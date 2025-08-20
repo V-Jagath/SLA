@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Typing Institute - Kerala</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1559056199-641a0d1e91cd') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .hero .btn {
+            background: #ffcc00;
+            padding: 10px 20px;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #003366;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .dark {
+            background: #003366;
+            color: white;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin-top: 20px;
+            border-left: 4px solid #ffcc00;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .map {
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Smart Typing Institute</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#batch">Batch</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Boost Your Typing Skills</h2>
+            <p>Join Kerala's best bilingual typing institute – Learn Malayalam & English Typing!</p>
+            <a href="#contact" class="btn">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <h2>Courses Offered</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Beginner Level</h3>
+                <p>Basics of typing, finger placement & speed drills.</p>
+                <p>Duration: 1 month</p>
+                <p>Fee: ₹1200</p>
+            </div>
+            <div class="card">
+                <h3>Intermediate Level</h3>
+                <p>Speed improvement & accuracy practices.</p>
+                <p>Duration: 2 months</p>
+                <p>Fee: ₹2000</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Level</h3>
+                <p>Professional typing techniques & certification exam.</p>
+                <p>Duration: 3 months</p>
+                <p>Fee: ₹3000</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 30px;">Languages</h3>
+        <ul>
+            <li>Malayalam Typing (മലയാളം ടൈപ്പിങ്)</li>
+            <li>English Typing</li>
+        </ul>
+        <p style="margin-top:10px;"><strong>Certification</strong> provided after course completion.</p>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="section dark">
+        <h2>About Us</h2>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            Established in 2010, Smart Typing Institute in Kerala has helped over 5000+ students master both Malayalam
+            and English typing. We offer a practical approach to fast and accurate typing.
+        </p>
+        <p style="text-align:center; margin-top:15px;"><strong>Our Faculty:</strong> Govt. certified trainers with 10+
+            years experience.</p>
+        <blockquote>
+            “I learned Malayalam typing in just 30 days! The support and classes were excellent!” – <em>Akshay,
+                Trivandrum</em>
+        </blockquote>
+    </section>
+
+    <!-- Batch Details Section -->
+    <section id="batch" class="section">
+        <h2>Batch Timings</h2>
+        <table>
+            <tr>
+                <th>Batch</th>
+                <th>Timing</th>
+                <th>Mode</th>
+            </tr>
+            <tr>
+                <td>Batch A</td>
+                <td>9 AM - 10 AM</td>
+                <td>Offline</td>
+            </tr>
+            <tr>
+                <td>Batch B</td>
+                <td>11 AM - 12 PM</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>Batch C</td>
+                <td>5 PM - 6 PM</td>
+                <td>Offline</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section dark">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> contact@smarttyping.in</p>
+        <p><strong>Address:</strong> 2nd Floor, ABC Building, MG Road, Ernakulam, Kerala</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps?q=Ernakulam,+Kerala&output=embed" width="100%" height="250"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Smart Typing Institute, Kerala. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewritting</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <header>
+        <div class="topic">
+            <div class="title">
+                <h1>VJ Typewritting Institute</h1>
+                <p>Fast Hands, Bright Minds !</p>
+            </div>
+
+            <nav>
+                <div class="nav">
+                    <a href="#content">Home</a>
+                    <a href="">Courses</a>
+                    <a href="">Batch Details</a>
+                    <a href="">Fee Structure</a>
+                    <a href="">Typing Tips</a>
+                    <a href="">Events & Gallery</a>
+                    <a href="">Contact us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section>
+            <div class="content">
+                <div class="speed">
+                    <img src="../../Project/project-images/Typewriter.avif" alt="Typewriter" width="350px"><br><br>
+                    <h2>Typing Speed Test</h2>
+                    <p>Type the sentence below and check your speed!</p>
+                    <p id="sample">Typing is the skill that improves with practice and accuracy.</p>
+                    <textarea id="input" rows="4" placeholder="Start typing here..."></textarea>
+                    <button onclick="checkSpeed()">Check Speed</button>
+                    <p id="result"></p>
+
+                    <script>
+                        let startTime;
+                        const input = document.getElementById("input");
+                        input.addEventListener("focus", () => {
+                            startTime = new Date().getTime();
+                        });
+
+                        function checkSpeed() {
+                            const endTime = new Date().getTime();
+                            const typed = input.value.trim();
+                            const duration = (endTime - startTime) / 1000;
+                            const words = typed.split(" ").length;
+                            const speed = Math.round((words / duration) * 60);
+                            document.getElementById("result").innerText = `Your speed is ${speed} WPM.`;
+                        }
+                    </script>
+                </div>
+                <div>
+                    <h3>🖋 The Importance of Typing</h3>
+                    <p>In today’s fast-moving digital world, typing is not just a skill — it’s a necessity. From sending
+                        emails to preparing official documents, every profession demands speed and accuracy on the
+                        keyboard.
+                        Good typing skills save time, improve productivity, and open doors to better job opportunities.
+                    </p>
+
+                    <p>Whether you are a student preparing for competitive exams, a professional handling office tasks,
+                        or
+                        a freelancer working online, typing efficiently gives you an edge. It’s not just about pressing
+                        keys
+                        — it’s about communicating effectively in the digital age.</p>
+                </div>
+        </section>
+        <section>
+            <h3>🎯 Our Typing Goals</h3>
+            At Speedy Fingers Typing Institute, we aim to:
+            <ul>
+
+                <li>Improve Speed & Accuracy – Reach professional typing standards with confidence.</li>
+
+                <li>Build Muscle Memory – Type naturally without looking at the keyboard.</li>
+
+                <li>Boost Career Readiness – Prepare for government exams, office work, and freelance jobs.</li>
+
+                <li>Enhance Productivity – Complete tasks faster, saving hours every week.</li>
+
+                <li>Develop Digital Confidence – Feel at ease using computers in any environment.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>💡 Why Start Today?</h3>
+            <p>Learning typing is like learning to ride a bicycle — once mastered, it stays with you for life.
+                And
+                with our structured training, expert guidance, and practical tests, you’ll achieve your goals
+                faster
+                than you think.</p>
+            </div>
+        </section>
+        <section>
+            <div class="courses">
+                <div>
+                    <h2>Typing Courses</h2>
+                </div>
+                <div class="course">
+                    <div class="eng-low">
+                        <a href="">
+                            <h3>English Typing (Lower)</h3>
+                            <p> <b>Duration:</b> 3 Month Includes speed drills, finger exercises</p>
+                        </a>
+                    </div>
+                    <div class="eng-high">
+                        <a href="">
+                            <h3>English Typing (Higher)</h3>
+                            <p> <b>Duration:</b> Duration: 3 Month
+                                Advanced typing techniques and speed practice</p>
+                        </a>
+                    </div>
+                    <div class="tam-low">
+                        <a href="">
+                            <h3>Tamil Typing (Lower)</h3>
+                            <p> <b>Duration:</b> 3 Months
+                                Includes Bamini/Phonetic keyboards</p>
+                        </a>
+                    </div>
+                    <div class="tam-high">
+                        <a href="">
+                            <h3>Tamil Typing (Higher)</h3>
+                            <p> <b>Duration:</b> 3 Month Advanced typing techniques and speed practice</p>
+                        </a>
+                    </div>
+                    <div class="government">
+                        <a href="">
+                            <h3>Advanced Typing + Govt Exam Practice</h3>
+                            <p> <b>Duration:</b> 4 Month Advanced typing techniques and Custom modules for competitive
+                                exams</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Batch">
+                <div>
+                    <h2>Batch Timings</h2>
+                    <ul>
+                        <h3>MORNING</h3>
+                        <li>Morning: 6:00 AM – 7:00 AM</li>
+                        <li>Morning: 7:00 AM – 8:00 AM</li>
+                        <li>Morning: 8:00 AM – 9:00 AM</li>
+                        <li>Morning: 10:00 AM – 11:00 AM</li>
+                        <h3>AFTERNOON</h3>
+                        <li>Afternoon: 11:00 AM – 12:00 PM</li>
+                        <li>Afternoon: 12:00 PM – 1:00 PM</li>
+                        <li>Afternoon: 2:00 PM – 3:00 PM</li>
+                        <li>Afternoon: 3:00 PM – 4:00 PM</li>
+                        <h4>LUNCH TIME 1:00 PM – 2:00 PM</h4>
+                        <h3>EVENING & NIGHT</h3>
+                        <li>Evening: 5:00 PM – 6:00 PM</li>
+                        <li>Evening: 6:00 PM – 7:00 PM</li>
+                        <li>Evening: 7:00 PM – 8:00 PM</li>
+                        <li>Evening: 8:00 PM – 9:00 PM</li>
+                        <h3>WEEKEND BATCHES</h3>
+                        <li>Weekend (Sat & Sun): 9:00 AM – 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <h2>Fee Structure</h2>
+                    <ul>
+                        <li>English Lower – ₹500 (per Month)</li>
+                        <li>English Higher – ₹500 (per Month)</li>
+                        <li>Tamil Lower – ₹600 (per Month)</li>
+                        <li>Tamil Higher – ₹600 (per Month)</li>
+                        <li>Combined Package (English) – ₹2500 (6 Months)</li>
+                        <li>Combined Package (Tamil) – ₹3000 (6 Months)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Our Achievements</h3>
+            <ul>
+                <li>Trained 1000+ students in last 3 years</li>
+                <li>80% students passed govt typing exams</li>
+                <li>Awarded Best Typing Institute in Chennai – 2024</li>
+                <li>Partnered with 5 Government Exam Training Centres</li>
+            </ul>
+        </section>
+        <section>
+            <h3> Latest Announcements</h3>
+            <ul>
+                <li>📅 New Weekend Batch starts from August 10th</li>
+                <li>💼 Free career guidance workshop on August 15th</li>
+                <li>📜 Govt exam model test series starts from August 20th</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Student Success Stories</h3>
+            <h4>"After joining the institute, I passed the SSC Typing Test and now I work as a Junior Assistant." -
+                Meena, Govt Employee</h4>
+            <h4>"The Tamil typing training was exactly what I needed to clear my TNPSC exam. Thank you!"- Suresh, Typist
+            </h4>
+        </section>
+        <section>
+            <h2>Why Choose Smart Typing Institute?</h2>
+            <ul>
+                <li>✅ Certified & Experienced Trainers</li>
+                <li>✅ Individual Focus with Progress Tracking</li>
+                <li>✅ Low Fees & Flexible Timings</li>
+                <li>✅ Tamil & English Typing – Both Available</li>
+                <li>✅ Certificate valid for government exams</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Register Here</h2><br><br>
+            <form action="">
+                <label for="">Name :</label>
+                <input type="text" placeholder="Enter Your Name"><br><br>
+                <label for="">Mobile Number :</label>
+                <input type="tel" placeholder="Enter Your Mobile Number"><br><br>
+                <label for="">Select Course :</label>
+                <select name="" id="">
+                    <option value="" selected disabled>Select Any One Course</option>
+                    <option value="">English Lower</option>
+                    <option value="">English Higher</option>
+                    <option value="">Tamil Lower</option>
+                    <option value="">Tamil Higher</option>
+                    <option value="">Government Exams</option>
+                </select><br><br>
+                <label for="">Any Query :</label>
+                <textarea placeholder="Enter Your Message or Query"></textarea><br><br>
+                <input type="submit">
+                </table>
+            </form>
+        </section>
+        </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="foot">
+            <p>Contact Us</p>
+            <p>Address: No. 25, Typing Street, Chennai, Tamil Nadu - 600001</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Email: smarttyping@example.com</p>
+            <center>
+                <p>© 2025 Smart Typing Institute. All Rights Reserved.</p>
+            </center>
+        </div>
+    </footer>
+</body>
+
+</html>

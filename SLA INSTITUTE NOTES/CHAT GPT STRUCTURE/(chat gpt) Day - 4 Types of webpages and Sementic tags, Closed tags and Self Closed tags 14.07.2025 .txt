@@ -1,0 +1,65 @@
+TYPES OF WEB PAGES
+----------------------
+
+1. Landing Pages:
+   - Purpose: Marketing, lead generation, product promotions, signup forms
+   - Often the first/main page a user sees
+   - Example: https://amazon.com
+
+2. Business Pages (Informational):
+   - Purpose: Company information, services, pricing, contact, blogs
+   - Official website of a business
+   - Example: https://tcs.com
+
+3. Maintenance / Operational Pages (Dashboards, CRM, Admin Panels):
+   - Purpose: Internal tools, analytics, user dashboards, website under maintenance
+   - Example: "Site Under Maintenance" message/page
+
+   - CRM (Customer Relationship Management):
+     - Software used by businesses to:
+         * Store customer information
+         * Track interactions and communication
+         * Send emails
+         * Improve business and customer relationships
+
+   - DASHBOARD:
+     - A page that displays important data or information in one view
+     - Example: Amazon customer service dashboard
+
+--------------------------------------------------
+
+SEMANTIC TAGS
+----------------------
+
+Definition:
+- Semantic tags are HTML tags that clearly describe the meaning and purpose of the content.
+- Helps browsers and developers understand the structure of the webpage.
+
+Common Semantic Tags:
+
+| Tag         | Description                             |
+|-------------|-----------------------------------------|
+| `<header>`  | Top section (title/logo/navigation)     |
+| `<nav>`     | Navigation links                        |
+| `<main>`    | Main content of the page                |
+| `<section>` | Section of related content              |
+| `<article>` | Blog posts, independent content         |
+| `<aside>`   | Side content (ads, tips, etc.)          |
+| `<footer>`  | Bottom/footer section of the page       |
+
+--------------------------------------------------
+
+1. CLOSING TAGS
+----------------------
+
+- A closing tag marks the end of an HTML element
+- Format: `<tag> content </tag>`
+
+Common Closing Tags:
+
+| Tag           | Use                                     |
+|---------------|------------------------------------------|
+| `<html>`      | Entire HTML document                     |
+| `<head>`      | Metadata and links section               |
+| `<title>`     | Title shown in browser tab               |
+| `<body>`      | Main visible content

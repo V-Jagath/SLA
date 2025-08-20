@@ -1,0 +1,44 @@
+SEMANTIC TAGS – BLOCK-LEVEL TAGS
+----------------------------------------
+
+What are Block-Level Tags?
+
+1. Block-level elements take up the **full width** of the screen by default.
+2. They **always start on a new line** in the webpage layout.
+3. **Nested block-level tags** (one inside another) are generally **not recommended**.
+4. Some block-level tags like `<div>` are **non-semantic** (they don’t describe the content's meaning).
+5. Block-level elements **work better inside semantic containers** for:
+   - Better structure
+   - Easier CSS styling
+   - Easier JavaScript interaction
+
+Note:
+- While nesting block-level tags inside semantic tags is not mandatory, doing so makes your webpage more **structured, powerful, and easier to maintain**.
+
+--------------------------------------------------
+
+COMMON BLOCK-LEVEL HTML TAGS
+-------------------------------------------------------------------|
+| Tag          | Description                                       |
+|--------------|---------------------------------------------------|
+| `<div>`      | Generic container for grouping content            |
+| `<p>`        | Paragraph text                                    |
+| `<h1>`–`<h6>`| Headings (H1 = largest, H6 = smallest)            |
+| `<ul>`       | Unordered list                                    |
+| `<ol>`       | Ordered list                                      |
+| `<li>`       | List item (used inside `<ul>` or `<ol>`)          |
+| `<header>`   | Defines the header section                        |
+| `<footer>`   | Defines the footer section                        |
+| `<nav>`      | Contains navigation links                         |
+| `<section>`  | Groups related content into sections              |
+| `<article>`  | Represents independent, self-contained content    |
+| `<aside>`    | Sidebar or indirectly related content             |
+| `<form>`     | Used to collect user input                        |
+| `<table>`    | Used to create and organize tabular data          |
+| `<blockquote>`| Displays long quotations                         |
+| `<pre>`      | Displays preformatted text                        |
+| `<hr>`       | Horizontal rule or divider                        |
+| `<fieldset>` | Groups form elements together                     |
+| `<address>`  | Displays contact information                      |
+| `<figure>`   | Groups media elements with optional caption       |
+--------------------------------------------------------------------

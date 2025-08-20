@@ -1,0 +1,134 @@
+1. What is Full Stack Development?
+Full Stack Development includes both:
+
+I. FRONTEND
+
+  A. STATIC
+    - HTML: Structure your webpage
+    - CSS, CASS, Bootstrap: Styling
+    - Tailwind, MUI (Material UI), Themes: Layout, style, and animations
+
+  B. DYNAMIC
+    - JavaScript (JS)
+    - jQuery
+    - AJAX
+    - React JS
+    - Angular JS
+    - Vue JS
+
+  C. DATABASES
+    1. SQL (Structured Query Language)
+       - Database tools: Oracle, Microsoft SQL Server, XAMPP, Workbench, PGAdmin, WAMP
+    2. NO SQL
+       - MongoDB
+       - Cloud databases
+       - AWS
+
+II. BACKEND
+
+  A. Actions / Functions
+    - PHP
+    - Java
+    - Node JS
+    - Python
+
+  B. Machine Level
+    - Electrical chips, Hardware
+    - RAM, ROM
+
+-------------------------------------------------------
+
+What is Web?
+
+Definition:
+- A network is a group of two or more computers or devices connected to share information, data, resources, or internet access.
+
+Types of Networks:
+  - LAN (Local Area Network): Covers small area like a building
+  - WAN (Wide Area Network): Covers large distances
+  - MAN (Metropolitan Area Network): Covers a city or campus
+
+Why use Networks?
+  * Internet access
+  * Share files and printers
+  * Send mail
+  * Play online games
+  * Store data in the cloud
+
+-------------------------------------------------------
+
+ARPANET
+- Stands for Advanced Research Projects Agency Network
+- The first network to use packet switching
+- Considered the foundation of the modern internet
+
+Importance:
+- Introduced basic networking concepts
+
+-------------------------------------------------------
+
+Basic Internet Terms:
+
+- TCP (Transmission Control Protocol): Ensures reliable communication, checks for lost/missing data
+- IP (Internet Protocol): Assigns a unique address to each internet-connected device
+- WWW (World Wide Web): Interlinked web pages accessed via internet
+- URL (Uniform Resource Locator): The address of a web page
+- HTTP (Hyper Text Transfer Protocol): Loads web pages (not secure)
+- HTTPS (Secure HTTP): Secure version of HTTP (encrypted data)
+- DNS (Domain Name System): Converts website names into IP addresses
+- ISP (Internet Service Provider): Company that provides internet access
+- SSL (Secure Sockets Layer): Encrypts browser-server connection for data protection
+
+-------------------------------------------------------
+
+SEO (Search Engine Optimization)
+
+Purpose:
+- Improve website visibility in search engines
+- Attract more visitors by ranking higher
+
+Types of SEO:
+  I. On-Page SEO
+     - Keywords, content, titles, meta tags
+
+  II. Off-Page SEO
+      - Backlinks, social sharing, authority
+
+  III. Technical SEO
+       - Website speed, mobile-friendliness, security, etc.
+
+-------------------------------------------------------
+
+What is a Web Page?
+- A single document you view in a web browser (like Chrome or Firefox)
+- Written using HTML, CSS, JavaScript
+
+-------------------------------------------------------
+
+SLA SYLLABUS (Common Topics):
+- HTML, CSS, Bootstrap, JavaScript
+
+Choose one of the following backend technologies:
+- Java
+- Python
+- Node.js
+
+Database Tools (Depends on chosen backend):
+- Workbench
+- XAMPP
+- MongoDB
+
+-------------------------------------------------------
+
+MUGUND SIR SYLLABUS:
+
+- Communication
+- Aptitude
+- Technologies
+- Discipline
+- Practices
+- Real-time Project
+- Meetings
+- Networking
+- Digital Marketing
+- Building a Startup Company

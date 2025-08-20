@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Register Page</title>
+    <link rel="icon" href="../../Project/project-images/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            background-color: #F2F2F2;
+            color: #000000;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-items: center;
+        }
+
+        .Newuser {
+            background-color: #F2F2F2;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+            width: 500px;
+
+        }
+
+        .Newuser a {
+            text-decoration: none;
+            color: rgb(141, 141, 228);
+        }
+
+        .Newuser input {
+            text-align: center;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .Newuser {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .Newuser {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Newuser input[type="submit"]:hover {
+            text-align: center;
+            background-color: green;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="login.html">
+        <div class="Newuser">
+            <table>
+                <tr>
+                    <th colspan="2" style="text-align: center;">
+                        <h2>Please Register</h2>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td><label for="">Name :</label></td>
+                    <td><input type="text" required placeholder="Enter Your Full Name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Date of Birth :</label></td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr style="column-gap: 25px;">
+                    <td><label for="">Gender :</label></td>
+                    <td><label for="">Male</label>
+                        <input type="radio" name="Gender">
+
+                        <label for="">Female</label>
+                        <input type="radio" name="Gender">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Mobile Number :</label></td>
+                    <td><input type="tel" placeholder="Enter Your Mobile Number" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Email Id :</label></td>
+                    <td><input type="email" placeholder="Enter Your Email Id" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Password :</label></td>
+                    <td><input type="password" required placeholder="Reenter Your Password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Confirm Password :</label></td>
+                    <td><input type="password" required placeholder="Create a New Password"></td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Register Now"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

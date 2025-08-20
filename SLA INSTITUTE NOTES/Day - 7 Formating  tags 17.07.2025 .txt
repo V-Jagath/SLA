@@ -1,0 +1,45 @@
+What are all the formatic tags
+in html?
+h1 to h6
+p
+bold
+br
+strong
+i
+u
+mark
+small
+sub 
+sup
+subsup
+ul
+ol
+li
+img
+hr
+table
+time
+code 
+abbr
+cite
+qoute
+iframe 
+audio
+video
+
+
+
+
+Attribute:
+
+1. Attribute is additional infarmation of your tags. the default behiver of the tag in you WEB PAGE .
+ will conver or create or exteneted or trasform to usinfg attributes of your weppage.
+2. if the attributes is not there IN html is only a static weppages - only see
+3. attribute is the only thing to communicate to the others. like js, css,, react.ect...
+3. intractions with in the weppages.
+4. attribute syntex - attributename = "value"
+5. attributes always come in to your opening tags. finishing angle tag >
+<tagname attributename = "value">
+6. each tag have there own attributes and their behaviors
+7. Gobal attribute - all tags acceing - some attribute have some behaviors some attribute using for change the behiver in css or js or moree...
+8. classs and id.

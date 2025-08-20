@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0%;
+}
+
+* {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topic {
+    background-color: #000000;
+    color: #FAEB92;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.main-content h3 {
+    color: #9929EA;
+}
+
+.main-content h2 {
+    color: #9929EA;
+    display: inline;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: #9929EA;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
+.course {
+    display: flex;
+    gap: 30px;
+}
+
+.course h3 {
+    color: #FAEB92;
+}
+
+.course p {
+    color: #CC66DA;
+}
+.course a{
+    text-decoration: none;
+}
+
+.government {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FAEB92;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+
+.eng-low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FAEB92;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.eng-high {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FAEB92;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.tam-low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FAEB92;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.tam-high {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FAEB92;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+
+.foot {
+    background-color: #000000;
+    color: #FAEB92;
+}
+
+.foot p {
+    font-size: small;
+}

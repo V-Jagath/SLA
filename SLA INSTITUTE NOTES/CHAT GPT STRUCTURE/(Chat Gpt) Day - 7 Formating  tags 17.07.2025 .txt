@@ -1,0 +1,73 @@
+HTML FORMATTING TAGS AND ATTRIBUTES
+===================================
+
+FORMATTING TAGS IN HTML
+------------------------
+
+Text Formatting Tags:
+---------------------
+<h1> to <h6>  - Heading tags (from largest to smallest)
+<p>           - Paragraph
+<b>           - Bold text (non-semantic)
+<strong>      - Important/semantic bold text
+<i>           - Italic text (non-semantic)
+<u>           - Underlined text
+<mark>        - Highlighted text
+<small>       - Smaller text
+<sub>         - Subscript
+<sup>         - Superscript
+<br>          - Line break
+(subsup is a combination of sub and sup - not an actual HTML tag)
+
+List & Layout Tags:
+-------------------
+<ul>          - Unordered list
+<ol>          - Ordered list
+<li>          - List item
+<hr>          - Horizontal line
+<table>       - Table structure
+
+Media & Embedding Tags:
+------------------------
+<img>         - Image
+<audio>       - Audio player
+<video>       - Video player
+<iframe>      - Embeds external content (like YouTube)
+
+Miscellaneous Tags:
+-------------------
+<time>        - Represents date/time
+<code>        - Code snippet
+<abbr>        - Abbreviation (with tooltip)
+<cite>        - Citation of a source
+<q>           - Inline quotation
+
+
+HTML ATTRIBUTES
+---------------
+
+1. Attributes provide additional information about HTML tags.
+2. They change the default behavior of elements on the web page.
+3. Without attributes, HTML pages are static (only display content).
+4. Attributes allow communication with CSS, JavaScript, React, etc.
+5. Used for interaction and dynamic functionality.
+6. Syntax:
+   <tagname attributename="value">
+7. Attributes always appear inside the opening tag.
+8. Each tag has specific attributes for specific behaviors.
+
+Global Attributes:
+------------------
+(Global attributes can be used with most tags)
+
+- class   : Assigns a class name (used in CSS/JS)
+- id      : Unique identifier for the element
+- style   : Inline styling
+- title   : Tooltip on hover
+- data-*  : Custom data attributes
+
+Examples:
+---------
+<img src="image.jpg" alt="My Image">
+<a href="https://example.com" target="_blank">Visit</a>
+<div class="box" id="main-section"></div>

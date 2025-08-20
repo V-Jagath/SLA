@@ -1,0 +1,11 @@
+FORM TAG
+
+form collect your datas grouply
+form tags for using dats for grouping
+input tag indidual ha vachikum but form tag la input type kodutha input ha group ha collect pannum.
+
+Attibute for input ku mattum the ithu use agum
+type
+value
+placeholder
+

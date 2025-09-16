@@ -1,0 +1,249 @@
+() --> funciton call
+
+build-in funtion dont use in ddl
+
+funtions in sql:-
+
+string funtions - upper()
+
+tips :-
+build-in funtions insert la vale la use pannanum
+select la column la kodukanum
+1.upper()
+2.lower()
+3.substring()-using paragraph
+4.trim - remove space
+5.round()
+6.date()
+
+aggricate ---> collection of data in single time
+select upper(emp_name) from emp;
+
+
+doubts
+
+ddl la buildin funtion use pannalama ?
+dml la build in funtion use pannalama?
+string funtion na ena ena ena iruku ?
+aggricate math string funtions na ena ?
+
+
+
+-----------------------------------------------------------------------
+🔹 () --> function call
+
+Whenever you see brackets () → that means function is being called.
+
+Example:
+
+UPPER('hello')   -- function call, output = 'HELLO'
+
+🔹 Built-in function dont use in DDL
+
+DDL (Data Definition Language) → CREATE, ALTER, DROP, TRUNCATE.
+
+This is only for table/database structure.
+
+Built-in functions like UPPER(), ROUND(), etc. ❌ cannot be used here.
+
+👉 Example (WRONG):
+
+CREATE TABLE test (name VARCHAR(20) UPPER());
+
+🔹 Functions in SQL
+
+There are two main categories:
+
+String / Scalar functions → Work on single row values.
+
+Aggregate functions → Work on multiple rows (collection).
+
+🔹 String functions
+
+Examples you wrote are correct:
+
+UPPER() → convert to capital letters
+
+SELECT UPPER('jagath');
+-- Output: JAGATH
+
+
+LOWER() → convert to small letters
+
+SELECT LOWER('SQL');
+-- Output: sql
+
+
+SUBSTRING() → extract part of text (paragraph, word, etc.)
+
+SELECT SUBSTRING('HELLO WORLD', 1, 5);
+-- Output: HELLO
+
+
+TRIM() → remove spaces (left + right)
+
+SELECT TRIM('   hello   ');
+-- Output: hello
+
+
+ROUND() → round off numbers
+
+SELECT ROUND(123.456, 2);
+-- Output: 123.46
+
+
+DATE() → extract date part from datetime
+
+SELECT DATE('2025-09-16 08:30:00');
+-- Output: 2025-09-16
+
+🔹 Tips you wrote
+
+✅ Correct understanding:
+
+INSERT → functions can be used in values.
+
+INSERT INTO emp (emp_name) VALUES (UPPER('raja'));
+
+
+SELECT → functions can be used on columns.
+
+SELECT LOWER(emp_name) FROM emp;
+
+🔹 Aggregate Functions
+
+Aggregate = collection of rows processed together.
+
+Examples:
+
+COUNT() → number of rows
+
+SUM() → total value
+
+AVG() → average
+
+MIN() → minimum
+
+MAX() → maximum
+
+👉 Example:
+
+SELECT AVG(salary) FROM emp;
+
+🔹 Example from your note
+SELECT UPPER(emp_name) FROM emp;
+
+
+This will display all employee names in capital letters.
+
+If emp table has:
+
+emp_name
+jagath
+ramesh
+
+👉 Output will be:
+
+UPPER(emp_name)
+JAGATH
+RAMESH
+
+✅ Final Summary
+
+DDL → no functions allowed.
+
+DML → functions can be used.
+
+String functions → handle text.
+
+Aggregate functions → summarize multiple rows.
+
+
+🔹 1. DDL la built-in function use pannalama?
+
+DDL (Data Definition Language) → CREATE, ALTER, DROP, TRUNCATE
+
+These are only for structure definition.
+
+Built-in functions (like UPPER(), ROUND(), etc.) cannot be used inside DDL.
+
+👉 Example (not valid):
+
+CREATE TABLE test(
+   name VARCHAR(20) UPPER()
+);
+
+
+This is ❌ wrong.
+
+✅ But you can use default values, constraints, or expressions in some cases inside CREATE TABLE, but not string/math functions.
+
+🔹 2. DML la built-in function use pannalama?
+
+DML (Data Manipulation Language) → INSERT, UPDATE, DELETE, SELECT
+
+Yes ✅, functions are commonly used in DML.
+
+Especially in SELECT statements and sometimes in INSERT/UPDATE.
+
+👉 Example:
+
+INSERT INTO employees (emp_name) VALUES (UPPER('jagath'));
+UPDATE employees SET emp_name = LOWER(emp_name);
+SELECT TRIM(emp_name) FROM employees;
+
+🔹 3. String functions na enna?
+
+Some common string functions in SQL:
+
+UPPER('text') → capital letters
+
+LOWER('TEXT') → small letters
+
+SUBSTRING('HELLO',2,3) → "ELL" (start=2, length=3)
+
+TRIM(' hi ') → "hi" (removes spaces both sides)
+
+LTRIM(' hi') → removes left spaces
+
+RTRIM('hi ') → removes right spaces
+
+CONCAT('hi',' jagath') → "hi jagath"
+
+LENGTH('hello') → 5
+
+🔹 4. Aggregate functions vs String functions
+Aggregate Functions (for collection of rows):
+
+COUNT() → number of rows
+
+SUM() → total
+
+AVG() → average
+
+MIN() → smallest
+
+MAX() → largest
+
+👉 Example:
+
+SELECT AVG(salary) FROM employees;
+
+String Functions (for text/character manipulation):
+
+Work on individual values (not collection).
+
+Example:
+
+SELECT UPPER(emp_name) FROM employees;
+
+
+✅ In short:
+
+DDL → no functions
+
+DML → yes, you can use functions
+
+String functions → text handling (UPPER, LOWER, SUBSTRING, TRIM, etc.)
+
+Aggregate functions → summarize multiple rows (SUM, COUNT, AVG, etc.)

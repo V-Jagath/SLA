@@ -1,0 +1,65 @@
+WEEK - 1 TEST QUESTIONS 
+1. What is HTML?
+Explain its full form and purpose in web development.
+2. What are the attributes of the <img> tag?
+Name at least 3 commonly used attributes and explain their purpose.
+3. What are block-level elements and inline elements in HTML?
+Provide 2 examples for each.
+4. What is the difference between <div> and <span> tags?
+Mention when you would use each.
+5. What are semantic elements in HTML?
+Give 3 examples of semantic tags and explain why they are used.
+
+1. What is HTML?
+Full Form: HTML stands for HyperText Markup Language.
+Purpose in Web Development:
+ HTML is the standard language used to create and structure content on the web. It tells the browser how to display text, images, links, videos, and more on a web page.
+ Example: You use HTML to create headings, paragraphs, tables, and to link different web pages together.
+
+2. What are the attributes of the <img> tag?
+The <img> tag is used to display images in a web page. It has several important attributes:
+src (source): Specifies the path or URL of the image file.
+ Example: <img src="photo.jpg">
+alt (alternative text): Provides text description of the image if it doesn't load or for screen readers.
+ Example: <img src="photo.jpg" alt="A beautiful sunset">
+width and height: Set the dimensions of the image.
+ Example: <img src="photo.jpg" width="300" height="200">
+
+3. What are block-level elements and inline elements in HTML?
+Block-level elements: Start on a new line and take up the full width available.
+ Examples:
+
+
+<div> – for dividing sections
+<p> – paragraph text
+Inline elements: Stay within the same line as surrounding content.
+ Examples:
+
+
+<span> – for styling part of a sentence
+<a> – for hyperlinks
+
+4. What is the difference between <div> and <span> tags?
+<div> (block-level): Used to group larger sections like paragraphs, images, or other elements. It creates structure.
+ Use when you want to organize your layout.
+ Example: Wrapping a whole product card or a section of a webpage.
+
+
+<span> (inline-level): Used to style or target smaller parts of text inside a line without breaking the flow.
+ Use for styling words or small pieces inside a sentence.
+ Example: Making one word bold or red inside a paragraph.
+
+
+
+5. What are semantic elements in HTML?
+Semantic elements clearly describe the meaning of their content, making the page more understandable for both browsers and developers.
+Examples:
+<header> – Represents the top section or header of a page.
+<article> – Represents independent content like a blog post or news item.
+<footer> – Represents the bottom section or footer of a page.
+Why used?
+Improve SEO
+Help screen readers and accessibility tools
+Make code more readable and well-structured
+
+

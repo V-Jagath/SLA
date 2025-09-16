@@ -1,0 +1,45 @@
+Take all calue using column name
+
+example - emp_nmae from emp
+
+row vise filter
+
+select emp_name form emp where emp_id=2;
+
+like 
+
+select emp_name form emp where emp_name like  "%a"
+
+starting ---> R%
+Ending ---> %A
+
+select count (*) from emp
+
+count no of total_datas
+
+select avg (column name) from emp
+
+Aggrigate Funtions:-
+
+Build-in Funtions
+
+count () --> overall count for that table 
+max() ---> 
+avg() --->
+sum --->
+min--->
+
+
+group by ---> group by
+
+limit 
+
+select * From Emp Limit2;
+
+first 2 values eduthutu varum 
+
+using for live example :-
+
+having, group ---> using for Dashboard
+updated by, updated at (extra id)
+inserted at, inserted by

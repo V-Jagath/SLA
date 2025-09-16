@@ -1,0 +1,20 @@
+h1 32px
+
+em(element measurement) na parent element value *2 tha em oda value
+
+Example parent ku 20px na child ku 20*2=40px ithu tha px value
+
+rem (root element measurement)
+
+rem na root element value * 2 the rem oda value 
+
+Example 
+
+Root ku 40px na child ku 40*2=80px ithu tha px value
+
+Parent and root ku value kodukalana default value eduthu athu kuda *2 pannikum 
+
+View port height 
+Viewport width
+
+2 mattum tha podanum  nu ila 3 ,4,5,6…. Evlo venum nalum namma pottukalam

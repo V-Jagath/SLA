@@ -1,0 +1,96 @@
+Emp -Dept --> dont use varchar because, dept anme contain spaces and capital small letter mixup. but Number is same so you can give any update for dept name you can use int.
+
+DQL -Data Query Language:-
+
+Retrive a data from core comment is select.
+
+select* from Table Name ---> show all datas or values
+
+select ---> comment 
+Fetch ---> Retrive a data
+
+Using where Condition:-
+
+Specify column only fetch you can use where condition.
+
+example
+
+select* emp-name(column name) from emp(Table name);
+
+slect *from emp where emp-salary<10000;
+
+comments:-
+those comments are used After table name or after where
+orderred by :- 
+disanding order-desc
+assesnding order
+
+disting --> Remove duplicates
+like-  --> pattern matching
+Group by+having --->
+
+group by-->group reselect
+having-->filter that group
+
+----------------------------------------------
+
+DQL – Data Query Language
+
+🔹 Definition:
+DQL is used to retrieve data from database tables.
+
+🔹 Main Command:
+
+SELECT → To fetch data.
+
+Basic Syntax
+SELECT column1, column2 
+FROM table_name 
+WHERE condition 
+ORDER BY column_name ASC|DESC;
+
+Key Features
+
+SELECT → Fetch data
+
+SELECT * FROM emp;
+
+
+WHERE → Apply condition
+
+SELECT * FROM emp WHERE emp_salary > 30000;
+
+
+ORDER BY → Sort results
+
+SELECT * FROM emp ORDER BY emp_name DESC;
+
+
+DISTINCT → Remove duplicates
+
+SELECT DISTINCT dept_id FROM emp;
+
+
+LIKE → Pattern matching
+
+SELECT * FROM emp WHERE emp_name LIKE 'A%';
+
+
+GROUP BY → Group rows
+
+SELECT dept_id, COUNT(*) FROM emp GROUP BY dept_id;
+
+
+HAVING → Filter groups
+
+SELECT dept_id, AVG(emp_salary) 
+FROM emp 
+GROUP BY dept_id 
+HAVING AVG(emp_salary) > 50000;
+
+
+👉 Note:
+
+DQL only retrieves data, does not modify it.
+
+emp_id / dept_id (numbers) should be used as keys instead of names, because names may contain spaces or case differences.

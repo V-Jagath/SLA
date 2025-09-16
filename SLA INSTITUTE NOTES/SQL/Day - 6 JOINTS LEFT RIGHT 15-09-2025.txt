@@ -1,0 +1,155 @@
+Joint Queries:-
+uses filtering process
+
+inneer join
+left join
+right join
+foreign key(dept_id) referances department (dept_id);
+
+1. Inner Joint :-
+
+returns only matching row in both rows
+if only want same values
+
+select * or column names,column name from table1 e inner join table2 as d on e.dp = d.dit;
+
+table ku aprm tha inner join varum
+
+select e.emp_id, e.emp_name, d.dept_name from employees e inner join department d on e.dept_id = d.dept_id; 
+
+2. left join or left outer join:- 
+
+retuns all rows from left table than matching rows from right table  if incase not match null will be shown.
+
+
+select e.emp_id, e.emp_name, d.dept_name from employees e left join department d on e.dept_id = d.dept_id;
+
+
+isnull --> purpose 
+
+3. Right Join
+
+return all rows from right table than matching rows from left table.
+
+
+----------------------------------------------
+
+🔹 SQL Joins – Filtering Process
+
+👉 Joins are used when you have two or more tables and you want to combine data based on a related column (usually primary key – foreign key).
+
+Example:
+
+employees table → emp_id, emp_name, dept_id
+
+department table → dept_id, dept_name
+
+Here, dept_id is foreign key in employees, referring to dept_id in department.
+
+1. INNER JOIN
+
+Returns only the matching rows between both tables.
+
+If no match → row is excluded.
+
+Best when you need only common values.
+
+✅ Syntax:
+
+SELECT e.emp_id, e.emp_name, d.dept_name
+FROM employees e
+INNER JOIN department d
+ON e.dept_id = d.dept_id;
+
+
+👉 Output:
+Only employees who have a department will be shown.
+
+2. LEFT JOIN (or LEFT OUTER JOIN)
+
+Returns all rows from the LEFT table (employees).
+
+Matching rows from RIGHT table (department) will be shown.
+
+If no match → NULL will be shown for right table columns.
+
+✅ Syntax:
+
+SELECT e.emp_id, e.emp_name, ISNULL(d.dept_name,'No Dept') AS dept_name
+FROM employees e
+LEFT JOIN department d
+ON e.dept_id = d.dept_id;
+
+
+👉 Output:
+
+All employees are shown.
+
+If employee doesn’t belong to any dept, dept_name = NULL (or replaced with "No Dept" using ISNULL).
+
+3. RIGHT JOIN (or RIGHT OUTER JOIN)
+
+Returns all rows from the RIGHT table (department).
+
+Matching rows from LEFT table (employees) will be shown.
+
+If no match → NULL for left table columns.
+
+✅ Syntax:
+
+SELECT e.emp_id, e.emp_name, d.dept_name
+FROM employees e
+RIGHT JOIN department d
+ON e.dept_id = d.dept_id;
+
+
+👉 Output:
+
+All departments will be shown.
+
+If no employees are in a department → emp_id and emp_name = NULL.
+
+🔹 Visual Difference
+Join Type	Rows Returned
+INNER JOIN	Only matching rows from both tables
+LEFT JOIN	All rows from left + matching rows from right
+RIGHT JOIN	All rows from right + matching rows from left
+🔹 Extra Notes
+
+ISNULL(column, 'value') → replaces NULL with custom value.
+
+AS → alias for table/column (employees e, department d).
+
+Always use JOIN after table name in query.
+
+✅ Example for quick understanding:
+
+employees
+emp_id	emp_name	dept_id
+1	Raj	        101
+2	Meena         	102
+3	Arun		NULL
+
+department
+
+dept_id		dept_name
+101		HR
+102		IT
+103		Finance	
+
+INNER JOIN → Raj (HR), Meena (IT)
+
+LEFT JOIN → Raj (HR), Meena (IT), Arun (NULL dept)
+
+RIGHT JOIN → Raj (HR), Meena (IT), (NULL employee for Finance)
+
+
+
+
+
+
+
+
+
+
+

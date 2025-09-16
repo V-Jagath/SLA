@@ -1,0 +1,192 @@
+Take all calue using column name
+
+example - emp_nmae from emp
+
+row vise filter
+
+select emp_name form emp where emp_id=2;
+
+like 
+
+select emp_name form emp where emp_name like  "%a"
+
+starting ---> R%
+Ending ---> %A
+
+select count (*) from emp
+
+count no of total_datas
+
+select avg (column name) from emp
+
+Aggrigate Funtions:-
+
+Build-in Funtions
+
+count () --> overall count for that table 
+max() ---> 
+avg() --->
+sum --->
+min--->
+
+
+group by ---> group by
+
+limit 
+
+select * From Emp Limit2;
+
+first 2 values eduthutu varum 
+
+using for live example :-
+
+having, group ---> using for Dashboard
+updated by, updated at (extra id)
+inserted at, inserted by
+
+
+----------------------------------------------------------------------
+
+🔹 1. Select column values
+
+To take data from specific column →
+
+SELECT emp_name FROM emp;
+
+
+This will return only the emp_name column (not all columns).
+
+🔹 2. Row-wise filtering (WHERE clause)
+
+Filter specific rows using WHERE:
+
+SELECT emp_name FROM emp WHERE emp_id = 2;
+
+
+👉 Only employee with emp_id = 2 will be shown.
+
+🔹 3. LIKE operator
+
+Used for pattern matching.
+
+Starts with "R":
+
+SELECT emp_name FROM emp WHERE emp_name LIKE 'R%';
+
+
+Ends with "A":
+
+SELECT emp_name FROM emp WHERE emp_name LIKE '%A';
+
+
+Contains "a" anywhere:
+
+SELECT emp_name FROM emp WHERE emp_name LIKE '%a%';
+
+🔹 4. Aggregate Functions
+
+Aggregate functions = summarize multiple rows.
+
+Count total rows
+
+SELECT COUNT(*) FROM emp;
+
+
+Maximum salary
+
+SELECT MAX(salary) FROM emp;
+
+
+Minimum salary
+
+SELECT MIN(salary) FROM emp;
+
+
+Average salary
+
+SELECT AVG(salary) FROM emp;
+
+
+Sum of salary
+
+SELECT SUM(salary) FROM emp;
+
+🔹 5. GROUP BY
+
+Used to group rows based on a column → useful in reports/dashboard.
+
+Example: Average salary by department:
+
+SELECT dept_id, AVG(salary) 
+FROM emp 
+GROUP BY dept_id;
+
+
+👉 Without GROUP BY → only one average for whole table.
+👉 With GROUP BY → one average for each department.
+
+🔹 6. HAVING
+
+WHERE = filter individual rows.
+
+HAVING = filter grouped results.
+
+Example: Only show departments with average salary > 30000:
+
+SELECT dept_id, AVG(salary) 
+FROM emp 
+GROUP BY dept_id 
+HAVING AVG(salary) > 30000;
+
+🔹 7. LIMIT
+
+Used to restrict number of rows in result (MySQL, PostgreSQL).
+
+First 2 rows:
+
+SELECT * FROM emp LIMIT 2;
+
+
+First 5 employees with highest salary:
+
+SELECT * FROM emp ORDER BY salary DESC LIMIT 5;
+
+🔹 8. Extra (for dashboards / audit columns)
+
+Many companies keep tracking columns in tables:
+
+inserted_by → who inserted the record
+
+inserted_at → when it was inserted
+
+updated_by → who last updated
+
+updated_at → when it was updated
+
+👉 Example table:
+
+CREATE TABLE emp (
+  emp_id INT PRIMARY KEY,
+  emp_name VARCHAR(50),
+  salary DECIMAL(10,2),
+  dept_id INT,
+  inserted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  inserted_by VARCHAR(50),
+  updated_at TIMESTAMP,
+  updated_by VARCHAR(50)
+);
+
+
+✅ Summary
+
+WHERE → filter row by row
+
+LIKE → pattern search (R%, %a)
+
+Aggregate Functions → COUNT, SUM, AVG, MIN, MAX
+
+GROUP BY → group rows (by dept, etc.)
+
+HAVING → filter grouped results
+
+LIMIT → restrict number of rows

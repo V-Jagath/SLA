@@ -1,0 +1,101 @@
+DML - Data Manipulation Lanuage
+insert, Modify, Remove view the dats
+you can manipulate the dats
+you can use select delete update detele insert dml comments only
+
+Comments
+insert
+sytax:  into table name(column name) values(values);
+
+string na value "" ithuku ulla kodukanum
+int na direct ha kodukalam
+
+update
+syntax; update tablenamne set column name= updated value where conditon primary value = same value
+you can update any coluumn name and value if any condition the column name updated.
+
+Delete
+
+Delete From talename where condition primary value = same value
+
+-----------------------------------------------------------------------------------------------
+
+DML – Data Manipulation Language
+
+DML is used to manipulate data in a database.
+It allows you to insert, modify, remove, and view data.
+
+Main commands:
+
+INSERT – Add new records
+
+UPDATE – Modify existing records
+
+DELETE – Remove records
+
+SELECT – View data
+
+1. INSERT
+
+Used to add new records into a table.
+
+Syntax:
+
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+
+
+✅ Rules:
+
+String values must be written in single quotes (' ').
+
+Numeric values can be written directly.
+
+Example:
+
+INSERT INTO Students (id, name, age)
+VALUES (1, 'Ravi', 20);
+
+2. UPDATE
+
+Used to modify existing records.
+
+Syntax:
+
+UPDATE table_name
+SET column_name = new_value
+WHERE condition;
+
+
+✅ Notes:
+
+Without WHERE, all rows will be updated.
+
+Use WHERE to target specific records (often using primary key).
+
+Example:
+
+UPDATE Students
+SET age = 21
+WHERE id = 1;
+
+3. DELETE
+
+Used to remove records from a table.
+
+Syntax:
+
+DELETE FROM table_name
+WHERE condition;
+
+
+✅ Notes:
+
+Without WHERE, all rows will be deleted.
+
+Always use WHERE with a condition to delete specific records.
+
+Example:
+
+DELETE FROM Students
+WHERE id = 1;

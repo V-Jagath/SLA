@@ -1,0 +1,34 @@
+Flexbox (5 Questions)
+Theory – What is Flexbox and why do we use it instead of float/inline-block layouts?
+
+Practical – How do you center a div horizontally and vertically using Flexbox?
+
+Theory – What is the difference between justify-content and align-items?
+
+Practical – How does flex-wrap work and give one real-world example where you used it?
+
+Theory + Code – What does flex: 1 mean and how is it different from flex-grow: 1?
+
+Box Model (3 Questions)
+Theory – Explain the CSS Box Model and its 4 components.
+
+Practical – If I set width: 200px and padding: 20px, what will be the total width with and without box-sizing: border-box?
+
+Theory – How do margin collapse issues occur and how can we avoid them?
+
+Position (3 Questions)
+Theory – Explain all CSS position values (static, relative, absolute, fixed, sticky) with one real-world example each.
+
+Practical – If I set position: absolute without giving position: relative to its parent, where will it be placed?
+
+Theory + Code – How does position: sticky work and where is it most commonly used?
+
+Z-index (2 Questions)
+Theory – What is z-index and how does stacking context affect it?
+
+Practical – If two elements have the same z-index, which one will appear on top?
+
+Background (2 Questions)
+Theory – Difference between background-color, background-image, and background shorthand property.
+
+Practical – How do you make a fixed full-screen background image that covers the viewport and stays fixed during scroll?

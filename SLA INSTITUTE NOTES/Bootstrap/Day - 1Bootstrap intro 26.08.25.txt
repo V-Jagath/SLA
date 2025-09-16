@@ -1,0 +1,182 @@
+What is Bootstrap? 
+1. Bootstrap is a popular Frontend Framework for creating responsive, mobile-first websites. 
+
+2. Bootstrap offers a set of CSS utility and component classes, so you focus on structure, not CSS rules. 
+
+3. You can integrate Bootstrap via CDN (Content Delivery Network) or by downloading and linking CSS/JS files offline. 
+
+4. Use Bootstrap for layout, design, color, utilities, components, and more, just by applying class names.
+
+5. Syntax: <tag class="class1 class2">Element</tag> 
+
+Bootstrap Key Principle: Apply pre-made classes directly to elements to get instant styles and layouts!
+
+Task:
+1. Plan and process
+2. Bootstrap Integration (+ MVC File System)
+3. Apply Bootstrap properties (classnames)
+4. Build a responsive, principle-based web page
+
+Interview Preparation Formula
+Plans: A, B, C
+Code: 3-5 line minimal approaches
+Task Submission: via Git & LinkedIn
+Practice: Self-learn, persist, and understand goals
+Advice: Know what you want and what you are doing!
+
+Git Link 
+
+https://codesmashers31.github.io/10to12_online_notes/Bootstrap/
+
+
+Bootstap Important Properties:-
+typepography
+colors&backgrounds
+padding & marign
+border & border radius
+box shadow
+breaking points and classes
+container 
+grid
+columns
+z index
+images
+table
+form elements
+flex justify content align items
+Badge
+card
+button
+alearts
+carosel properties
+Nav bar
+dropdowns
+nodals
+spinning
+animations
+tooltips
+radio
+shodows
+sizing
+spacing
+icons
+
+---------------------------------------------------------------------------------------
+
+📘 Bootstrap – Quick Interview & Learning Notes
+🔹 What is Bootstrap?
+
+Bootstrap is a popular front-end framework for building responsive, mobile-first websites.
+
+Provides CSS utility classes + components (so you don’t write CSS from scratch).
+
+Can be integrated via CDN or offline (downloaded CSS/JS files).
+
+Principle: Apply class names → Get instant style & layout.
+
+👉 Syntax Example:
+
+<tag class="class1 class2">Element</tag>
+
+🔹 Bootstrap Workflow (Plan & Process)
+
+Plan (A, B, C)
+
+A → Layout (Grid, Containers, Breakpoints)
+
+B → Components (Nav, Cards, Forms, Buttons)
+
+C → Utilities (Spacing, Colors, Shadows, Flex, etc.)
+
+Integration
+
+CDN (quick setup, always latest)
+
+Offline (download Bootstrap files and link CSS/JS).
+
+MVC File System (keep css/, js/, views/ folders organized).
+
+Apply Properties
+
+Use pre-defined class names (.container, .row, .col-md-6, .btn btn-primary, etc.).
+
+Build Responsive Page
+
+Mobile-first → Use breakpoints (sm, md, lg, xl).
+
+Use Grid + Utilities for responsive adjustments.
+
+🔹 Bootstrap Important Properties (Cheat Sheet)
+📝 General
+
+Typography → h1-h6, .lead, .text-muted, .fw-bold.
+
+Colors & Backgrounds → text-primary, bg-dark, bg-light.
+
+Spacing (Padding & Margin) → p-3, pt-2, m-4, mx-auto.
+
+Sizing → w-50, h-100, mw-100.
+
+🎨 Design Helpers
+
+Borders → border, border-0, rounded, rounded-pill.
+
+Box Shadows → shadow, shadow-lg.
+
+Z-Index → z-0, z-3.
+
+🖼 Media
+
+Images → img-fluid, rounded-circle, img-thumbnail.
+
+Tables → table, table-striped, table-dark.
+
+📐 Layout
+
+Containers → .container, .container-fluid.
+
+Grid → .row, .col-6, .col-md-4.
+
+Flexbox → d-flex, justify-content-center, align-items-start.
+
+🔧 Components
+
+Buttons → btn btn-primary, btn-outline-success.
+
+Badges → badge bg-warning text-dark.
+
+Cards → card, card-body, card-header.
+
+Navbar → navbar navbar-expand-lg navbar-dark bg-dark.
+
+Alerts → alert alert-success.
+
+Dropdowns → dropdown, dropdown-menu.
+
+Modals → modal, modal-dialog.
+
+Carousel → carousel, carousel-item.
+
+🎛 Extra
+
+Spinners (Loading) → spinner-border, spinner-grow.
+
+Animations → fade, collapse.
+
+Tooltips → data-bs-toggle="tooltip".
+
+Forms → form-control, form-check, form-select.
+
+Icons → bi bi-heart (Bootstrap Icons).
+
+🔹 Interview Preparation Formula
+
+Plans (A, B, C) → Clear roadmap.
+
+Code → Write minimal 3–5 line snippets to explain concepts.
+
+Task Submission → Push code to GitHub + share via LinkedIn.
+
+Practice → Self-learn, repeat small tasks, build muscle memory.
+
+Advice → Know what you are doing & why → not just copying classes.

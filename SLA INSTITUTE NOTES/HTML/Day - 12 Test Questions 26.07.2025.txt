@@ -1,0 +1,30 @@
+🔶 A. FORM-RELATED (1–5)
+What is the purpose of the <form> tag in HTML?
+What attributes can we use with it (like action, method)?
+
+What is the difference between GET and POST method in forms?
+Which one is used for login or sensitive data?
+
+Why do we use the label tag in forms? What is the use of the for attribute?
+
+List at least 5 different input types supported in HTML5.
+Example: text, email, date, range, color
+
+How do you make a form input field required and validate an email field?
+Which attributes help with this? (Answer: required, type="email", pattern)
+
+🔶 B. TABLE-RELATED (6–8)
+What are the main tags used in an HTML table?
+(Answer: <table>, <tr>, <th>, <td>, <caption>, <thead>, <tbody>, <tfoot>)
+
+What is the difference between <th> and <td>?
+
+How can you merge two or more table columns or rows?
+Which attributes do you use? (Answer: colspan, rowspan)
+
+🔶 C. BASIC HTML STRUCTURE (9–10)
+What is the purpose of the <!DOCTYPE html> declaration?
+Why is it placed at the top of every HTML5 page?
+
+What is the use of <meta charset="UTF-8"> and <meta name="viewport"...>?
+Why are they important in modern HTML pages?

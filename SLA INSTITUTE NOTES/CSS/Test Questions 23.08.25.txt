@@ -1,0 +1,21 @@
+7 Theory Questions
+1.	Flex vs Grid – difference and when to use?
+2.	What are pseudo-classes and pseudo-elements? Difference with examples.
+3.	Explain CSS positions (static, relative, absolute, fixed, sticky) with real-world use case.
+4.	What is the difference between inline, inline-block, block elements?
+5.	Explain transition vs animation in CSS.
+6.	What is the role of z-index in positioning?
+7.	What is fr unit in CSS Grid and why is it better than percentages?
+________________________________________
+8 Practical Questions
+1.	Create a 2-column layout using Grid (sidebar + content).
+2.	Create a horizontal navbar using Flexbox.
+3.	Center a box horizontally & vertically using Flexbox.
+4.	Create a card list (3 in row, responsive) using Grid.
+5.	Design a hover effect button with :hover pseudo-class + animation.
+6.	Use ::before and ::after pseudo-elements to add decorative lines around a heading.
+7.	Create an input field animation using :focus.
+8.	Animate a card so that it scales up on hover and shows shadow.
+
+
+test question

@@ -1,0 +1,26 @@
+HTML 
+
+When you identify doc type length 
+
+Limited input types only ex txt number
+
+Limited Meta tags
+
+Not support video and audio
+
+
+Html 5
+
+Simantic tags and Non semantic tags
+
+More input types example color date and range and more
+
+More meta tags are included like og
+
+Support all types like media and video and auido
+
+
+Table
+Iframe
+Meta tag
+

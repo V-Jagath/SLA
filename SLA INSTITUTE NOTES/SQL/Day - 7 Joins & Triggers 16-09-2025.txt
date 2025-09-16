@@ -1,0 +1,219 @@
+full join -return all rows for both 
+
+slef join 
+
+join with itself . hirarical ku use agum(postion step by step)  
+
+same table link.
+
+coross join (or) carticion join important for phython
+	
+cartision join formula:-
+
+every row form first table * every row form second table
+
+
+using testing and compition ku use agum
+
+inner, left join is most use agum 
+
+IS NULL -->
+
+IF NULL -->
+
+TCL - Transaction Control Language  (before gpay la money marubadium namma account ku vara help aguthu) 
+dcl - security based important
+tricar - mostly used.
+grit operations in sql important interview questions
+insert update delete and etc..
+
+tricar is special stored program in sql that automatically executes when an event insert update and delete. its automattacally run agaum.
+auto action changes on anather table becasue security purpose.
+ethaathu oru table la insert update and delete achuna automatically run agum ithu vera oru table la datas store agum.
+
+tyeps of tricars:-
+
+1.Before tricar :-
+
+	security purpose ku use agum. waring kodukum.validation purpose ku use agum. invalid data va avoid panna use agum
+
+2. After Tricars:-
+
+	logging la use agum. updated antother table
+
+EVENTS
+
+before  insert 
+after insert
+before  update
+after update
+before  delete
+after delete
+
+trigger only use stroed procudure only not a fetch ku use agathu.
+
+comments :-
+
+1. delimitor - change delimitor from 
+
+change delimitor you can give any two spical chractors 
+
+demitor #$
+
+2. CREATE TRIGGER triggar_name BEFORE OR AFTER INSERT OR UPDATE OR DELETE ON table_name 
+FOR EACH ROW
+BEGIN 
+statements anather_table //(mostly dml ha tha irukum) or(if condition)
+END #$(because delimitor #$)
+
+delimitor ;
+
+example:-
+
+insert example:-
+
+DELIMITER $$
+CREATE TRIGGER insert_data(ithu trigger ku oru name namma kodurathu) AFTR INSERT ON employees(ithu table name)
+FOR EACH ROW
+BEGIN
+INSERT INTO Auditlog (actiontype,empid,newsalary) values ("insert",new.empid,new.salary);
+end$$
+DELIMITER ;
+
+ipa ena agum na employee table la ethavathu insert panna athu audit log la poitu save agugum.
+    
+
+------------------------------------------------------------------------------------------------
+
+🔹 SQL Joins
+
+INNER JOIN
+
+Returns only matching rows from both tables.
+
+Most commonly used.
+
+LEFT JOIN (or LEFT OUTER JOIN)
+
+Returns all rows from the left table and matching rows from the right.
+
+If no match, NULL is returned from the right table.
+
+FULL JOIN (or FULL OUTER JOIN)
+
+Returns all rows from both tables, matched or unmatched.
+
+If no match, NULL is shown for missing values.
+
+SELF JOIN
+
+Join a table with itself.
+
+Used for hierarchical data (example: employee & manager relationship).
+
+SELECT e.emp_name, m.emp_name AS manager
+FROM employees e
+JOIN employees m ON e.manager_id = m.emp_id;
+
+
+CROSS JOIN / CARTESIAN JOIN
+
+Returns all combinations → Formula:
+
+Total Rows = Rows(Table A) × Rows(Table B)
+
+
+Example: 5 rows × 4 rows = 20 rows.
+
+Used for testing and sometimes in Python pandas.
+
+🔹 NULL Handling
+
+IS NULL → Check if a value is NULL.
+
+IFNULL(expr, value) → Replace NULL with a given value.
+
+SELECT emp_name, IFNULL(salary, 0) FROM employees;
+
+🔹 SQL Control Languages
+
+TCL (Transaction Control Language)
+
+COMMIT, ROLLBACK, SAVEPOINT
+
+Example: GPay money reversal → rollback before commit.
+
+DCL (Data Control Language)
+
+GRANT, REVOKE → security-based, permissions.
+
+🔹 Triggers (Very Important in Interviews 🚀)
+
+A trigger is a stored program in SQL that automatically runs when INSERT, UPDATE, DELETE happens.
+
+👉 Use cases:
+
+Auto logging
+
+Security validation
+
+Audit trail
+
+🔸 Types of Triggers:
+
+BEFORE Trigger
+
+Runs before the action.
+
+Used for validation/security (avoid invalid data).
+
+AFTER Trigger
+
+Runs after the action.
+
+Used for logging, auditing.
+
+🔸 Trigger Events:
+
+BEFORE INSERT, AFTER INSERT
+
+BEFORE UPDATE, AFTER UPDATE
+
+BEFORE DELETE, AFTER DELETE
+
+🔸 Syntax:
+DELIMITER $$
+
+CREATE TRIGGER trigger_name
+BEFORE INSERT ON employees
+FOR EACH ROW
+BEGIN
+   -- Statements (mostly DML)
+END $$
+
+DELIMITER ;
+
+🔸 Example: Insert Logging
+DELIMITER $$
+
+CREATE TRIGGER insert_data
+AFTER INSERT ON employees
+FOR EACH ROW
+BEGIN
+   INSERT INTO auditlog (actiontype, empid, newsalary)
+   VALUES ('insert', NEW.empid, NEW.salary);
+END $$
+
+DELIMITER ;
+
+
+👉 Now, whenever you insert into employees,
+a record is automatically inserted into auditlog.
+
+⚡ Tip for interviews:
+
+Always mention INNER & LEFT JOIN are most used.
+
+Triggers are for automation, logging, validation.
+
+TCL is for transactions, DCL is for security. 

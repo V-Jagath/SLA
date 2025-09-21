@@ -1,0 +1,108 @@
+variable declaration apa v8 engine la temp ha oru memory create agum.
+
+variable:-
+lik a container box
+variables are named like used to store dta which can be changed or accessed later.
+
+when you declare a name is using js's keyword - the browser engin and memory allocate the space or create the space.
+kebab case js la use panna kodathu
+space ilatha full name use pannanum
+
+1.camal
+2.snake
+3. upper camel
+
+ES- Ecma Script - Version f the js (version - 16) 
+
+es start es5 --> where key mattum tha irunthuchi 
+var - romba old
+
+
+es6+(romba fast ha irukum)
+let,const es6 la lunch pannaga
+
+operators:-
+assening operator ---> =
+
+
+DATATYPES:-
+
+primitive
+Int
+string
+boolean
+null
+undefined
+bigint
+
+non - primitive datatypes
+
+arry,object, array of object, functions
+
+bigint -- > numberku pakkathula n podanum 
+example : 756n
+
+string  - "jagath" or 'jagath'
+
+boolean - true or false
+
+null - empty value
+
+undifined - without innitisazation is the undefined -like only declaration part (system give the error)
+
+referance error some time varum
+
+printing statement:-
+
+statement ha prinit panna 
+console.log() ----> console la undefined kattum
+alert() ---> popup ku use agum undefined kattum
+document.write() ---> screen la kattum undefined kattum
+
+SYNTAX :-
+
+variable-keyword variablename= datatype
+
+variable-keyword variablename ---> declaration part
+
+variable keyword 1.var 2.const 3.let
+
+variable first letter number or spicial character ha iruka kudathu
+
+mutable --> chagne pannalam
+inmutable --> cahnge panna mudiyathu
+
+var la redeclar pannalam
+
+example 
+var user ="React"
+var user ="java"
+let la redeclar panna mudiyathu but reassign pannalam
+const la delclar he panna mudiaythu and reassign kuda panna mudiyathu
+
+
+variable oda default value --> undefined
+
+task 1:- 
+10 times 3 datatype irukanum
+10 times reassigning pannanum
+
+var a=10
+var b=10
+var c=10
+
+var user="react"
+var newdata="data science"
+
+
+
+
+
+
+
+
+
+
+
+
+

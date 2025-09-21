@@ -1,0 +1,255 @@
+What is javascript?
+	programming language for web. and outside of the browser also (node.js - brower ku veliya run aga node.js use agum).java script is the high level interprited single
+thered dynamic programming language for web and server mostly is used for web applications static to dynamic process for your webpage.
+
+interprited - code executed line by line (run rime environment) sygroness process.only use in browser (browser la js v8 engine la run agum).
+
+when you write a 
+
+browser forse(change) no exe or superated 
+
+js types :-
+
+1. internal and 
+2. external only 
+
+core concepts must need to know :-
+
+two types for learning 
+
+1. funtional process (math process)
+	
+	15% to 20% interview question ithula tha varum. (formula,syntax,methods)
+
+core concepts basics
+
+variables :-
+
+data types
+
+1.primitive data type
+	
+	operators and expressions
+	control flow (conditional statements if, if else,else if, switch) 
+	loops
+	funtions objects and arrays
+	advanced concepts ES(Ecma Script) 6plus features
+	
+
+2.non primitive data tyeps
+
+2. DOM Process
+40 to 50 % intrview questions kepanga
+DOUMENT OBJECT MODEL
+
+	root=document
+	slectors = 
+	even handling and even listening
+	properties
+
+
+closures and scope 
+prototypes and classes
+event LOOP
+array methods 
+
+frameworks and libraries
+frameworks -- > angular and next.js
+
+lib--> react vu.js
+
+node.js --> server side and web
+
+TASKS
+
+what is js why use and where use 
+what is variable declaration
+what is intitzaisatuion
+what is dtatyes what are akk the important datatype
+what is primitive and non primitive data type
+
+1. what is js why use and where use ?
+	javascript is a popular programming language that makes websites nd interactive.Html gives a 
+structure , css five style and javascript goves a brain/logic.
+
+	we use javascript because it can show messages change colors, validate forms, and update content wothout reloading the page.
+ 
+
+	we use javascript in 
+front end --> to make webpages dynamic and interactive
+backend--> using Node.js for server-side logic
+apps & games --> to build mobile apps and dsktop apps and simple browsser games
+
+2. what is variable declaration ?
+ 	variable declaration means creating a variable and telling the program that this variable exits.
+example 
+let age
+
+3. what is intialization?
+	initialization means giving the variable its first value.
+ example
+let age=25
+
+4. what is dtatyes what are akk the important datatype ?
+	datatypes means the type of value we store in a variable.
+
+important data types in java script
+
+1. Number - let x=10;
+2. string - let name="jagath";
+3. boolean - let isopen =true;
+4. null - let value=null;(empty on purpose)
+5. undefined - let test; (declared but no value)
+6. object - let person ={name:'jagath',age:23};
+7. array - let colors['red','yellow','blue'];
+
+5. what is primitive and non primitive data type?
+
+primitive datatypes 
+	simple and single values 
+	example number, string, bolean, null, undefined, bigint, symbol
+	stored by value(copy of data stored)
+	example--> let age = 30;
+	cannot change value directly (create new values)
+
+non primitive datatypes 
+	collection or complex value 
+	object, array, function
+	stored by referance(point to memory address)
+	example--> let person {name:'jagath',age:23};
+	can change properties/ elements
+
+----------------------------------------------------------------------------------------------
+
+🔹 What is JavaScript?
+
+JavaScript (JS) is a high-level, interpreted, single-threaded, dynamic programming language.
+
+It was originally built for the web but now also works outside the browser (via Node.js).
+
+JavaScript converts static webpages into dynamic, interactive webpages.
+
+⚡ Key Features:
+
+Interpreted → runs line by line in a runtime environment.
+
+Single-threaded → executes one task at a time.
+
+Asynchronous support → with callbacks, promises, async/await.
+
+Runs in browsers (via JavaScript Engines like Google Chrome’s V8) and on servers (Node.js).
+
+🔹 Types of JavaScript Usage
+
+Internal JS → written inside <script> tags in an HTML file.
+
+External JS → written in .js file and linked with <script src="file.js"></script>.
+
+🔹 Core Concepts to Learn in JavaScript
+1️ Basics
+
+Variables → var, let, const
+
+Data Types
+
+Primitive → number, string, boolean, null, undefined, symbol, bigint
+
+Non-primitive → objects, arrays, functions
+
+Operators & Expressions → arithmetic, logical, relational, assignment
+
+Control Flow → if, else, else if, switch
+
+Loops → for, while, do-while, for…of, for…in
+
+Functions → normal, arrow functions, parameters, return values
+
+2️ DOM (Document Object Model)
+
+👉 JS interacts with HTML & CSS through the DOM.
+
+Root → document
+
+Selectors → getElementById, querySelector, etc.
+
+Events → event handling & event listeners (e.g., onclick, addEventListener)
+
+Properties & Methods → change content, style, attributes dynamically
+
+3 Advanced Concepts
+
+Closures & Scope (local, global, block)
+
+Prototypes & Classes (OOP in JS)
+
+Event Loop → manages sync & async code
+
+Array Methods → map, filter, reduce, forEach
+
+ES6+ Features → let/const, template literals, destructuring, modules, promises, async/await
+
+4️ Frameworks & Libraries
+
+Frameworks → Angular, Next.js
+
+Libraries → React, Vue.js
+
+Server-Side → Node.js
+
+✅ One-liner Summary (Interview-friendly):
+“JavaScript is a high-level, single-threaded, interpreted programming language mainly used to make web pages dynamic and interactive. 
+It runs in browsers (via engines like V8) and outside browsers using Node.js. Mastery of DOM, ES6+ features, async programming,
+and frameworks like React/Angular is essential for modern development.”
+
+1. What is JavaScript? Why do we use it? Where is it used?
+
+Answer:
+JavaScript is a high-level programming language that adds logic and interactivity to web pages. We use it to validate forms, update content without reloading, and make websites dynamic. It is used in front-end for UI, back-end with Node.js, and also in mobile/desktop apps and simple games.
+
+2. What is variable declaration?
+
+Answer:
+Variable declaration means creating a variable and telling the program it exists.
+Example:
+
+let age;
+
+3. What is initialization?
+
+Answer:
+Initialization means assigning the first value to a variable.
+Example:
+
+let age = 25;
+
+4. What are data types in JavaScript?
+
+Answer:
+Data types define the type of value stored in a variable. The main ones are:
+
+Number → let x = 10;
+
+String → "Jagath"
+
+Boolean → true / false
+
+Null → null
+
+Undefined → declared but not assigned
+
+Object → { name: "Jagath", age: 23 }
+
+Array → ["red", "blue"]
+
+5. Difference between primitive and non-primitive data types?
+
+Answer:
+
+Primitive: Simple values like number, string, boolean, null, undefined, bigint, symbol. Stored by value. Example:
+
+let age = 30;
+
+
+Non-Primitive: Complex values like objects, arrays, functions. Stored by reference. Example:
+
+let person = { name: "Jagath", age: 23 };

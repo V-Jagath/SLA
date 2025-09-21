@@ -1,10 +1,11 @@
-Emp -Dept --> dont use varchar because, dept anme contain spaces and capital small letter mixup. but Number is same so you can give any update for dept name you can use int.
+Emp -Dept --> dont use varchar because, dept name contain spaces and capital small letter mixup.
+but Number is same so you can give any update for dept name you can use int.
 
 DQL -Data Query Language:-
 
 Retrive a data from core comment is select.
 
-select* from Table Name ---> show all datas or values
+select * from Table Name ---> show all datas or values
 
 select ---> comment 
 Fetch ---> Retrive a data
@@ -15,15 +16,15 @@ Specify column only fetch you can use where condition.
 
 example
 
-select* emp-name(column name) from emp(Table name);
+select * emp-name(column name) from emp(Table name);
 
-slect *from emp where emp-salary<10000;
+slect * from emp where emp-salary<10000;
 
 comments:-
 those comments are used After table name or after where
-orderred by :- 
-disanding order-desc
-assesnding order
+order by :- 
+disanding order - desc
+assesnding order - asc
 
 disting --> Remove duplicates
 like-  --> pattern matching

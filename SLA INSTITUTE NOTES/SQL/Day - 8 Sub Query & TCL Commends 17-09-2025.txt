@@ -1,0 +1,126 @@
+Sub Query - a query inside another query.	it act like a helper query provides data to the main query.
+
+its use to select from wehere having (condition and where condition use panra idathula use pannalam)
+
+Types of sub querys:-
+
+1. Single row sub query --> return one value
+2. Multi row sub query ---> retunrn multiple rows
+3. Multi cloumn sub query ---> return multiple cloumns
+
+dynamic ha datas poda use agum.
+
+TCL - transaction control language
+
+a single unit of work that includes one or more sql statements (example: insert,update,delete).
+
+
+TCL COMMENTS:-
+
+1.COMMIT -Save all changes permentally in your database. commit use panna rollback use panna mudiyathu 
+
+2.ROLLBACK - undo redo
+
+3.SAVEPOINT -create a checkpoint inside the checkpoint.
+
+banking sector la use agum (payment enga enga use panramo anga ithu agum).
+ 
+
+----------------------------------------------------------------------------------------------------------------
+
+🔹 Subquery (Nested Query)
+
+👉 A query inside another query.
+👉 It acts like a helper query that provides data to the main query.
+👉 Mainly used in WHERE, HAVING, FROM, and SELECT clauses.
+
+✅ Types of Subqueries
+
+Single Row Subquery
+
+Returns only one value (one row, one column).
+
+Example:
+
+SELECT emp_name 
+FROM employees 
+WHERE salary = (SELECT MAX(salary) FROM employees);
+
+
+(Returns employee(s) with highest salary)
+
+Multi Row Subquery
+
+Returns multiple rows.
+
+Use operators like IN, ANY, ALL.
+
+Example:
+
+SELECT emp_name 
+FROM employees 
+WHERE dept_id IN (SELECT dept_id FROM departments WHERE location = 'Chennai');
+
+
+Multi Column Subquery
+
+Returns multiple columns.
+
+Example:
+
+SELECT emp_id, emp_name 
+FROM employees 
+WHERE (dept_id, salary) IN 
+      (SELECT dept_id, MAX(salary) FROM employees GROUP BY dept_id);
+
+
+(Finds highest salary employee in each department)
+
+📌 Use case: Dynamic data fetching → instead of writing hard-coded values.
+
+🔹 TCL (Transaction Control Language)
+
+👉 A transaction = one logical unit of work (a group of SQL statements like INSERT, UPDATE, DELETE).
+
+✅ TCL Commands
+
+COMMIT
+
+Saves all changes permanently in the database.
+
+After COMMIT, you cannot rollback.
+
+Example:
+
+UPDATE employees SET salary = salary + 1000 WHERE dept_id = 2;
+COMMIT;
+
+
+ROLLBACK
+
+Undo the changes (reverts back to last COMMIT or SAVEPOINT).
+
+Example:
+
+DELETE FROM employees WHERE dept_id = 3;
+ROLLBACK;
+
+
+SAVEPOINT
+
+Creates a checkpoint inside a transaction → you can rollback partially.
+
+Example:
+
+SAVEPOINT sp1;
+UPDATE employees SET salary = 50000 WHERE emp_id = 101;
+ROLLBACK TO sp1;
+
+
+💡 Banking Example:
+
+Money transfer = debit from one account + credit to another account.
+
+If credit fails, rollback must undo debit → ensures data consistency.
+
+

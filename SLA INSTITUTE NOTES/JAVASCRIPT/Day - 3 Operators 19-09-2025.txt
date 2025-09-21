@@ -1,0 +1,223 @@
+Operators:
+
+1. Arithmatic opertor:-
+
++,-,/,%
+
+** ---> Exponenation Power poda use agum
+++ ---> Increment  example X++ = X=X+1 
+-- ---> Decrement  example X-- = X=X-1
+
+banking and e commerce webpage la use agum.
+
+2. Assienment Operator:-
+
+only assignment process not return. its use dynamic 
+
+= ---> assign the value
++= ---> add and assign
+-= ---> subract and assign
+*= ---> multiply and assign
+/= ---> devide and assign
+%= ---> mod and assign
+**= ---> exponenation and assign
+
+example
+
+let totel = 500;
+
+totel +=50;
+
+output ----> 550 (totel=totel+50)
+
+3. Logical Operator:-
+
+logical operatoronly return boolean values only
+
+And operator(&&) :-
+
+true + true = ture
+true + false = false
+false + true = false
+false + false = false
+
+OR Operator (||):-
+
+true + true = ture
+true + false = true
+false + true = true
+false + false = false
+
+NOT Operator (!):-
+
+True --> False
+False --> True
+
+Comparison operator (==):-
+
+(==) Equal to ---> loose comparison 
+
+(===) Stringt equal ----> Stringt comparison 
+
+Not-equal (!=) :-
+
+not equal is true
+
+Strict Equal (!==) :-
+
+
+< (less then)
+<= (less then are equal to)
+> (greater then)
+>= (greater then are equal to)
+
+
+Tasks
+
+3 type of variable key words 
+declaration
+inzalization
+re assign
+operator 4 types (AACL)
+
+
+-----------------------------------------------------------------------
+
+🔑 3 Types of Variable Keywords in JavaScript
+
+var
+
+Declaration → Allowed
+
+Initialization → Allowed
+
+Re-assign → Allowed
+
+Scope → Function scope (old way, not recommended)
+
+let
+
+Declaration → Allowed
+
+Initialization → Allowed
+
+Re-assign → Allowed
+
+Scope → Block scope (recommended for values that may change)
+
+const
+
+Declaration → Allowed
+
+Initialization → Must be initialized at declaration
+
+Re-assign → ❌ Not allowed
+
+Scope → Block scope (used for fixed values)
+
+⚡ Operators (4 Main Types = AACL)
+1. Arithmetic Operators
+
++ (Addition)
+
+- (Subtraction)
+
+* (Multiplication)
+
+/ (Division)
+
+% (Modulus → remainder)
+
+** (Exponentiation → power)
+
+++ (Increment → x++ = x+1)
+
+-- (Decrement → x-- = x-1)
+
+👉 Example:
+
+let x = 5;
+x++;   // 6
+x**2;  // 36
+
+2. Assignment Operators
+
+= → Assign
+
++= → Add & assign
+
+-= → Subtract & assign
+
+*= → Multiply & assign
+
+/= → Divide & assign
+
+%= → Mod & assign
+
+**= → Exponentiation & assign
+
+👉 Example:
+
+let total = 500;
+total += 50;   // 550
+
+3. Comparison Operators
+
+== → Equal to (loose, ignores type)
+
+=== → Strict equal (checks value + type)
+
+!= → Not equal
+
+!== → Strict not equal
+
+< → Less than
+
+<= → Less than or equal to
+
+> → Greater than
+
+>= → Greater than or equal to
+
+👉 Example:
+
+5 == "5";   // true
+5 === "5";  // false
+
+4. Logical Operators
+
+&& (AND)
+
+true && true → true
+
+otherwise → false
+
+|| (OR)
+
+false || true → true
+
+true || false → true
+
+true || true → true
+
+false || false → false
+
+! (NOT)
+
+!true → false
+
+!false → true
+
+👉 Example:
+
+let a = true, b = false;
+a && b;  // false
+a || b;  // true
+!a;      // false
+
+
+✅ Quick Memory Trick:
+
+Variables: var, let, const
+
+Operators: AACL = Arithmetic, Assignment, Comparison, Logical

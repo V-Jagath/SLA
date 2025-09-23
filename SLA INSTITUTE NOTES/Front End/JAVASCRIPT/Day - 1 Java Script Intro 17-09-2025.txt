@@ -253,3 +253,110 @@ let age = 30;
 Non-Primitive: Complex values like objects, arrays, functions. Stored by reference. Example:
 
 let person = { name: "Jagath", age: 23 };
+
+
+📘 JavaScript – Core Interview Notes
+🔹 1. What is JavaScript? Why use it? Where is it used?
+
+Answer:
+JavaScript (JS) is a high-level, interpreted, single-threaded, dynamic programming language.
+It was originally made for browsers but now runs outside browsers using Node.js.
+
+✅ Why use it?
+
+Adds logic & interactivity to webpages.
+
+Makes static pages dynamic (animations, form validation, DOM updates).
+
+Supports async programming (Promises, async/await).
+
+✅ Where used?
+
+Frontend (Browser): User interfaces, validation, animations.
+
+Backend (Node.js): APIs, servers, databases.
+
+Apps & Games: Mobile apps, desktop apps, simple games.
+
+👉 One-liner (interview friendly):
+“JavaScript is the brain of the web — it makes websites dynamic and interactive, and also runs on servers via Node.js.”
+
+🔹 2. What is Variable Declaration?
+
+Answer:
+Variable declaration means creating a variable and telling the program it exists.
+
+Example:
+
+let age;  // declaration only (value = undefined)
+
+🔹 3. What is Initialization?
+
+Answer:
+Initialization means assigning the first value to a variable.
+
+Example:
+
+let age = 25; // declaration + initialization
+
+🔹 4. What are Data Types in JavaScript?
+
+Answer:
+Data types define the kind of value stored in a variable.
+
+✅ Primitive (Immutable → stored by value)
+
+Number → let x = 10;
+
+String → let name = "Jagath";
+
+Boolean → let isOpen = true;
+
+Null → let data = null; (empty on purpose)
+
+Undefined → let test; (declared, no value)
+
+BigInt → let big = 12345678901234567890n;
+
+Symbol → let id = Symbol("unique");
+
+✅ Non-Primitive (Mutable → stored by reference)
+
+Object → { name: "Jagath", age: 23 }
+
+Array → ["red", "blue"]
+
+Function → function greet() { console.log("Hi"); }
+
+🔹 5. Difference: Primitive vs Non-Primitive
+Feature	Primitive	Non-Primitive
+Stores	Single simple value	Collection / complex value
+Storage	Stored by value (copy)	Stored by reference (memory address)
+Examples	Number, String, Boolean, Null, Undefined, BigInt, Symbol	Object, Array, Function
+Mutability	Cannot be changed directly	Properties/elements can be changed
+
+Example:
+
+// Primitive
+let a = 10;
+let b = a;
+b = 20;
+console.log(a); // 10 (copy, unaffected)
+
+// Non-Primitive
+let obj1 = {name: "Jagath"};
+let obj2 = obj1;
+obj2.name = "React";
+console.log(obj1.name); // React (reference changed)
+
+🚀 Quick Recap for Interview
+
+JavaScript → High-level, interpreted, single-threaded, dynamic → makes web interactive.
+
+Variable Declaration → Create a variable (let age;).
+
+Initialization → Assign first value (let age = 25;).
+
+Data Types → Primitive (by value) & Non-Primitive (by reference).
+
+Primitive vs Non-Primitive → Simple vs Complex, value vs reference.

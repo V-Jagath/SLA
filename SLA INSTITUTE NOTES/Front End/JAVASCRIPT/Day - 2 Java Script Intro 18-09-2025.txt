@@ -218,7 +218,150 @@ console.log(isActive, isLoggedIn, hasAccess);
 Reassigning allowed for var & let, blocked for const
 
 
+🎯 Variables
+1. What are the 3 keywords for variable declaration in JavaScript?
 
+Answer: var, let, const
+
+var → function-scoped, redeclarable, reassignable (old way).
+
+let → block-scoped, cannot redeclare, can reassign.
+
+const → block-scoped, cannot redeclare, cannot reassign.
+
+2. What is the difference between function scope and block scope?
+
+Function scope: Variable is accessible anywhere inside a function (var).
+
+Block scope: Variable is accessible only inside { } (let, const).
+
+3. What happens if we redeclare variables?
+var a = 10;
+var a = 20;  // ✅ allowed
+let b = 30;
+let b = 40;  // ❌ error
+const c = 50;
+const c = 60; // ❌ error
+
+4. Can const variables change in JavaScript?
+
+No re-assignment allowed.
+
+But for objects & arrays, properties/elements can change.
+
+const arr = [1,2,3];
+arr.push(4);    // ✅ allowed
+arr = [5,6,7];  // ❌ error
+
+5. What happens if we use a variable without declaring it?
+
+Answer: It becomes a global variable (bad practice).
+
+x = 100;
+console.log(x); // 100
+
+🎯 Data Types
+6. What are primitive vs non-primitive data types in JS?
+
+Primitive (immutable): Number, BigInt, String, Boolean, Null, Undefined, Symbol.
+
+Non-primitive (mutable): Object, Array, Function, Date, RegExp, Map, Set.
+
+7. Difference between null and undefined?
+
+null → empty value (intentionally assigned).
+
+undefined → variable declared but not assigned.
+
+let a;
+console.log(a); // undefined
+let b = null;
+console.log(b); // null
+
+8. What is typeof null and why is it a bug?
+
+Answer: typeof null returns "object" (historical bug in JS).
+
+9. Difference between Number and BigInt?
+
+Number → Safe up to 2^53 - 1.
+
+BigInt → For very large integers, denoted with n.
+
+let x = 12345678901234567890n; // BigInt
+
+10. Is JavaScript statically typed or dynamically typed?
+
+Answer: JavaScript is dynamically typed → data type is decided at runtime.
+
+🎯 Printing in JS
+11. What are the different ways to print output in JavaScript?
+
+console.log() → console.
+
+alert() → browser popup.
+
+document.write() → directly writes to HTML page.
+
+🎯 Mutability
+12. Quick Reference Table (Interview Must-Know ✅)
+Keyword	Redeclare	Reassign	Scope
+var	✅	✅	Function
+let	❌	✅	Block
+const	❌	❌	Block
+🎯 Task-Based (Interview Coding)
+13. Code Output Question
+var x = 10;
+let y = 20;
+const z = 30;
+
+x = 15; // ✅
+y = 25; // ✅
+z = 35; // ❌ error
+
+console.log(x, y, z);
+
+
+👉 Output: 15 25 + TypeError for const reassignment.
+
+14. Tricky Question ⚡
+console.log(typeof NaN);    // ?
+console.log(typeof null);   // ?
+console.log(typeof []);     // ?
+console.log(typeof {});     // ?
+
+
+👉 Answer:
+
+NaN → number
+
+null → object (bug)
+
+[] → object
+
+{} → object
+
+15. Task Example Recap
+
+Create 10 variables with 3 data types.
+
+Reassign allowed for var & let, not for const.
+
+✅ You already wrote this perfectly in your task section.
+
+⚡ Interview Quick Revision (Keywords):
+
+var / let / const → scope + mutability differences.
+
+Primitive vs Non-primitive.
+
+null vs undefined.
+
+typeof null = object (bug).
+
+BigInt usage.
+
+Dynamically typed language.
 
 
 

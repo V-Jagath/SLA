@@ -34,30 +34,30 @@ output ----> 550 (totel=totel+50)
 
 logical operatoronly return boolean values only
 
-And operator(&&) :-
+	 And operator(&&) :-
 
 true + true = ture
 true + false = false
 false + true = false
 false + false = false
 
-OR Operator (||):-
+	OR Operator (||):-
 
 true + true = ture
 true + false = true
 false + true = true
 false + false = false
 
-NOT Operator (!):-
+	NOT Operator (!):-
 
 True --> False
 False --> True
 
-Comparison operator (==):-
+4. Comparison operator (==):-
 
 (==) Equal to ---> loose comparison 
 
-(===) Stringt equal ----> Stringt comparison 
+(===) Stringt equal ----> Strigt comparison 
 
 Not-equal (!=) :-
 
@@ -116,6 +116,7 @@ Re-assign → ❌ Not allowed
 Scope → Block scope (used for fixed values)
 
 ⚡ Operators (4 Main Types = AACL)
+
 1. Arithmetic Operators
 
 + (Addition)

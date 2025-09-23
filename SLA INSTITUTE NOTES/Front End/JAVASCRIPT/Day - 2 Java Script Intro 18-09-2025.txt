@@ -1,0 +1,228 @@
+variable declaration apa v8 engine la temp ha oru memory create agum.
+
+variable:-
+link a container box
+variables are named like used to store data which can be changed or accessed later.
+
+when you declare a name is using js's keyword - the browser engin and memory allocate the space or create the space.
+kebab case js la use panna kodathu
+space ilatha full name use pannanum
+
+1.camal
+2.snake
+3. pascal case
+
+ES- Ecma Script - Version of the js (version - 16) 
+
+es start es5 --> where key mattum tha irunthuchi 
+var - romba old
+
+
+es6+(romba fast ha irukum)
+let,const es6 la lunch pannaga
+
+operators:-
+assening operator ---> =
+
+
+DATATYPES:-
+
+1. primitive
+Int
+string
+boolean
+null
+undefined
+big int
+
+2.non - primitive datatypes
+
+arry,
+object,
+array of object,
+functions
+
+bigint -- > numberku pakkathula n podanum 
+example : 756n
+
+string  - "jagath" or 'jagath'
+
+boolean - true or false
+
+null - empty value
+
+undifined - without innitisazation is the undefined -like only declaration part (system give the error)
+
+referance error some time varum
+
+printing statement:-
+
+statement ha prinit panna 
+console.log() ----> console la undefined kattum
+alert() ---> popup ku use agum undefined kattum
+document.write() ---> screen la kattum undefined kattum
+
+SYNTAX :-
+
+variable_keyword variable_name= datatype
+
+variable_keyword variable_name ---> declaration part
+
+variable_keyword
+ 1.var 
+ 2.let 
+ 3.const
+
+variable first letter number or special character ha iruka kudathu
+
+mutable --> chagne pannalam
+inmutable --> change panna mudiyathu
+
+var la redeclar pannalam
+
+example 
+var user ="React"
+var user ="java"
+let la redeclar panna mudiyathu but reassign pannalam
+const la delclar he panna mudiaythu and reassign kuda panna mudiyathu
+
+
+variable oda default value --> undefined
+
+task 1:- 
+10 times 3 datatype irukanum
+10 times reassigning pannanum
+
+var a=10
+var b=10
+var c=10
+
+var user="react"
+var newdata="data science"
+
+
+----------------------------------------------------------------------------------------------------------
+
+1. Variable Declaration in JS
+
+Declaring a variable means reserving memory to store data.
+
+JS keywords for declaration:
+
+var → old, redeclarable, function-scoped
+
+let → ES6+, block-scoped, can reassign but not redeclare in the same scope
+
+const → ES6+, block-scoped, cannot reassign or redeclare
+
+Naming rules:
+
+No spaces
+
+Cannot start with a number
+
+Avoid kebab-case (my-variable)
+
+Preferred: camelCase, snake_case, PascalCase
+
+2. Data Types
+
+Primitive Types (immutable)
+
+Number → integers, floats
+
+BigInt → for very large numbers → 123456n
+
+String → "Hello" or 'Hello'
+
+Boolean → true / false
+
+Null → empty value
+
+Undefined → declared but not initialized
+
+Non-Primitive Types (mutable)
+
+Array → [1,2,3]
+
+Object → {name:"Jagath", age:24}
+
+Array of objects → [ {name:"A"}, {name:"B"} ]
+
+Function → function greet(){...}
+
+3. Printing Statements
+
+console.log("Hello")  // prints in console
+
+alert("Hello")        // popup in browser
+
+document.write("Hello") // writes to HTML page
+
+4. Syntax Example
+
+let userName = "Jagath"; // declaration + initialization
+const pi = 3.14;         // cannot reassign(standard values only example pi=3.14,week=7,year=365 etc...)
+var age;                  // declaration only, default = undefined
+
+5. Mutability
+
+Keyword	Redeclare	Reassign	Scope
+var	✅	✅	Function
+let	❌	✅	Block
+const	❌	❌	Block
+
+6. Task Example
+
+You want 10 variables, 3 different data types, and reassign them. Here’s one way:
+
+// Numbers
+var num1 = 10;
+let num2 = 20;
+const num3 = 30;
+
+// Strings
+var name1 = "Jagath";
+let name2 = "React";
+const name3 = "JavaScript";
+
+// Boolean
+var isActive = true;
+let isLoggedIn = false;
+const hasAccess = true;
+
+// Reassigning
+num1 = 15;   // var can reassign
+num2 = 25;   // let can reassign
+// num3 = 35; // const cannot reassign -> will give error
+
+name1 = "Angular"; // var
+name2 = "NodeJS";  // let
+// name3 = "Python"; // const -> error
+
+isActive = false;  // var
+isLoggedIn = true; // let
+// hasAccess = false; // const -> error
+
+console.log(num1, num2, num3);
+console.log(name1, name2, name3);
+console.log(isActive, isLoggedIn, hasAccess);
+
+
+✅ This covers:
+
+10 variables
+
+3 data types: Number, String, Boolean
+
+Reassigning allowed for var & let, blocked for const
+
+
+
+
+
+
+
+
+
+

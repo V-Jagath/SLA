@@ -2,7 +2,6 @@ Hoisting Method(Error Handling Method):-
 
 Before inizalization you call variable its undefined that medthod is called Hoisting.
  
-
 var a;
 document.write(a)
 var a=10;
@@ -27,7 +26,7 @@ collection of value is strore in a single variable.
 
 let arr = [1,2,3,"datas"]
 
-indexing element ha the eduthukum 
+indexing element ha tha eduthukum 
 0,1,2,3,4
 
 you can access the datas using indexing elements.
@@ -67,7 +66,8 @@ obj la irunthu key  edukanum na (.) use pannanum
 
 console.log(obj.name)---->react
 
-
+nested objct:-
+ 
 let obj = {name:"react",intro:"2017",subject:"js",obj1{name:"js",year:2022}}
 
 console.log(obj.obj1.name)
@@ -91,7 +91,8 @@ Hoisting is JavaScript's behavior of moving variable and function declarations t
 
 Variables declared with var are hoisted and initialized with undefined.
 
-Variables declared with let and const are hoisted but not initialized, accessing them before declaration throws a ReferenceError. This period is called Temporal Dead Zone (TDZ).
+Variables declared with let and const are hoisted but not initialized, accessing them before declaration throws a ReferenceError. 
+This period is called Temporal Dead Zone (TDZ).
 
 Example with var:
 
@@ -171,14 +172,18 @@ console.log(fib);
 // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
+INTERVIEW BASED QUESTIONS:-
+
 
 1. Hoisting
 
 Q1. What is hoisting in JavaScript?
-Answer: Hoisting is JavaScript’s behavior of moving declarations of variables and functions to the top of their scope before execution. Variables declared with var are initialized with undefined, while let and const remain uninitialized (TDZ).
+Answer: Hoisting is JavaScript’s behavior of moving declarations of variables and functions to the top of their scope before execution. 
+Variables declared with var are initialized with undefined, while let and const remain uninitialized (TDZ - Temporal Dead Zone).
 
 Q2. What is Temporal Dead Zone (TDZ)?
-Answer: TDZ is the period between the start of a scope and when a let or const variable is initialized. Accessing them in TDZ causes a ReferenceError.
+Answer: TDZ is the period between the start of a scope and when a let or const variable is initialized. 
+Accessing them in TDZ causes a ReferenceError.
 
 Q3. Can functions be hoisted?
 Answer:

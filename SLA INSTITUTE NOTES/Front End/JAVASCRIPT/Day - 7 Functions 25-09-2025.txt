@@ -51,6 +51,7 @@ when ever you call the function that function
 
  
 2. Arrow Function - es6
+
 syntax:-
 
 const addnumber = ()=>{
@@ -76,12 +77,12 @@ variable la function store panrathu tha function
 
 Tasks:-
 
-1.normal,arrow and anonymous function ku differances
-2.function declaration and function expression differance
-3.arrow function and normal function differances
+1. normal,arrow and anonymous function ku differances
+2. function declaration and function expression differance
+3. arrow function and normal function differances
 (normal function la tha class use panna mudium.)
-4.arrow funtion la constractor use panna mudiyathu normal fucntion la the use panna mudium
-5.why use function?
+4. arrow funtion la constractor use panna mudiyathu normal fucntion la the use panna mudium
+5. why use function?
 reuse
 cleandesign 
 debugging 

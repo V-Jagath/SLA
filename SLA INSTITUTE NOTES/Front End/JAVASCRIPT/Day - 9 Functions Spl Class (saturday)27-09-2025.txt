@@ -1,0 +1,87 @@
+Class:-
+
+Dynamic process 
+
+Math function 
+
+variables 
+
+var - declar,redeclar, reassign
+undefined
+let - reassign,redeclar
+
+const - declar only
+
+declaration - variable key wod variable name
+
+inisizalation vairable key variable name = values
+
+reassign ---> variable name = 10
+
+const number =10+1=11
+
+const number = 12 nu poda mudiyathu
+
+for loop
+
+Functions:-
+
+1. Normal Function
+
+function 
+
+Function expression -hoisting declaration part only  
+
+
+2. Arrow Function const variable=(a,b)=>{}
+
+3. Anonymous Function
+
+Function la use pannalam. but anonymous function la use panna mudiyathu.This Bainding
+
+anonymous la callback function use pannalam
+
+SYNTAX:-
+Class Class_Name{
+constructor(name){} 
+}
+
+Example:-
+
+class students {
+constructor (rollno,name){
+this.name=name;
+this.rollno=rollno
+}
+
+display(){
+console.log("this.name")
+}
+}
+
+
+Const s1 = new students(100,"React")
+
+s1.display()
+
+
+
+Coding Questions (Interview Style)
+Print numbers 1 to 10.
+Print even numbers from 2 to 20.
+Print multiplication table of 5.
+Reverse an array manually.
+Count vowels in string.
+Find maximum in array.
+Check palindrome string.
+Print square pattern of *.
+Print right triangle of *.
+Print inverted triangle of *.
+Print number triangle.
+Print numbers 10 to 1.
+Find sum of first N numbers.
+Swap two numbers without temp variable.
+Print factorial using loop.
+Write if/else if program for marks grading.
+Write program using while loop to print numbers until 100.
+Write nested loop to print multiplication tables 1–10.

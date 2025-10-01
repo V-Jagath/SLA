@@ -5,7 +5,7 @@ DOM (Document Object Model) :-
 when a webpage loads browser creates a tree structure (object model) for all html tags. each element like become the node in the tree.
 using js i can access and change these  nodes dynamically.
 
-Dom is not part of js but a broser API with js uses.(API - Application Programming Interface - Object orianted data)
+Dom is not part of js but a browser API with js uses.(API - Application Programming Interface - Object orianted data)
 
 
 HTML + Document(like api)+ js = interactive webpage
@@ -46,20 +46,20 @@ addEventListeners('',()=>{})
 
 PROPERTY :-
 
-selectorelement.innerHTML = "value";
+element.innerHTML = "value"; ----> tag + Cntent
 
 style.cssproperty = "";
-
-innerText = "";
+	
+innerText = "";	-----> Only Text
 
 document.write()
 
-text.Content="";
+text.Content="";	----> only text
 
 
 TASK 1 :
 
-	18 times need to create a page for slectors
+	18 times need to create a page for selectors
 
 properties - using with selectors
 2 event onclick - one event listener
@@ -133,7 +133,7 @@ btn.addEventListener("click", () => {
 Mouse → click, mouseover, mouseout
 
 Keyboard → keydown, keyup, keypress
-
+/
 Form → submit, change, select
 
 📌 Properties of Elements

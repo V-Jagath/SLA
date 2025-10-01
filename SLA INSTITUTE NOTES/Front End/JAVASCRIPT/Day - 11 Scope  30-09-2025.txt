@@ -1,0 +1,174 @@
+Var - Functional Scope
+var is a global scope but you can declare in a fucntion its not used. that only access in a function only.
+
+Let and Const - Block Scope :-
+
+let a=10;
+if (true){
+console.log(a);
+}
+
+when you declare with in a condition let only use with in the condition . not used in outof condition.
+
+block block ha let and const ku different different values assign pannalam.
+
+
+Multipleline css:-
+
+csstext.
+addstyle.list
+
+variable_name.style.cssText=css_properties
+
+
+--------------------------------------------------------------------------------------------------------
+
+var – Function Scope
+
+var is function-scoped.
+
+If you declare a variable with var inside a function, it is only accessible inside that function.
+
+But if you declare var outside any function, it becomes global.
+
+✅ Example:
+
+function test() {
+  var x = 100;
+  console.log(x); // ✅ works inside the function
+}
+test();
+
+console.log(x); // ❌ Error: x is not defined
+
+let and const – Block Scope
+
+Both let and const are block-scoped.
+
+A "block" means anything inside { } (if, for, while, etc.).
+
+You can’t access them outside of the block.
+
+✅ Example:
+
+if (true) {
+  let a = 10;
+  const b = 20;
+  console.log(a); // ✅ 10
+  console.log(b); // ✅ 20
+}
+
+console.log(a); // ❌ Error
+console.log(b); // ❌ Error
+
+Key Difference
+
+var → function-scoped (ignores block, only cares about functions).
+
+let & const → block-scoped (limited to { }).
+
+In the same block, you can assign different values for let and const.
+
+✅ Example:
+
+let num = 5;
+if (true) {
+  let num = 10;   // New variable (block scoped)
+  const pi = 3.14;
+  console.log(num); // ✅ 10
+  console.log(pi);  // ✅ 3.14
+}
+console.log(num); // ✅ 5
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+🔥 Interview Questions
+1. What is the difference between var, let, and const?
+
+Answer:
+
+var → Function-scoped, can be redeclared & updated.
+
+l
+et → Block-scoped, can be updated but not redeclared in the same scope.
+
+const → Block-scoped, cannot be updated or redeclared (value is constant).
+
+2. What is functional scope vs block scope?
+
+Answer:
+
+Functional scope → Variables declared with var are accessible throughout the function.
+
+Block scope → Variables declared with let and const are only accessible inside { } (if, for, etc.).
+
+3. What happens if you use var inside a block (like if)?
+
+Answer:
+It will ignore the block and still be available outside.
+
+if (true) {
+  var x = 10;
+}
+console.log(x); // ✅ 10
+
+4. What happens if you use let or const inside a block?
+
+Answer:
+They are not accessible outside the block.
+
+if (true) {
+  let y = 20;
+}
+console.log(y); // ❌ ReferenceError
+
+5. Can you redeclare a variable with var, let, and const?
+
+Answer:
+
+var → Yes (re-declaration allowed).
+
+let → ❌ No, in the same scope.
+
+const → ❌ No, in the same scope.
+
+6. Can you update the value of let and const?
+
+Answer:
+
+let → ✅ Yes, you can update.
+
+const → ❌ No, value cannot be reassigned (but objects/arrays can be mutated).
+
+7. What is Hoisting in var, let, and const?
+
+Answer:
+
+var → Hoisted and initialized with undefined.
+
+let and const → Hoisted but not initialized (Temporal Dead Zone until declaration).
+
+Example:
+
+console.log(a); // undefined
+var a = 5;
+
+console.log(b); // ❌ ReferenceError
+let b = 10;
+
+8. Why is const not always "constant"?
+
+Answer:
+const prevents reassignment of the variable, but if the value is an object/array, its contents can still be changed.
+
+const arr = [1, 2, 3];
+arr.push(4); // ✅ allowed
+arr = [5, 6]; // ❌ not allowed
+
+
+
+
+
+

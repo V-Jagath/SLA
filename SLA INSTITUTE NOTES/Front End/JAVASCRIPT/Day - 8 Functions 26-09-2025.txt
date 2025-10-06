@@ -248,8 +248,126 @@ Output:
 
 56 is even
 52 is even
+-------------------------------------------------------------------------------------------------------------
+🚀 JavaScript Array Methods – Full Guide
+🟢 Basic Modification Methods
+
+push() → Last la element add.
+
+pop() → Last element remove.
+
+unshift() → First la element add.
+
+shift() → First element remove.
+
+🔎 Searching & Checking
+
+includes() → Boolean return (element iruka nu check).
+
+indexOf() → First occurrence index.
+
+lastIndexOf() → Last occurrence index.
+
+find() → First element (condition satisfy).
+
+findIndex() → First element index (condition satisfy).
+
+every() → All elements satisfy? (true/false).
+
+some() → Atleast one element satisfy? (true/false).
+
+✂️ Copying & Slicing
+
+slice(start, end) → Pudhu array create (original change aagathu).
+
+splice(start, deleteCount, items...) → Add/remove pannum (original change aagum).
+
+concat() → Arrays combine pannum.
+
+copyWithin(target, start, end) → Array parts copy panni same array la overwrite pannum.
+
+🔁 Iteration Methods
+
+forEach() → Loop through array (return nothing).
+
+map() → New array create pannum (processing each element).
+
+filter() → Condition satisfy pannra elements new array.
+
+reduce() → Array elements → single value (sum, avg, etc.).
+
+reduceRight() → Right → Left reduce.
+
+🧾 String Conversion
+
+join(separator) → Array → string.
+
+toString() → Array → string (default , separator).
+
+🔄 Reordering
+
+reverse() → Array reverse pannum.
+
+sort(compareFn) → Ascending/Descending order sort (default string sort).
+
+📦 Flattening & Transform
+
+flat(depth) → Nested array flatten pannum.
+
+flatMap(fn) → Map + Flat together.
+
+🎯 Value Modification
+
+fill(value, start, end) → Fill values (original array change).
+
+with(index, value) (🔔 ES2023) → Immutable replace (original change aagathu).
+
+🔥 Iterators
+
+entries() → [index, value] pairs.
+
+keys() → Array indexes.
+
+values() → Array values.
+
+🆕 ES2022 – ES2023 Latest
+
+at(index) → Element by index (negative index allowed).
+
+const arr = [10, 20, 30];
+console.log(arr.at(-1)); // 30
 
 
+toReversed() → Reverse but immutable.
+
+const arr = [1, 2, 3];
+console.log(arr.toReversed()); // [3, 2, 1]
+console.log(arr); // [1, 2, 3] (unchanged)
+
+
+toSorted(compareFn) → Sort but immutable.
+
+const arr = [3, 1, 2];
+console.log(arr.toSorted()); // [1, 2, 3]
+
+
+toSpliced(start, deleteCount, items...) → Splice but immutable.
+
+✅ Summary – Interview / Exam ku Must Know
+
+Basic Add/Remove → push, pop, shift, unshift
+
+Search → includes, indexOf, find, findIndex
+
+Transform → map, filter, reduce, forEach
+
+Modify → splice, slice, concat, sort, reverse, fill
+
+Flatten → flat, flatMap
+
+Iterators → entries, keys, values
+
+New Gen (ES2023) → at, with, toReversed, toSorted, toSpliced
 
 -------------------------------------------------------------------------------------------------------
   

@@ -140,7 +140,7 @@ Hoisted (can be called before definition).
 
 SYNTAX:-
 
-function function name(){}
+function function_name(){}
 
 // Function Declaration
 function greet(name) {
@@ -181,7 +181,7 @@ const functionName = (parameters) => {
 };
 
 
-const add = (a, b) => a + b;
+const add = (a, b) => {a + b};
 
 console.log(add(3, 5)); // 8
 

@@ -1,0 +1,291 @@
+🟢 Common DOM Events (addEventListener ku use panna mudiyum)
+1) Mouse Events
+
+Mouse-related actions on elements:
+
+click → Single mouse click
+
+dblclick → Double click
+
+contextmenu → Right-click
+
+mousedown → When mouse button is pressed
+
+mouseup → When mouse button is released
+
+mousemove → Triggered continuously when moving the mouse
+
+mouseenter → Mouse enters the element (does not bubble)
+
+mouseleave → Mouse leaves the element (does not bubble)
+
+mouseover → Mouse enters (bubbles, includes children)
+
+mouseout → Mouse leaves (bubbles)
+
+2) Keyboard Events
+
+When interacting with the keyboard:
+
+keydown → Key is pressed down
+
+keyup → Key is released
+
+keypress → Key is pressed (deprecated, avoid using)
+
+3) Form Events
+
+For input and form controls:
+
+input → Triggered when textbox value changes
+
+change → Value changes after losing focus (blur)
+
+focus → Input gains focus
+
+blur → Input loses focus
+
+submit → Form is submitted
+
+4) Window / Document Events
+
+Events related to the page or window:
+
+load → Page completely loaded
+
+DOMContentLoaded → HTML parsed and loaded (before images, scripts may load)
+
+resize → Window is resized
+
+scroll → Page is scrolled
+
+5) Clipboard Events
+
+Triggered on copy/paste actions:
+
+copy → User copies content
+
+cut → User cuts content
+
+paste → User pastes content
+
+6) Drag & Drop Events
+
+Events during drag and drop actions:
+
+dragstart → Dragging starts
+
+drag → While dragging
+
+dragend → Dragging ends
+
+dragenter → Dragged item enters drop target
+
+dragover → Dragged item is over drop target
+
+dragleave → Dragged item leaves drop target
+
+drop → Item is dropped
+
+7) Touch Events (mobile)
+
+For mobile/touch devices:
+
+touchstart → Finger touches screen
+
+touchmove → Finger moves on screen
+
+touchend → Finger lifted from screen
+
+touchcancel → Touch interrupted
+
+8) Pointer Events (modern, combines mouse + touch + pen)
+
+pointerdown → Pointer pressed
+
+pointerup → Pointer released
+
+pointermove → Pointer moves
+
+pointerenter → Pointer enters element
+
+pointerleave → Pointer leaves element
+
+pointerover → Pointer over element (bubbles)
+
+pointerout → Pointer leaves element (bubbles)
+
+pointercancel → Pointer action canceled
+
+
+1) Media Events (Audio/Video)
+
+play → Media play aagumbodhu
+
+pause → Media pause aagumbodhu
+
+ended → Media complete aana odane
+
+volumechange → Volume change aagumbodhu
+
+timeupdate → Playback time update aagumbodhu
+
+2) Animation & Transition Events
+
+animationstart → CSS animation start aagumbodhu
+
+animationend → CSS animation end aagumbodhu
+
+animationiteration → Animation repeat aagumbodhu
+
+transitionstart → CSS transition start aagumbodhu
+
+transitionend → CSS transition complete aagumbodhu
+
+3) Pointer Lock & Fullscreen Events
+
+pointerlockchange → Pointer lock state change aagumbodhu
+
+fullscreenchange → Fullscreen enter/exit aagumbodhu
+
+4) Error Events
+
+error → Resource load fail aagumbodhu (image, script, etc.)
+
+unhandledrejection → Promise reject aana odane handle panna
+
+5) Storage & Online Events
+
+online → User internet connect aagumbodhu
+
+offline → User internet disconnect aagumbodhu
+
+storage → LocalStorage/sessionStorage update aagumbodhu
+
+6) Miscellaneous Events
+
+wheel → Mouse wheel scroll aagumbodhu
+
+select → Input text select pannumbodhu
+
+toggle → <details> open/close aagumbodhu
+
+===============================================================================
+
+1) Mouse Events
+
+Mouse-related actions on elements:
+
+click → Single mouse click (oru click pannumbodhu)
+
+dblclick → Double click (iru click)
+
+contextmenu → Right-click (right click menu)
+
+mousedown → Mouse button press pannumbodhu
+
+mouseup → Mouse button release pannumbodhu
+
+mousemove → Mouse move pannumbodhu continuous trigger aagum
+
+mouseenter → Mouse element-ku enter aagumbodhu (bubbles illa)
+
+mouseleave → Mouse element leave aagumbodhu (bubbles illa)
+
+mouseover → Mouse element-ku enter aagumbodhu (bubbles, children kooda count)
+
+mouseout → Mouse element leave aagumbodhu (bubbles)
+
+2) Keyboard Events
+
+Keyboard-related actions:
+
+keydown → Key press pannumbodhu
+
+keyup → Key release aagumbodhu
+
+keypress → Key press (old, avoid panrathu better)
+
+3) Form Events
+
+Input/form actions:
+
+input → Textbox value change aagumbodhu
+
+change → Value change aana odane (focus poi blur aana apram)
+
+focus → Input focus aagumbodhu
+
+blur → Input focus poidumbodhu
+
+submit → Form submit pannumbodhu
+
+4) Window / Document Events
+
+Page or window events:
+
+load → Page complete load aana odane
+
+DOMContentLoaded → HTML parse aana odane trigger aagum
+
+resize → Window resize pannumbodhu
+
+scroll → Page scroll pannumbodhu
+
+5) Clipboard Events
+
+Copy / paste actions:
+
+copy → Copy pannumbodhu
+
+cut → Cut pannumbodhu
+
+paste → Paste pannumbodhu
+
+6) Drag & Drop Events
+
+Drag-drop actions:
+
+dragstart → Drag start aagumbodhu
+
+drag → Drag nadakkumbodhu
+
+dragend → Drag end aagumbodhu
+
+dragenter → Dragged item drop target-ku enter aagumbodhu
+
+dragover → Dragged item drop target mele irukumbodhu
+
+dragleave → Dragged item drop target leave aagumbodhu
+
+drop → Item drop pannumbodhu
+
+7) Touch Events (mobile)
+
+Mobile/touch actions:
+
+touchstart → Finger screen touch pannumbodhu
+
+touchmove → Finger screen mele move pannumbodhu
+
+touchend → Finger lift pannumbodhu
+
+touchcancel → Touch cancel aagumbodhu
+
+8) Pointer Events (modern: mouse + touch + pen)
+
+pointerdown → Pointer press aagumbodhu
+
+pointerup → Pointer release aagumbodhu
+
+pointermove → Pointer move aagumbodhu
+
+pointerenter → Pointer element-ku enter aagumbodhu
+
+pointerleave → Pointer element leave aagumbodhu
+
+pointerover → Pointer element over aagumbodhu (bubbles)
+
+pointerout → Pointer element leave aagumbodhu (bubbles)
+
+pointercancel → Pointer action cancel aagumbodhu

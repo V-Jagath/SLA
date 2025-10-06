@@ -12,7 +12,7 @@ TBZ -Temparal Dead Zone (referance error)
 
 NON PRIMITIVE DATATYPES:-
 
-	very important.
+very important.
 
 1.Array
 2.object - Array of object

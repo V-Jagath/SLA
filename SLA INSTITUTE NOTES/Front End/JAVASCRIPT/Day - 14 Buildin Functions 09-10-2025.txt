@@ -1,0 +1,86 @@
+Build in functions:-
+
+that build in function is the already write a function using perameter and argument in that fanction just w pass the 
+value that function perform the process very shortly.
+
+
+UPPERCASE() :-
+
+const name="arun"
+
+const namechange=name.toUpperCase()
+
+console.log(namechange) //      ----> ARUN
+
+
+LOWERCASE() :-
+
+const name="arun"
+
+const namechange=name.lowerCase()
+
+console.log(namechange) //      ----> arun
+
+TRIM():-
+
+remove unwanted spaces first and last.
+
+const name="  arun "
+
+const namechange=name.Trim()
+
+console.log(namechange) //      ----> arun
+
+
+SLICE:-
+
+const name="arun kumar"
+
+const namechange=name.slice(0,6)
+
+console.log(namechange) //      ----> arun k
+
+
+REPLACE:-
+
+
+const name="arun kumar"
+
+const namechange=name.replace("arun","ajith")
+
+console.log(namechange) //      ----> ajith kumar
+
+
+INCLUDES:-
+
+iruka ilaya nu cheack pannum
+
+const name="arunkumar@gmail.com"
+
+const namechange=name.includes("@")
+
+console.log(namechange) //      ----> True
+
+REPEAT();-
+
+const datas="hi"
+
+CONST REPEATVALUE=DATAS.repeat(3)
+
+console.log(REPEATVALUE)
+
+
+MATH.ROUND:-
+
+const number=41.235
+
+const round=Math.round(number)
+
+console.log(round)
+
+
+sqrt(),pow()
+
+const date=new date();
+console.log(date)
+date.toDateSting()

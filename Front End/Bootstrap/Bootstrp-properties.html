@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Typography Utilities Table</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light text-dark">
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">📘 Bootstrap 5 Typography Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class</th>
+                        <th>Values / Variants</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Headings</td>
+                        <td><code>.h1</code> → <code>.h6</code></td>
+                        <td>Heading sizes</td>
+                        <td>
+                            <p class="h3 m-0">Heading 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Display Headings</td>
+                        <td><code>.display-1</code> → <code>.display-6</code></td>
+                        <td>Extra large headings</td>
+                        <td><span class="display-6">Display 6</span></td>
+                    </tr>
+                    <tr>
+                        <td>Lead Text</td>
+                        <td><code>.lead</code></td>
+                        <td>Larger & lighter</td>
+                        <td>
+                            <p class="lead m-0">Lead text</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inline Styles</td>
+                        <td><code>.mark</code>, <code>.small</code>, <code>.fw-bold</code>, <code>.fw-light</code>,
+                            <code>.fst-italic</code>, <code>.text-decoration-underline</code>
+                        </td>
+                        <td>Highlight, small, bold, italic, underline</td>
+                        <td><span class="mark">Mark</span>, <span class="small">small</span>, <span
+                                class="fw-bold">bold</span></td>
+                    </tr>
+                    <tr>
+                        <td>Text Alignment</td>
+                        <td><code>.text-start</code>, <code>.text-center</code>, <code>.text-end</code></td>
+                        <td>Responsive: <code>.text-md-center</code></td>
+                        <td>
+                            <p class="text-center m-0">Centered</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text Wrapping</td>
+                        <td><code>.text-wrap</code>, <code>.text-nowrap</code>, <code>.text-truncate</code></td>
+                        <td>Wrap, no-wrap, truncate</td>
+                        <td style="max-width:150px;">
+                            <p class="text-truncate m-0">This text is truncated</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Word Breaks</td>
+                        <td><code>.text-break</code></td>
+                        <td>Breaks long words</td>
+                        <td>
+                            <p class="text-break m-0">averyveryverylongword</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text Transform</td>
+                        <td><code>.text-uppercase</code>, <code>.text-lowercase</code>, <code>.text-capitalize</code>
+                        </td>
+                        <td>Case control</td>
+                        <td>
+                            <p class="text-uppercase m-0">uppercase</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Font Size</td>
+                        <td><code>.fs-1</code> → <code>.fs-6</code></td>
+                        <td>1 = largest, 6 = smallest</td>
+                        <td><span class="fs-1">FS-1</span></td>
+                    </tr>
+                    <tr>
+                        <td>Font Weight</td>
+                        <td><code>.fw-bold</code>, <code>.fw-light</code>, <code>.fw-normal</code></td>
+                        <td>Controls boldness</td>
+                        <td><span class="fw-light">Light</span>, <span class="fw-bold">Bold</span></td>
+                    </tr>
+                    <tr>
+                        <td>Font Style</td>
+                        <td><code>.fst-italic</code>, <code>.fst-normal</code></td>
+                        <td>Italic or reset</td>
+                        <td><span class="fst-italic">Italic text</span></td>
+                    </tr>
+                    <tr>
+                        <td>Line Height</td>
+                        <td><code>.lh-1</code>, <code>.lh-sm</code>, <code>.lh-base</code>, <code>.lh-lg</code></td>
+                        <td>Line spacing</td>
+                        <td>
+                            <p class="lh-lg m-0">Large line height</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monospace</td>
+                        <td><code>.font-monospace</code></td>
+                        <td>Monospace font</td>
+                        <td>
+                            <p class="font-monospace m-0">Monospace text</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text Colors</td>
+                        <td><code>.text-primary</code>, <code>.text-success</code>, <code>.text-danger</code>,
+                            <code>.text-muted</code>, etc.
+                        </td>
+                        <td>Predefined color utilities</td>
+                        <td>
+                            <p class="text-danger m-0">Danger text</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text + Background</td>
+                        <td><code>.text-*</code> + <code>.bg-*</code></td>
+                        <td>Contrast styles</td>
+                        <td>
+                            <p class="text-white bg-dark d-inline-block p-1 m-0">White on Dark</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blockquotes</td>
+                        <td><code>.blockquote</code>, <code>.blockquote-footer</code></td>
+                        <td>Quote formatting</td>
+                        <td>
+                            <blockquote class="blockquote m-0">
+                                <p class="m-0">A famous quote.</p>
+                                <footer class="blockquote-footer">Author</footer>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">🎨 Bootstrap 5 Colors & Backgrounds</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class</th>
+                        <th>Values / Variants</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Text Colors -->
+                    <tr>
+                        <td>Text Colors</td>
+                        <td><code>.text-*</code></td>
+                        <td>primary, secondary, success, danger, warning, info, light, dark, body, muted, white,
+                            black-50, white-50</td>
+                        <td>
+                            <p class="text-primary m-0">Primary</p>
+                            <p class="text-danger m-0">Danger</p>
+                            <p class="text-muted m-0">Muted</p>
+                        </td>
+                    </tr>
+
+                    <!-- Background Colors -->
+                    <tr>
+                        <td>Background Colors</td>
+                        <td><code>.bg-*</code></td>
+                        <td>primary, secondary, success, danger, warning, info, light, dark, body, white, transparent
+                        </td>
+                        <td>
+                            <div class="bg-success text-white d-inline-block px-2 py-1 rounded">Success BG</div>
+                            <div class="bg-warning text-dark d-inline-block px-2 py-1 rounded">Warning BG</div>
+                        </td>
+                    </tr>
+
+                    <!-- Background Gradient -->
+                    <tr>
+                        <td>Background Gradient</td>
+                        <td><code>.bg-gradient</code></td>
+                        <td>Works with any <code>.bg-*</code></td>
+                        <td>
+                            <div class="bg-info bg-gradient text-white d-inline-block px-2 py-1 rounded">Gradient BG
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Background Opacity -->
+                    <tr>
+                        <td>Background Opacity</td>
+                        <td><code>.bg-opacity-*</code></td>
+                        <td>10, 25, 50, 75, 100</td>
+                        <td>
+                            <div class="bg-danger bg-opacity-50 text-dark d-inline-block px-2 py-1 rounded">50% BG</div>
+                        </td>
+                    </tr>
+
+                    <!-- Text Opacity -->
+                    <tr>
+                        <td>Text Opacity</td>
+                        <td><code>.text-opacity-*</code></td>
+                        <td>25, 50, 75, 100</td>
+                        <td>
+                            <p class="text-success text-opacity-50 m-0">50% Success Text</p>
+                        </td>
+                    </tr>
+
+                    <!-- Link Colors -->
+                    <tr>
+                        <td>Link Colors</td>
+                        <td><code>.link-*</code></td>
+                        <td>primary, secondary, success, danger, warning, info, light, dark</td>
+                        <td>
+                            <a href="#" class="link-danger me-2">Danger Link</a>
+                            <a href="#" class="link-warning">Warning Link</a>
+                        </td>
+                    </tr>
+
+                    <!-- Table Variants -->
+                    <tr>
+                        <td>Table Variants</td>
+                        <td><code>.table-*</code></td>
+                        <td>primary, secondary, success, danger, warning, info, light, dark</td>
+                        <td>
+                            <table class="table table-bordered m-0">
+                                <tr class="table-primary">
+                                    <td>Primary row</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>Warning row</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📐 Bootstrap 5 Spacing (Margin & Padding)</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class Pattern</th>
+                        <th>Values / Variants</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Margin (all sides)</td>
+                        <td><code>m-*</code></td>
+                        <td>0,1,2,3,4,5, auto</td>
+                        <td>
+                            <div class="m-3 bg-light border d-inline-block">m-3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding (all sides)</td>
+                        <td><code>p-*</code></td>
+                        <td>0,1,2,3,4,5</td>
+                        <td>
+                            <div class="p-3 bg-primary text-white d-inline-block">p-3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Margin Top</td>
+                        <td><code>mt-*</code></td>
+                        <td>0 → 5, auto</td>
+                        <td>
+                            <div class="mt-4 bg-light border d-inline-block">mt-4</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Margin Bottom</td>
+                        <td><code>mb-*</code></td>
+                        <td>0 → 5, auto</td>
+                        <td>
+                            <div class="mb-2 bg-light border d-inline-block">mb-2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Margin Start</td>
+                        <td><code>ms-*</code></td>
+                        <td>0 → 5, auto</td>
+                        <td>
+                            <div class="ms-5 bg-light border d-inline-block">ms-5</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Margin End</td>
+                        <td><code>me-*</code></td>
+                        <td>0 → 5, auto</td>
+                        <td>
+                            <div class="me-3 bg-light border d-inline-block">me-3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Margin X-axis</td>
+                        <td><code>mx-*</code></td>
+                        <td>0 → 5, auto</td>
+                        <td>
+                            <div class="mx-auto bg-light border d-block" style="width:150px;">mx-auto</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Margin Y-axis</td>
+                        <td><code>my-*</code></td>
+                        <td>0 → 5, auto</td>
+                        <td>
+                            <div class="my-4 bg-light border d-inline-block">my-4</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding Top</td>
+                        <td><code>pt-*</code></td>
+                        <td>0 → 5</td>
+                        <td>
+                            <div class="pt-2 bg-primary text-white d-inline-block">pt-2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding Bottom</td>
+                        <td><code>pb-*</code></td>
+                        <td>0 → 5</td>
+                        <td>
+                            <div class="pb-4 bg-primary text-white d-inline-block">pb-4</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding Start</td>
+                        <td><code>ps-*</code></td>
+                        <td>0 → 5</td>
+                        <td>
+                            <div class="ps-3 bg-primary text-white d-inline-block">ps-3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding End</td>
+                        <td><code>pe-*</code></td>
+                        <td>0 → 5</td>
+                        <td>
+                            <div class="pe-2 bg-primary text-white d-inline-block">pe-2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding X-axis</td>
+                        <td><code>px-*</code></td>
+                        <td>0 → 5</td>
+                        <td>
+                            <div class="px-4 bg-primary text-white d-inline-block">px-4</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding Y-axis</td>
+                        <td><code>py-*</code></td>
+                        <td>0 → 5</td>
+                        <td>
+                            <div class="py-5 bg-primary text-white d-inline-block">py-5</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Support</td>
+                        <td><code>{m/p}{side}-{breakpoint}-{size}</code></td>
+                        <td>Breakpoints: sm, md, lg, xl, xxl</td>
+                        <td>
+                            <div class="p-md-4 m-lg-5 bg-warning d-inline-block">Responsive</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟦 Bootstrap 5 Border & Border Radius Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class Pattern</th>
+                        <th>Values / Variants</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Border (all sides)</td>
+                        <td><code>border</code></td>
+                        <td>default (1px solid)</td>
+                        <td>
+                            <div class="border p-2">border</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Remove Border</td>
+                        <td><code>border-0</code></td>
+                        <td>removes border</td>
+                        <td>
+                            <div class="border border-0 p-2">border-0</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border Top</td>
+                        <td><code>border-top</code></td>
+                        <td>adds top border</td>
+                        <td>
+                            <div class="border-top p-2">border-top</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border Bottom</td>
+                        <td><code>border-bottom</code></td>
+                        <td>adds bottom border</td>
+                        <td>
+                            <div class="border-bottom p-2">border-bottom</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border Start</td>
+                        <td><code>border-start</code></td>
+                        <td>adds left border</td>
+                        <td>
+                            <div class="border-start p-2">border-start</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border End</td>
+                        <td><code>border-end</code></td>
+                        <td>adds right border</td>
+                        <td>
+                            <div class="border-end p-2">border-end</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Remove Specific Side</td>
+                        <td><code>border-top-0, border-bottom-0, border-start-0, border-end-0</code></td>
+                        <td>removes specific side border</td>
+                        <td>
+                            <div class="border border-top-0 p-2">border-top-0</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border Colors</td>
+                        <td><code>border-{color}</code></td>
+                        <td>primary, secondary, success, danger, warning, info, light, dark, white</td>
+                        <td>
+                            <div class="border border-danger p-2">border-danger</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border Widths</td>
+                        <td><code>border-{1-5}</code></td>
+                        <td>1px → 5px</td>
+                        <td>
+                            <div class="border border-3 p-2">border-3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Border Opacity</td>
+                        <td><code>border-opacity-{10-100}</code></td>
+                        <td>10 → 100</td>
+                        <td>
+                            <div class="border border-primary border-opacity-50 p-2">opacity-50</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rounded (all sides)</td>
+                        <td><code>rounded</code></td>
+                        <td>default radius</td>
+                        <td>
+                            <div class="border rounded p-2">rounded</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>No Radius</td>
+                        <td><code>rounded-0</code></td>
+                        <td>removes radius</td>
+                        <td>
+                            <div class="border rounded-0 p-2">rounded-0</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rounded Sizes</td>
+                        <td><code>rounded-sm, rounded-lg, rounded-circle, rounded-pill</code></td>
+                        <td>sm, lg, xl, 2xl, 3xl, circle, pill</td>
+                        <td>
+                            <div class="border rounded-sm p-2 mb-1">sm</div>
+                            <div class="border rounded-lg p-2 mb-1">lg</div>
+                            <div class="border rounded-circle p-2 d-inline-block text-center"
+                                style="width:60px;height:60px;">circle</div>
+                            <div class="border rounded-pill px-3 py-1 d-inline-block">pill</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rounded Side</td>
+                        <td><code>rounded-top, rounded-bottom, rounded-start, rounded-end</code></td>
+                        <td>rounds specific corners</td>
+                        <td>
+                            <div class="border rounded-top p-2 mb-1">top</div>
+                            <div class="border rounded-bottom p-2 mb-1">bottom</div>
+                            <div class="border rounded-start p-2 mb-1">start</div>
+                            <div class="border rounded-end p-2">end</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟨 Bootstrap 5 Box Shadow Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class Pattern</th>
+                        <th>Values / Variants</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Shadow</td>
+                        <td><code>shadow-none</code></td>
+                        <td>Removes shadow</td>
+                        <td>
+                            <div class="shadow-none p-3 mb-3 bg-light">shadow-none</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Default Shadow</td>
+                        <td><code>shadow</code></td>
+                        <td>Small shadow</td>
+                        <td>
+                            <div class="shadow p-3 mb-3 bg-light">shadow</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Small Shadow</td>
+                        <td><code>shadow-sm</code></td>
+                        <td>Lighter / smaller shadow</td>
+                        <td>
+                            <div class="shadow-sm p-3 mb-3 bg-light">shadow-sm</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Large Shadow</td>
+                        <td><code>shadow-lg</code></td>
+                        <td>Bigger / deeper shadow</td>
+                        <td>
+                            <div class="shadow-lg p-3 mb-3 bg-light">shadow-lg</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟦 Bootstrap 5 Breakpoints & Responsive Classes</h1>
+
+        <!-- Breakpoints Table -->
+        <h3 class="mt-4">Breakpoints</h3>
+        <div class="table-responsive mb-5">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Breakpoint</th>
+                        <th>Class Prefix</th>
+                        <th>Viewport Width (min)</th>
+                        <th>Example (Grid Columns)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Extra Small (xs)</td>
+                        <td><em>(none)</em></td>
+                        <td>&lt;576px</td>
+                        <td><code>&lt;div class="col-12"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Small (sm)</td>
+                        <td><code>sm</code></td>
+                        <td>≥576px</td>
+                        <td><code>&lt;div class="col-sm-6"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Medium (md)</td>
+                        <td><code>md</code></td>
+                        <td>≥768px</td>
+                        <td><code>&lt;div class="col-md-4"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Large (lg)</td>
+                        <td><code>lg</code></td>
+                        <td>≥992px</td>
+                        <td><code>&lt;div class="col-lg-3"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Extra Large (xl)</td>
+                        <td><code>xl</code></td>
+                        <td>≥1200px</td>
+                        <td><code>&lt;div class="col-xl-2"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Extra Extra Large (xxl)</td>
+                        <td><code>xxl</code></td>
+                        <td>≥1400px</td>
+                        <td><code>&lt;div class="col-xxl-1"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Responsive Classes Table -->
+        <h3 class="mt-4">Responsive Classes</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Utility Type</th>
+                        <th>Class Pattern</th>
+                        <th>Responsive Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grid Columns</td>
+                        <td><code>col-{bp}-{n}</code></td>
+                        <td><code>col-md-6 col-lg-4</code></td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td><code>d-{bp}-{value}</code></td>
+                        <td><code>d-none d-md-block</code></td>
+                    </tr>
+                    <tr>
+                        <td>Margin / Padding</td>
+                        <td><code>m{t|b|s|e|x|y}-{bp}-{0-5}</code></td>
+                        <td><code>mt-md-3 px-lg-4</code></td>
+                    </tr>
+                    <tr>
+                        <td>Flexbox</td>
+                        <td><code>flex-{bp}-{row|column}</code></td>
+                        <td><code>flex-sm-row flex-column</code></td>
+                    </tr>
+                    <tr>
+                        <td>Text Alignment</td>
+                        <td><code>text-{bp}-{start|center|end}</code></td>
+                        <td><code>text-center text-md-start</code></td>
+                    </tr>
+                    <tr>
+                        <td>Float</td>
+                        <td><code>float-{bp}-{start|end|none}</code></td>
+                        <td><code>float-sm-end</code></td>
+                    </tr>
+                    <tr>
+                        <td>Container</td>
+                        <td><code>container-{bp}</code></td>
+                        <td><code>container-lg</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟦 Bootstrap 5 Containers</h1>
+
+        <!-- Container Types Table -->
+        <h3 class="mt-4">Container Types</h3>
+        <div class="table-responsive mb-5">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Behavior</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.container</code></td>
+                        <td>Default fixed-width container</td>
+                        <td>Responsive, adapts at each breakpoint</td>
+                        <td><code>&lt;div class="container"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.container-sm</code></td>
+                        <td>Fixed width from <code>576px</code> and up</td>
+                        <td>Full width until sm breakpoint</td>
+                        <td><code>&lt;div class="container-sm"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.container-md</code></td>
+                        <td>Fixed width from <code>768px</code> and up</td>
+                        <td>Full width until md breakpoint</td>
+                        <td><code>&lt;div class="container-md"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.container-lg</code></td>
+                        <td>Fixed width from <code>992px</code> and up</td>
+                        <td>Full width until lg breakpoint</td>
+                        <td><code>&lt;div class="container-lg"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.container-xl</code></td>
+                        <td>Fixed width from <code>1200px</code> and up</td>
+                        <td>Full width until xl breakpoint</td>
+                        <td><code>&lt;div class="container-xl"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.container-xxl</code></td>
+                        <td>Fixed width from <code>1400px</code> and up</td>
+                        <td>Full width until xxl breakpoint</td>
+                        <td><code>&lt;div class="container-xxl"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.container-fluid</code></td>
+                        <td>Always takes full width</td>
+                        <td>Stretches across entire viewport</td>
+                        <td><code>&lt;div class="container-fluid"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Container Widths Table -->
+        <h3 class="mt-4">Container Widths at Breakpoints</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Breakpoint</th>
+                        <th>Viewport Size</th>
+                        <th>Container Max Width</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Extra Small (xs)</td>
+                        <td>&lt;576px</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>Small (sm)</td>
+                        <td>≥576px</td>
+                        <td>540px</td>
+                    </tr>
+                    <tr>
+                        <td>Medium (md)</td>
+                        <td>≥768px</td>
+                        <td>720px</td>
+                    </tr>
+                    <tr>
+                        <td>Large (lg)</td>
+                        <td>≥992px</td>
+                        <td>960px</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Large (xl)</td>
+                        <td>≥1200px</td>
+                        <td>1140px</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Extra Large (xxl)</td>
+                        <td>≥1400px</td>
+                        <td>1320px</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📐 Bootstrap 5 Grid System</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Syntax</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.row</code></td>
+                        <td>Defines a horizontal row (wrapper for columns)</td>
+                        <td><code>&lt;div class="row"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col</code></td>
+                        <td>Auto width column (equal size)</td>
+                        <td><code>&lt;div class="col"&gt;1&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-*</code></td>
+                        <td>Fixed number of columns (1–12)</td>
+                        <td><code>&lt;div class="col-6"&gt;Half&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-md-*</code></td>
+                        <td>Responsive column for md breakpoint</td>
+                        <td><code>&lt;div class="col-md-4"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.row-cols-*</code></td>
+                        <td>Set equal number of columns per row</td>
+                        <td><code>&lt;div class="row row-cols-3"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-auto</code></td>
+                        <td>Column width adjusts to content</td>
+                        <td><code>&lt;div class="col-auto"&gt;Fit&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.offset-*</code></td>
+                        <td>Moves column right by n columns</td>
+                        <td><code>&lt;div class="offset-2 col-6"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.g-*</code></td>
+                        <td>Sets gutter (spacing) between columns (0–5)</td>
+                        <td><code>&lt;div class="row g-3"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.gx-*</code> / <code>.gy-*</code></td>
+                        <td>Set horizontal / vertical gutter individually</td>
+                        <td><code>&lt;div class="row gx-2 gy-4"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.align-items-*</code></td>
+                        <td>Align columns vertically (start, center, end)</td>
+                        <td><code>&lt;div class="row align-items-center"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.justify-content-*</code></td>
+                        <td>Align columns horizontally (start, center, end, between, around, evenly)</td>
+                        <td><code>&lt;div class="row justify-content-between"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📦 Bootstrap 5 Columns</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Syntax</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.col</code></td>
+                        <td>Auto column, equal width</td>
+                        <td><code>&lt;div class="col"&gt;1&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-*</code></td>
+                        <td>Fixed width column (1–12)</td>
+                        <td><code>&lt;div class="col-4"&gt;One Third&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-{breakpoint}</code></td>
+                        <td>Auto column at specific breakpoint</td>
+                        <td><code>&lt;div class="col-md"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-{breakpoint}-{n}</code></td>
+                        <td>Fixed column size at specific breakpoint</td>
+                        <td><code>&lt;div class="col-lg-6"&gt;Half&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.col-auto</code></td>
+                        <td>Column width fits its content</td>
+                        <td><code>&lt;div class="col-auto"&gt;Fit&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.row-cols-*</code></td>
+                        <td>Set equal number of columns in a row</td>
+                        <td><code>&lt;div class="row row-cols-3"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.offset-*</code></td>
+                        <td>Push column right by n columns</td>
+                        <td><code>&lt;div class="col-6 offset-3"&gt;Centered&lt;/div&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🪜 Bootstrap 5 Z-Index</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Value</th>
+                        <th>CSS Equivalent</th>
+                        <th>Usage Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>z-n1</code></td>
+                        <td><code>z-index: -1</code></td>
+                        <td>Element behind others</td>
+                    </tr>
+                    <tr>
+                        <td><code>z-0</code></td>
+                        <td><code>z-index: 0</code></td>
+                        <td>Reset stacking order</td>
+                    </tr>
+                    <tr>
+                        <td><code>z-1</code></td>
+                        <td><code>z-index: 1</code></td>
+                        <td>Element slightly above</td>
+                    </tr>
+                    <tr>
+                        <td><code>z-2</code></td>
+                        <td><code>z-index: 2</code></td>
+                        <td>Higher stacking</td>
+                    </tr>
+                    <tr>
+                        <td><code>z-3</code></td>
+                        <td><code>z-index: 3</code></td>
+                        <td>Top-most (Bootstrap utility scale)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="mt-5">🔹 Z-Index in Bootstrap Components</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-secondary text-center">
+                    <tr>
+                        <th>Component</th>
+                        <th>Z-Index Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dropdown menu</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Sticky element</td>
+                        <td>1020</td>
+                    </tr>
+                    <tr>
+                        <td>Navbar (fixed, sticky)</td>
+                        <td>1030</td>
+                    </tr>
+                    <tr>
+                        <td>Offcanvas</td>
+                        <td>1045</td>
+                    </tr>
+                    <tr>
+                        <td>Modal</td>
+                        <td>1055</td>
+                    </tr>
+                    <tr>
+                        <td>Popover</td>
+                        <td>1070</td>
+                    </tr>
+                    <tr>
+                        <td>Tooltip</td>
+                        <td>1080</td>
+                    </tr>
+                    <tr>
+                        <td>Toast</td>
+                        <td>1090</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🖼️ Bootstrap 5 Images</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.img-fluid</code></td>
+                        <td>Responsive image (scales with parent)</td>
+                        <td><code>&lt;img src="..." class="img-fluid"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.img-thumbnail</code></td>
+                        <td>Image with border, padding & rounded corners</td>
+                        <td><code>&lt;img src="..." class="img-thumbnail"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded</code></td>
+                        <td>Rounded corners</td>
+                        <td><code>&lt;img src="..." class="rounded"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded-circle</code></td>
+                        <td>Perfect circle</td>
+                        <td><code>&lt;img src="..." class="rounded-circle"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded-pill</code></td>
+                        <td>Oval / pill-shaped image</td>
+                        <td><code>&lt;img src="..." class="rounded-pill"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.float-start</code></td>
+                        <td>Align image to the left</td>
+                        <td><code>&lt;img src="..." class="float-start"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.float-end</code></td>
+                        <td>Align image to the right</td>
+                        <td><code>&lt;img src="..." class="float-end"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.mx-auto d-block</code></td>
+                        <td>Center image horizontally</td>
+                        <td><code>&lt;img src="..." class="mx-auto d-block"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.w-25 / .w-50 / .w-75 / .w-100</code></td>
+                        <td>Set width in percentage</td>
+                        <td><code>&lt;img src="..." class="w-50"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.h-auto</code></td>
+                        <td>Keep aspect ratio</td>
+                        <td><code>&lt;img src="..." class="h-auto"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🖼️ Bootstrap 5 Images</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.img-fluid</code></td>
+                        <td>Responsive image (scales with parent)</td>
+                        <td><code>&lt;img src="..." class="img-fluid"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.img-thumbnail</code></td>
+                        <td>Image with border, padding & rounded corners</td>
+                        <td><code>&lt;img src="..." class="img-thumbnail"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded</code></td>
+                        <td>Rounded corners</td>
+                        <td><code>&lt;img src="..." class="rounded"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded-circle</code></td>
+                        <td>Perfect circle</td>
+                        <td><code>&lt;img src="..." class="rounded-circle"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded-pill</code></td>
+                        <td>Oval / pill-shaped image</td>
+                        <td><code>&lt;img src="..." class="rounded-pill"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.float-start</code></td>
+                        <td>Align image to the left</td>
+                        <td><code>&lt;img src="..." class="float-start"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.float-end</code></td>
+                        <td>Align image to the right</td>
+                        <td><code>&lt;img src="..." class="float-end"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.mx-auto d-block</code></td>
+                        <td>Center image horizontally</td>
+                        <td><code>&lt;img src="..." class="mx-auto d-block"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.w-25 / .w-50 / .w-75 / .w-100</code></td>
+                        <td>Set width in percentage</td>
+                        <td><code>&lt;img src="..." class="w-50"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.h-auto</code></td>
+                        <td>Keep aspect ratio</td>
+                        <td><code>&lt;img src="..." class="h-auto"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📝 Bootstrap 5 Form Elements</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Element</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;form&gt;</code></td>
+                        <td>Wrapper for form elements</td>
+                        <td><code>&lt;form&gt; ... &lt;/form&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-label</code></td>
+                        <td>Styles labels for inputs</td>
+                        <td><code>&lt;label class="form-label"&gt;Name&lt;/label&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-control</code></td>
+                        <td>Inputs, textarea, etc.</td>
+                        <td><code>&lt;input type="text" class="form-control"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-control-lg / .form-control-sm</code></td>
+                        <td>Large / small inputs</td>
+                        <td><code>&lt;input type="text" class="form-control-lg"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-text</code></td>
+                        <td>Small help text</td>
+                        <td><code>&lt;div class="form-text"&gt;Enter your email&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-check</code></td>
+                        <td>Wrapper for checkbox/radio</td>
+                        <td><code>&lt;div class="form-check"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-check-input</code></td>
+                        <td>Checkbox / radio input</td>
+                        <td><code>&lt;input class="form-check-input" type="checkbox"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-check-label</code></td>
+                        <td>Label for checkbox/radio</td>
+                        <td><code>&lt;label class="form-check-label"&gt;Accept&lt;/label&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-select</code></td>
+                        <td>Dropdown select</td>
+                        <td><code>&lt;select class="form-select"&gt;&lt;option&gt;1&lt;/option&gt;&lt;/select&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-range</code></td>
+                        <td>Range slider</td>
+                        <td><code>&lt;input type="range" class="form-range"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.input-group</code></td>
+                        <td>Group inputs with addons</td>
+                        <td><code>&lt;div class="input-group"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.input-group-text</code></td>
+                        <td>Addon inside group</td>
+                        <td><code>&lt;span class="input-group-text"&gt;@&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-floating</code></td>
+                        <td>Floating labels</td>
+                        <td><code>&lt;div class="form-floating"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.valid-feedback / .invalid-feedback</code></td>
+                        <td>Validation messages</td>
+                        <td><code>&lt;div class="invalid-feedback"&gt;Required&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.disabled / disabled</code></td>
+                        <td>Disabled input</td>
+                        <td><code>&lt;input class="form-control" disabled&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🔹 Bootstrap 5 Flex Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.d-flex</code></td>
+                        <td>Applies flexbox</td>
+                        <td><code>&lt;div class="d-flex"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.d-inline-flex</code></td>
+                        <td>Inline flex container</td>
+                        <td><code>&lt;div class="d-inline-flex"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-row</code></td>
+                        <td>Horizontal direction</td>
+                        <td><code>&lt;div class="d-flex flex-row"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-row-reverse</code></td>
+                        <td>Reverse horizontal</td>
+                        <td><code>&lt;div class="d-flex flex-row-reverse"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-column</code></td>
+                        <td>Vertical direction</td>
+                        <td><code>&lt;div class="d-flex flex-column"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-column-reverse</code></td>
+                        <td>Reverse vertical</td>
+                        <td><code>&lt;div class="d-flex flex-column-reverse"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-wrap</code></td>
+                        <td>Allow wrapping</td>
+                        <td><code>&lt;div class="d-flex flex-wrap"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-nowrap</code></td>
+                        <td>No wrapping</td>
+                        <td><code>&lt;div class="d-flex flex-nowrap"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.justify-content-center</code></td>
+                        <td>Center items horizontally</td>
+                        <td><code>&lt;div class="d-flex justify-content-center"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.justify-content-between</code></td>
+                        <td>Space between items</td>
+                        <td><code>&lt;div class="d-flex justify-content-between"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.align-items-center</code></td>
+                        <td>Center items vertically</td>
+                        <td><code>&lt;div class="d-flex align-items-center"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.align-items-end</code></td>
+                        <td>Align items bottom</td>
+                        <td><code>&lt;div class="d-flex align-items-end"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.align-self-start</code></td>
+                        <td>Align one item top</td>
+                        <td><code>&lt;div class="align-self-start"&gt;Item&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.align-self-center</code></td>
+                        <td>Align one item center</td>
+                        <td><code>&lt;div class="align-self-center"&gt;Item&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.order-1</code></td>
+                        <td>Change order of item</td>
+                        <td><code>&lt;div class="order-1"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-fill</code></td>
+                        <td>Fill remaining space</td>
+                        <td><code>&lt;div class="flex-fill"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-grow-1</code></td>
+                        <td>Allow item to grow</td>
+                        <td><code>&lt;div class="flex-grow-1"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.flex-shrink-0</code></td>
+                        <td>Prevent shrinking</td>
+                        <td><code>&lt;div class="flex-shrink-0"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🔹 Bootstrap 5 Badge Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.badge</code></td>
+                        <td>Base class for badges</td>
+                        <td><span class="badge bg-primary">New</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>.bg-primary</code> <br> <code>.bg-success</code> ...</td>
+                        <td>Contextual colors</td>
+                        <td>
+                            <span class="badge bg-primary">Primary</span>
+                            <span class="badge bg-success">Success</span>
+                            <span class="badge bg-danger">Danger</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.rounded-pill</code></td>
+                        <td>Rounded badge</td>
+                        <td><span class="badge rounded-pill bg-danger">99+</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>.text-bg-*</code></td>
+                        <td>Text + background utility (v5.2+)</td>
+                        <td><span class="badge text-bg-warning">Alert</span></td>
+                    </tr>
+                    <tr>
+                        <td>Inside Button</td>
+                        <td>Show badge counts</td>
+                        <td>
+                            <button class="btn btn-primary">
+                                Inbox <span class="badge bg-light text-dark">4</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.position-absolute</code> + <code>.translate-middle</code></td>
+                        <td>Position badge like notification dot</td>
+                        <td>
+                            <button class="btn btn-dark position-relative">
+                                Messages
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9</span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟦 Bootstrap 5 Card Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Structure</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.card</code></td>
+                        <td>Main card container</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">Card</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-body</code></td>
+                        <td>Content inside card</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">Body text</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-title</code></td>
+                        <td>Card title</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Title</h5>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-subtitle</code></td>
+                        <td>Card subtitle</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-text</code></td>
+                        <td>Card text content</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">
+                                    <p class="card-text">This is text</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-img-top</code></td>
+                        <td>Image at top</td>
+                        <td><img src="https://via.placeholder.com/100x60" class="card-img-top" alt="..."></td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-img-bottom</code></td>
+                        <td>Image at bottom</td>
+                        <td><img src="https://via.placeholder.com/100x60" class="card-img-bottom" alt="..."></td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-header</code></td>
+                        <td>Header section</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">Body</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-footer</code></td>
+                        <td>Footer section</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">Body</div>
+                                <div class="card-footer">Footer</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.list-group</code> + <code>.list-group-item</code></td>
+                        <td>List inside card</td>
+                        <td>
+                            <div class="card" style="width: 10rem;">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.card-group</code></td>
+                        <td>Group cards together</td>
+                        <td>
+                            <div class="card-group" style="width: 20rem;">
+                                <div class="card">
+                                    <div class="card-body">Card 1</div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">Card 2</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.bg-*</code> + <code>.text-*</code></td>
+                        <td>Change background & text color</td>
+                        <td>
+                            <div class="card bg-primary text-white" style="width: 10rem;">
+                                <div class="card-body">Primary</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟩 Bootstrap 5 Button Classes</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.btn</code></td>
+                        <td>Base button class (required)</td>
+                        <td><button class="btn">Default</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-primary</code></td>
+                        <td>Primary blue button</td>
+                        <td><button class="btn btn-primary">Primary</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-secondary</code></td>
+                        <td>Secondary gray button</td>
+                        <td><button class="btn btn-secondary">Secondary</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-success</code></td>
+                        <td>Green success button</td>
+                        <td><button class="btn btn-success">Success</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-danger</code></td>
+                        <td>Red danger button</td>
+                        <td><button class="btn btn-danger">Danger</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-warning</code></td>
+                        <td>Yellow warning button</td>
+                        <td><button class="btn btn-warning">Warning</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-info</code></td>
+                        <td>Cyan info button</td>
+                        <td><button class="btn btn-info">Info</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-light</code></td>
+                        <td>Light button</td>
+                        <td><button class="btn btn-light">Light</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-dark</code></td>
+                        <td>Dark button</td>
+                        <td><button class="btn btn-dark">Dark</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-link</code></td>
+                        <td>Looks like a hyperlink</td>
+                        <td><button class="btn btn-link">Link</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-lg</code></td>
+                        <td>Large button</td>
+                        <td><button class="btn btn-primary btn-lg">Large</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-sm</code></td>
+                        <td>Small button</td>
+                        <td><button class="btn btn-primary btn-sm">Small</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-block</code> (deprecated)</td>
+                        <td>Full width button</td>
+                        <td>
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Block</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.active</code></td>
+                        <td>Active state</td>
+                        <td><button class="btn btn-primary active">Active</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.disabled</code> / <code>disabled</code></td>
+                        <td>Disabled button</td>
+                        <td><button class="btn btn-primary disabled">Disabled</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-outline-*</code></td>
+                        <td>Outline style buttons</td>
+                        <td>
+                            <button class="btn btn-outline-primary">Outline</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🟥 Bootstrap 5 Alerts</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.alert</code></td>
+                        <td>Base alert class (required)</td>
+                        <td>
+                            <div class="alert alert-primary mb-0">Basic Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-primary</code></td>
+                        <td>Primary (blue) alert</td>
+                        <td>
+                            <div class="alert alert-primary mb-0">Primary Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-secondary</code></td>
+                        <td>Secondary (gray) alert</td>
+                        <td>
+                            <div class="alert alert-secondary mb-0">Secondary Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-success</code></td>
+                        <td>Success (green) alert</td>
+                        <td>
+                            <div class="alert alert-success mb-0">Success Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-danger</code></td>
+                        <td>Danger (red) alert</td>
+                        <td>
+                            <div class="alert alert-danger mb-0">Danger Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-warning</code></td>
+                        <td>Warning (yellow) alert</td>
+                        <td>
+                            <div class="alert alert-warning mb-0">Warning Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-info</code></td>
+                        <td>Info (cyan) alert</td>
+                        <td>
+                            <div class="alert alert-info mb-0">Info Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-light</code></td>
+                        <td>Light alert</td>
+                        <td>
+                            <div class="alert alert-light mb-0">Light Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-dark</code></td>
+                        <td>Dark alert</td>
+                        <td>
+                            <div class="alert alert-dark mb-0">Dark Alert</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.alert-dismissible .fade .show</code></td>
+                        <td>Dismissible (closable) alert with fade</td>
+                        <td>
+                            <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+                                Dismissible Alert
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🎠 Bootstrap 5 Carousel Properties</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Attribute</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.carousel</code></td>
+                        <td>Base carousel container</td>
+                        <td><code>&lt;div id="myCarousel" class="carousel slide"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-inner</code></td>
+                        <td>Wrapper for all slides</td>
+                        <td><code>&lt;div class="carousel-inner"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-item</code></td>
+                        <td>Each slide</td>
+                        <td><code>&lt;div class="carousel-item active"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.active</code></td>
+                        <td>First visible slide</td>
+                        <td><code>&lt;div class="carousel-item active"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-control-prev</code></td>
+                        <td>Previous button</td>
+                        <td><code>&lt;button class="carousel-control-prev" data-bs-slide="prev"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-control-next</code></td>
+                        <td>Next button</td>
+                        <td><code>&lt;button class="carousel-control-next" data-bs-slide="next"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-indicators</code></td>
+                        <td>Dots navigation</td>
+                        <td><code>&lt;div class="carousel-indicators"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-ride="carousel"</code></td>
+                        <td>Auto start sliding</td>
+                        <td><code>&lt;div class="carousel slide" data-bs-ride="carousel"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-interval="2000"</code></td>
+                        <td>Slide interval (ms)</td>
+                        <td><code>&lt;div class="carousel-item" data-bs-interval="2000"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-wrap="false"</code></td>
+                        <td>Stop looping at last slide</td>
+                        <td><code>&lt;div class="carousel slide" data-bs-wrap="false"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-pause="hover"</code></td>
+                        <td>Pause on hover</td>
+                        <td><code>&lt;div class="carousel slide" data-bs-pause="hover"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-touch="false"</code></td>
+                        <td>Disable swipe on mobile</td>
+                        <td><code>&lt;div class="carousel slide" data-bs-touch="false"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-fade</code></td>
+                        <td>Fade transition instead of slide</td>
+                        <td><code>&lt;div class="carousel slide carousel-fade"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📌 Bootstrap 5 Navbar Properties</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Attribute</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.navbar</code></td>
+                        <td>Base class for navbar</td>
+                        <td><code>&lt;nav class="navbar"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-brand</code></td>
+                        <td>Branding/logo text or image</td>
+                        <td><code>&lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-nav</code></td>
+                        <td>Wrapper for nav links</td>
+                        <td><code>&lt;ul class="navbar-nav"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.nav-item</code></td>
+                        <td>Individual nav item</td>
+                        <td><code>&lt;li class="nav-item"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.nav-link</code></td>
+                        <td>Styling for links</td>
+                        <td><code>&lt;a class="nav-link active"&gt;Home&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-toggler</code></td>
+                        <td>Button for collapsing navbar</td>
+                        <td><code>&lt;button class="navbar-toggler" data-bs-toggle="collapse"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-toggler-icon</code></td>
+                        <td>Hamburger icon</td>
+                        <td><code>&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.collapse.navbar-collapse</code></td>
+                        <td>Collapsible content wrapper</td>
+                        <td><code>&lt;div class="collapse navbar-collapse"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-expand-lg</code></td>
+                        <td>Expand from large (≥992px)</td>
+                        <td><code>&lt;nav class="navbar navbar-expand-lg"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-light</code></td>
+                        <td>Light text colors (dark text)</td>
+                        <td><code>&lt;nav class="navbar navbar-light bg-light"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.navbar-dark</code></td>
+                        <td>Dark text colors (light text)</td>
+                        <td><code>&lt;nav class="navbar navbar-dark bg-dark"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.bg-primary</code></td>
+                        <td>Background color utility</td>
+                        <td><code>&lt;nav class="navbar bg-primary"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.ms-auto</code></td>
+                        <td>Push nav items to right</td>
+                        <td><code>&lt;ul class="navbar-nav ms-auto"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📌 Bootstrap 5 Dropdown Properties</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Attribute</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.dropdown</code></td>
+                        <td>Parent container for dropdown</td>
+                        <td><code>&lt;div class="dropdown"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropdown-toggle</code></td>
+                        <td>Button/link to toggle dropdown</td>
+                        <td><code>&lt;button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;Menu&lt;/button&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropdown-menu</code></td>
+                        <td>Wrapper for dropdown items</td>
+                        <td><code>&lt;ul class="dropdown-menu"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropdown-item</code></td>
+                        <td>Individual dropdown item</td>
+                        <td><code>&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropdown-divider</code></td>
+                        <td>Horizontal divider line</td>
+                        <td><code>&lt;hr class="dropdown-divider"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropdown-header</code></td>
+                        <td>Section header inside menu</td>
+                        <td><code>&lt;h6 class="dropdown-header"&gt;Section&lt;/h6&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropup</code></td>
+                        <td>Drop upward</td>
+                        <td><code>&lt;div class="dropup"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropend</code></td>
+                        <td>Drop to right</td>
+                        <td><code>&lt;div class="dropend"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropstart</code></td>
+                        <td>Drop to left</td>
+                        <td><code>&lt;div class="dropstart"&gt;...&lt;/div&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.dropdown-menu-dark</code></td>
+                        <td>Dark dropdown theme</td>
+                        <td><code>&lt;ul class="dropdown-menu dropdown-menu-dark"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-toggle="dropdown"</code></td>
+                        <td>Enables dropdown toggle</td>
+                        <td><code>&lt;button data-bs-toggle="dropdown"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-offset</code></td>
+                        <td>Custom offset positioning</td>
+                        <td><code>&lt;ul class="dropdown-menu" data-bs-offset="10,20"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-auto-close="false"</code></td>
+                        <td>Keeps menu open until closed manually</td>
+                        <td><code>&lt;button data-bs-auto-close="false"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📌 Bootstrap 5 Modal Properties</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Attribute</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.modal</code></td>
+                        <td>Main wrapper for modal</td>
+                        <td><code>&lt;div class="modal" id="myModal"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-dialog</code></td>
+                        <td>Wrapper for modal box</td>
+                        <td><code>&lt;div class="modal-dialog"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-content</code></td>
+                        <td>Modal content box</td>
+                        <td><code>&lt;div class="modal-content"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-header</code></td>
+                        <td>Header section</td>
+                        <td><code>&lt;div class="modal-header"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-body</code></td>
+                        <td>Main content area</td>
+                        <td><code>&lt;div class="modal-body"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-footer</code></td>
+                        <td>Footer with buttons</td>
+                        <td><code>&lt;div class="modal-footer"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-title</code></td>
+                        <td>Title text</td>
+                        <td><code>&lt;h5 class="modal-title"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.btn-close</code></td>
+                        <td>Close button</td>
+                        <td><code>&lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-toggle="modal"</code></td>
+                        <td>Trigger modal</td>
+                        <td><code>&lt;button data-bs-toggle="modal" data-bs-target="#myModal"&gt;Open&lt;/button&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-target="#id"</code></td>
+                        <td>Target modal ID</td>
+                        <td><code>&lt;button data-bs-target="#myModal"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-dismiss="modal"</code></td>
+                        <td>Dismiss modal</td>
+                        <td><code>&lt;button data-bs-dismiss="modal"&gt;Close&lt;/button&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-backdrop="static"</code></td>
+                        <td>Disable backdrop close</td>
+                        <td><code>&lt;div class="modal" data-bs-backdrop="static"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-keyboard="false"</code></td>
+                        <td>Disable ESC close</td>
+                        <td><code>&lt;div class="modal" data-bs-keyboard="false"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-dialog-centered</code></td>
+                        <td>Vertically centered modal</td>
+                        <td><code>&lt;div class="modal-dialog modal-dialog-centered"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-dialog-scrollable</code></td>
+                        <td>Scrollable content</td>
+                        <td><code>&lt;div class="modal-dialog modal-dialog-scrollable"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal-sm / .modal-lg / .modal-xl</code></td>
+                        <td>Size variations</td>
+                        <td><code>&lt;div class="modal-dialog modal-lg"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>.fade</code></td>
+                        <td>Fade animation</td>
+                        <td><code>&lt;div class="modal fade" id="myModal"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">⏳ Bootstrap 5 Spinner Properties</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.spinner-border</code></td>
+                        <td>Border-style spinner</td>
+                        <td>
+                            <div class="spinner-border"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.spinner-border-sm</code></td>
+                        <td>Small border spinner</td>
+                        <td>
+                            <div class="spinner-border spinner-border-sm"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.spinner-grow</code></td>
+                        <td>Growing-style spinner</td>
+                        <td>
+                            <div class="spinner-grow"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.spinner-grow-sm</code></td>
+                        <td>Small growing spinner</td>
+                        <td>
+                            <div class="spinner-grow spinner-grow-sm"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>text-*</code></td>
+                        <td>Change spinner color</td>
+                        <td>
+                            <div class="spinner-border text-success"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>role="status"</code></td>
+                        <td>Accessibility role</td>
+                        <td>
+                            <div class="spinner-border" role="status"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.visually-hidden</code></td>
+                        <td>Screen reader text</td>
+                        <td><span class="visually-hidden">Loading...</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>btn .spinner-border</code></td>
+                        <td>Spinner inside button</td>
+                        <td>
+                            <button class="btn btn-primary">
+                                <span class="spinner-border spinner-border-sm"></span> Loading
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.d-flex .justify-content-center</code></td>
+                        <td>Center spinner</td>
+                        <td>
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-border text-danger"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🎬 Bootstrap 5 Animation Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Utility</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.fade</code></td>
+                        <td>Fading effect (with <code>.show</code>)</td>
+                        <td>
+                            <div class="fade show bg-primary text-white p-2">Fade In</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.collapse</code></td>
+                        <td>Collapse animation</td>
+                        <td>
+                            <button class="btn btn-outline-primary" data-bs-toggle="collapse"
+                                data-bs-target="#demoCollapse">Toggle</button>
+                            <div id="demoCollapse" class="collapse mt-2">
+                                <div class="card card-body">Collapsible Content</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.carousel-fade</code></td>
+                        <td>Smooth fade carousel</td>
+                        <td><span class="badge bg-info">Used in Carousel</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>.modal.fade</code></td>
+                        <td>Modal with fade effect</td>
+                        <td><span class="badge bg-warning text-dark">Used in Modals</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>.spinner-border / .spinner-grow</code></td>
+                        <td>Loading animations</td>
+                        <td>
+                            <div class="spinner-border text-success"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.progress-bar-animated</code></td>
+                        <td>Animated striped progress bar</td>
+                        <td>
+                            <div class="progress" style="height:20px; width:150px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                    style="width: 75%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">💡 Bootstrap 5 Tooltips</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Property / Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>data-bs-toggle="tooltip"</code></td>
+                        <td>Enables tooltip</td>
+                        <td><button class="btn btn-primary" data-bs-toggle="tooltip" title="Hello!">Hover</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>title=""</code></td>
+                        <td>Tooltip text</td>
+                        <td><button class="btn btn-secondary" data-bs-toggle="tooltip"
+                                title="Simple tooltip">Hover</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-placement</code></td>
+                        <td>Tooltip position</td>
+                        <td><button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right"
+                                title="Tooltip on right">Hover</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-html="true"</code></td>
+                        <td>Enable HTML inside tooltip</td>
+                        <td><button class="btn btn-info" data-bs-toggle="tooltip" data-bs-html="true"
+                                title="<b>Bold</b> &amp; <i>Italic</i>">Hover</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-trigger</code></td>
+                        <td>Control trigger (hover, click, focus)</td>
+                        <td><button class="btn btn-warning" data-bs-toggle="tooltip" data-bs-trigger="click"
+                                title="Click tooltip">Click me</button></td>
+                    </tr>
+                    <tr>
+                        <td><code>data-bs-delay</code></td>
+                        <td>Set delay for show/hide</td>
+                        <td><button class="btn btn-dark" data-bs-toggle="tooltip"
+                                data-bs-delay='{"show":500,"hide":200}' title="Delayed tooltip">Hover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🎯 Bootstrap 5 Radio Buttons</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Class / Attribute</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.form-check</code></td>
+                        <td>Wrapper for radio + label</td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio1">
+                                <label class="form-check-label">Option 1</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-check-input</code></td>
+                        <td>Applied to radio input</td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="radio2"> Option
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-check-label</code></td>
+                        <td>Label for radio</td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio3" id="radio3">
+                                <label class="form-check-label" for="radio3">Labeled Option</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>name=""</code></td>
+                        <td>Groups radios</td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="group1"> A
+                                <input class="form-check-input" type="radio" name="group1"> B
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>checked</code></td>
+                        <td>Pre-selected</td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="radio4" checked> Checked
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>disabled</code></td>
+                        <td>Disabled radio</td>
+                        <td>
+                            <input class="form-check-input" type="radio" disabled> Disabled
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.form-check-inline</code></td>
+                        <td>Inline radios</td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadio" id="inline1">
+                                <label class="form-check-label" for="inline1">Inline 1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadio" id="inline2">
+                                <label class="form-check-label" for="inline2">Inline 2</label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🌑 Bootstrap 5 Shadows</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Class</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.shadow-none</code></td>
+                        <td>Removes shadow</td>
+                        <td>
+                            <div class="shadow-none p-3 mb-3 bg-light rounded">No Shadow</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.shadow-sm</code></td>
+                        <td>Small shadow</td>
+                        <td>
+                            <div class="shadow-sm p-3 mb-3 bg-body rounded">Small Shadow</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.shadow</code></td>
+                        <td>Regular shadow</td>
+                        <td>
+                            <div class="shadow p-3 mb-3 bg-body rounded">Regular Shadow</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.shadow-lg</code></td>
+                        <td>Large shadow</td>
+                        <td>
+                            <div class="shadow-lg p-3 mb-3 bg-body rounded">Large Shadow</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📏 Bootstrap 5 Sizing Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class Pattern</th>
+                        <th>Values</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Width (%)</td>
+                        <td><code>w-*</code></td>
+                        <td>25, 50, 75, 100, auto</td>
+                        <td>
+                            <div class="w-50 bg-info text-white">50% Width</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Height (%)</td>
+                        <td><code>h-*</code></td>
+                        <td>25, 50, 75, 100, auto</td>
+                        <td style="height:150px;">
+                            <div class="h-25 bg-warning">25% Height</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Max Width</td>
+                        <td><code>mw-100</code></td>
+                        <td>100%</td>
+                        <td>
+                            <div class="mw-100 bg-light border">Max Width 100%</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Max Height</td>
+                        <td><code>mh-100</code></td>
+                        <td>100%</td>
+                        <td style="height:150px;">
+                            <div class="mh-100 bg-secondary text-white">Max Height 100%</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Viewport Width</td>
+                        <td><code>vw-100</code></td>
+                        <td>100vw</td>
+                        <td>
+                            <div class="vw-100 bg-success text-white">Full Viewport Width</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Viewport Height</td>
+                        <td><code>vh-100</code></td>
+                        <td>100vh</td>
+                        <td>
+                            <div class="vh-100 bg-danger text-white">Full Viewport Height</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Min Width</td>
+                        <td><code>min-vw-100</code></td>
+                        <td>100vw</td>
+                        <td>
+                            <div class="min-vw-100 bg-light border">Min Full Width</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Min Height</td>
+                        <td><code>min-vh-100</code></td>
+                        <td>100vh</td>
+                        <td>
+                            <div class="min-vh-100 bg-dark text-white">Min Full Height</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">📐 Bootstrap 5 Spacing Utilities</h1>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Property</th>
+                        <th>Class Pattern</th>
+                        <th>Values</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Margin (all sides)</td>
+                        <td><code>m-*</code></td>
+                        <td>0–5, auto</td>
+                        <td>
+                            <div class="m-3 bg-info text-white">Margin 1rem</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Padding (all sides)</td>
+                        <td><code>p-*</code></td>
+                        <td>0–5</td>
+                        <td>
+                            <div class="p-3 bg-warning">Padding 1rem</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Top</td>
+                        <td><code>mt-*</code> / <code>pt-*</code></td>
+                        <td>0–5, auto (margin only)</td>
+                        <td>
+                            <div class="mt-2 p-2 bg-light border">Margin Top</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bottom</td>
+                        <td><code>mb-*</code> / <code>pb-*</code></td>
+                        <td>0–5, auto (margin only)</td>
+                        <td>
+                            <div class="pb-4 bg-secondary text-white">Padding Bottom</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Start (Left in LTR)</td>
+                        <td><code>ms-*</code> / <code>ps-*</code></td>
+                        <td>0–5, auto (margin only)</td>
+                        <td>
+                            <div class="ms-5 p-2 bg-success text-white">Margin Start</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>End (Right in LTR)</td>
+                        <td><code>me-*</code> / <code>pe-*</code></td>
+                        <td>0–5, auto (margin only)</td>
+                        <td>
+                            <div class="pe-2 bg-danger text-white">Padding End</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-axis (Left + Right)</td>
+                        <td><code>mx-*</code> / <code>px-*</code></td>
+                        <td>0–5, auto (margin only)</td>
+                        <td>
+                            <div class="mx-4 bg-primary text-white">Margin X-axis</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Y-axis (Top + Bottom)</td>
+                        <td><code>my-*</code> / <code>py-*</code></td>
+                        <td>0–5, auto (margin only)</td>
+                        <td>
+                            <div class="py-2 bg-dark text-white">Padding Y-axis</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">🎨 Bootstrap 5 Icons</h1>
+
+        <div class="alert alert-info text-center">
+            👉 Don’t forget to add Bootstrap Icons CDN in your <code>&lt;head&gt;</code>:
+            <br>
+            <code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"&gt;</code>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Details</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Usage</td>
+                        <td>Use <code>&lt;i class="bi bi-iconname"&gt;&lt;/i&gt;</code></td>
+                        <td><i class="bi bi-alarm fs-3"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Sizes</td>
+                        <td>Use <code>fs-1</code> … <code>fs-6</code> classes</td>
+                        <td>
+                            <i class="bi bi-heart fs-1 text-danger"></i>
+                            <i class="bi bi-heart fs-3 text-danger"></i>
+                            <i class="bi bi-heart fs-5 text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Colors</td>
+                        <td>Apply text color utilities</td>
+                        <td>
+                            <i class="bi bi-star-fill text-warning fs-3"></i>
+                            <i class="bi bi-star-fill text-primary fs-3"></i>
+                            <i class="bi bi-star-fill text-success fs-3"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alignment</td>
+                        <td>Use margin utilities with text</td>
+                        <td>
+                            <i class="bi bi-check-circle text-success me-2"></i>Success
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility</td>
+                        <td>Add <code>aria-hidden="true"</code> if decorative</td>
+                        <td><i class="bi bi-info-circle text-info fs-3" aria-hidden="true"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

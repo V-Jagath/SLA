@@ -1,0 +1,42 @@
+let a=1.8345
+
+let round=Math.round(a)
+console.log(round)
+
+let floor=Math.floor(a)
+console.log(floor)
+
+let ceil=Math.ceil(a)
+console.log(ceil)
+
+let trunc=Math.trunc(a)
+console.log(trunc)
+
+let x=12;
+let y=17;
+let z=89;
+
+let max=Math.max(x,y,z)
+console.log(max)
+
+let min=Math.min(Math.floor(a,x,y,z))
+console.log(min +"hi")
+
+let number=3;
+for(let c=1;c<=number;c++){
+let random=(Math.ceil(Math.random()*100));
+console.log(random)
+}
+
+output:-
+
+2
+1
+2
+1
+89
+1hi
+72
+95
+66
+

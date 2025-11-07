@@ -1,0 +1,474 @@
+Array Methods:-
+
+const arr= [1,2,3,4,5]
+console.log(arr)
+arr.push(2,4,5,'subject') //----> last la element add pannum
+
+arr.pop() // ---> last element remove pannum
+
+arr.unshift(100,300,200)//---->Front la datas ha add pannum
+
+arr.shift() //--------> starting la irunthu element remove pannum
+
+arr.includes(2) //----> only boolean values(true/false) mattum tha return pannum.
+//array la 2 iruntha true nu output varum. ilana false nu varum.
+
+arr.indexof(2)//------>array voda index value show pannum output:3
+
+slice //----> array la irunthu particular value ha copy panni eduthukalam
+
+PROTO TYPES:-
+
+1. PUSH
+to add the PUSH at your end of the array one value insert pannum.
+
+2. POP 
+last element only remove pannum.
+
+3.UNSHIFT
+Front la datas ha add pannum. 
+
+4.SHIFT
+starting la irunthu element remove pannum
+
+5.INCLUDES()
+only boolean values(true/false) mattum tha return pannum
+
+arr.includes(2)--- array la 2 iruntha true nu output varum. ilana false nu varum.
+
+6.INDEXOF()
+array voda index value show pannum output:3
+same name iruntha first value oda index value tha kattum.
+
+example
+const ivalue=arr.indexof("value")
+console.log(ivalue)
+
+7.SLICE:-
+
+example:-
+
+const ncopyarray=arr.slice(0,1)
+
+starting oru number 
+ending oru number
+antha number index value ha irukanum
+
+const arr= [1,2,3,4,5]
+
+starting value eduthutu varum last la irunthu one minus panni eduthutu varum
+
+example
+slice
+
+const ncopyarray = arr.slice(2,5)
+console.log(ncopyarray)
+
+8.SPLICE:-
+remove and add pannalam
+starting number kodukanum and ending number kodukanum 
+
+example
+const addremove=arr.splice(2(index_value),3(count),78(3rd place kodutha add add pannum))
+console.log(addremove)
+
+2(index_value) la irunthu 3(count) values delete pannitum (2,3,4). delete pannathu show pannum.
+
+arr.splice(2,0,4)
+
+2nd place la irunthu 0 value delete pannum. aprm 4 add pannum.
+
+
+9.JOIN:-
+
+array va full ha string ha convert pannum.
+
+let words=arr.join("")
+
+join("/")join(".")----- ithu pola symbols add pannalam.
+
+boolean values string ha marathu.
+
+10.REVERSE():-
+
+content ha reverse ha varum. last ha irukurathu first and first ha irukurathu last ha varum
+
+perameter ku ulla function use anrathuku peru callback function
+
+-----------------------------------------------------------------
+11.SORT():-							|
+assending order and desending order ha convert pannum.		|
+number la correct ha varathu					|	
+const datas = arr.sort()					|
+console.log(datas)						|
+const datas = arr.sort((a,b)=>a-b)				|
+ipdi potta corecct ha varum.					|								|
+-----------------------------------------------------------------
+
+
+Find even number in array:-
+
+const arr =[63,25,45,89,56,85,1,52,3]
+
+for (let index=0; index<arr.length; i++){
+	 if(arr[i]%2===0){
+
+console.log(arr[i],"even")
+}
+}
+
+
+let row = 5;
+
+for (let i =1;i<=row;i++){
+let break_line=""
+}
+for (let j=0;j<=i;j++){
+break_line+="*"
+}
+
+console.log(break_line)
+------------------------------------------------------------------------------------------------------
+
+
+1. PUSH()
+
+👉 Last la element add pannum.
+
+const arr = [1, 2, 3];
+arr.push(4, 5);  
+console.log(arr); // [1, 2, 3, 4, 5]
+
+2. POP()
+
+👉 Last element remove pannum.
+
+const arr = [10, 20, 30];
+arr.pop();  
+console.log(arr); // [10, 20]
+
+3. UNSHIFT()
+
+👉 Front la element add pannum.
+
+const arr = [5, 6, 7];
+arr.unshift(1, 2);  
+console.log(arr); // [1, 2, 5, 6, 7]
+
+4. SHIFT()
+
+👉 Starting element remove pannum.
+
+const arr = [100, 200, 300];
+arr.shift();  
+console.log(arr); // [200, 300]
+
+5. INCLUDES()
+
+👉 Boolean (true/false) return pannum.
+
+const arr = [1, 2, 3, 4];
+console.log(arr.includes(2));  // true
+console.log(arr.includes(10)); // false
+
+6. INDEXOF()
+
+👉 Element oda index (first occurrence only).
+
+const arr = [10, 20, 30, 20];
+console.log(arr.indexOf(20)); // 1
+console.log(arr.indexOf(50)); // -1 (not found)
+
+7. SLICE()
+
+👉 Copy panni pudhu array create pannum (original array change aagathu).
+
+const arr = [10, 20, 30, 40, 50];
+const sliced = arr.slice(1, 4);  
+console.log(sliced); // [20, 30, 40]
+
+8. SPLICE()
+
+👉 Add/Remove pannum. (original array change aagum).
+
+const arr = [1, 2, 3, 4, 5];
+
+// remove
+const removed = arr.splice(1, 2);  
+console.log(removed); // [2, 3]
+console.log(arr);     // [1, 4, 5]
+
+// add
+arr.splice(1, 0, 100); 
+console.log(arr);     // [1, 100, 4, 5]
+
+9. JOIN()
+
+👉 Array full-ah string convert pannum.
+
+const arr = ["Hello", "World"];
+console.log(arr.join(" "));   // "Hello World"
+console.log(arr.join("-"));   // "Hello-World"
+
+10. REVERSE()
+
+👉 Array reverse aagum.
+
+const arr = [1, 2, 3, 4];
+arr.reverse();
+console.log(arr); // [4, 3, 2, 1]
+
+11. SORT()
+
+👉 Ascending/Descending sort pannum.
+
+❌ Normal sort: (as string sort pannum)
+
+const arr = [5, 2, 10, 1];
+console.log(arr.sort()); // [1, 10, 2, 5]
+
+
+✅ Correct numeric sort:
+
+const arr = [5, 2, 10, 1];
+console.log(arr.sort((a, b) => a - b)); // [1, 2, 5, 10]  (ascending)
+console.log(arr.sort((a, b) => b - a)); // [10, 5, 2, 1] (descending)
+
+Extra: Find Even Numbers
+const arr = [63, 25, 45, 89, 56, 85, 1, 52, 3];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0) {
+    console.log(arr[i], "is even");
+  }
+}
+
+
+Output:
+
+56 is even
+52 is even
+-------------------------------------------------------------------------------------------------------------
+🚀 JavaScript Array Methods – Full Guide
+🟢 Basic Modification Methods
+
+push() → Last la element add.
+
+pop() → Last element remove.
+
+unshift() → First la element add.
+
+shift() → First element remove.
+
+🔎 Searching & Checking
+
+includes() → Boolean return (element iruka nu check).
+
+indexOf() → First occurrence index.
+
+lastIndexOf() → Last occurrence index.
+
+find() → First element (condition satisfy).
+
+findIndex() → First element index (condition satisfy).
+
+every() → All elements satisfy? (true/false).
+
+some() → Atleast one element satisfy? (true/false).
+
+✂️ Copying & Slicing
+
+slice(start, end) → Pudhu array create (original change aagathu).
+
+splice(start, deleteCount, items...) → Add/remove pannum (original change aagum).
+
+concat() → Arrays combine pannum.
+
+copyWithin(target, start, end) → Array parts copy panni same array la overwrite pannum.
+
+🔁 Iteration Methods
+
+forEach() → Loop through array (return nothing).
+
+map() → New array create pannum (processing each element).
+
+filter() → Condition satisfy pannra elements new array.
+
+reduce() → Array elements → single value (sum, avg, etc.).
+
+reduceRight() → Right → Left reduce.
+
+🧾 String Conversion
+
+join(separator) → Array → string.
+
+toString() → Array → string (default , separator).
+
+🔄 Reordering
+
+reverse() → Array reverse pannum.
+
+sort(compareFn) → Ascending/Descending order sort (default string sort).
+
+📦 Flattening & Transform
+
+flat(depth) → Nested array flatten pannum.
+
+flatMap(fn) → Map + Flat together.
+
+🎯 Value Modification
+
+fill(value, start, end) → Fill values (original array change).
+
+with(index, value) (🔔 ES2023) → Immutable replace (original change aagathu).
+
+🔥 Iterators
+
+entries() → [index, value] pairs.
+
+keys() → Array indexes.
+
+values() → Array values.
+
+🆕 ES2022 – ES2023 Latest
+
+at(index) → Element by index (negative index allowed).
+
+const arr = [10, 20, 30];
+console.log(arr.at(-1)); // 30
+
+
+toReversed() → Reverse but immutable.
+
+const arr = [1, 2, 3];
+console.log(arr.toReversed()); // [3, 2, 1]
+console.log(arr); // [1, 2, 3] (unchanged)
+
+
+toSorted(compareFn) → Sort but immutable.
+
+const arr = [3, 1, 2];
+console.log(arr.toSorted()); // [1, 2, 3]
+
+
+toSpliced(start, deleteCount, items...) → Splice but immutable.
+
+✅ Summary – Interview / Exam ku Must Know
+
+Basic Add/Remove → push, pop, shift, unshift
+
+Search → includes, indexOf, find, findIndex
+
+Transform → map, filter, reduce, forEach
+
+Modify → splice, slice, concat, sort, reverse, fill
+
+Flatten → flat, flatMap
+
+Iterators → entries, keys, values
+
+New Gen (ES2023) → at, with, toReversed, toSorted, toSpliced
+
+-------------------------------------------------------------------------------------------------------
+  
+
+🔹 Basic Questions
+
+What is an array in JavaScript?
+👉 Array is a collection of elements stored in a single variable. Example:
+
+let arr = [1, 2, 3, 4];
+
+
+Difference between push() and unshift()?
+
+push() → Add elements at the end.
+
+unshift() → Add elements at the beginning.
+
+Difference between pop() and shift()?
+
+pop() → Removes last element.
+
+shift() → Removes first element.
+
+What does includes() return?
+👉 Boolean value (true or false) if element exists in array.
+
+What is the difference between slice() and splice()?
+
+slice() → Returns a copy of part of array, does not change original.
+
+splice() → Can add/remove elements, modifies original array.
+
+🔹 Intermediate Questions
+
+How do you find the index of an element in an array?
+👉 Using indexOf().
+
+let arr = [10, 20, 30];  
+console.log(arr.indexOf(20)); // 1
+
+
+What is the difference between join() and toString()?
+
+join() → Convert array to string with custom separator.
+
+toString() → Convert array to comma-separated string only.
+
+What happens if you call pop() on an empty array?
+👉 It returns undefined.
+
+How do you reverse an array in place?
+👉 Using reverse(). It mutates the original array.
+
+Why does sort() sometimes give wrong order for numbers?
+👉 Because by default it sorts as string values.
+
+[1, 10, 2].sort(); // [1, 10, 2]
+
+
+Correct way:
+
+[1, 10, 2].sort((a,b) => a-b); // [1, 2, 10]
+
+🔹 Tricky / Advanced Questions
+
+How do you remove duplicate elements from an array?
+👉 Using Set:
+
+let arr = [1, 2, 2, 3, 4, 4];
+let unique = [...new Set(arr)];
+console.log(unique); // [1, 2, 3, 4]
+
+
+What is the difference between shallow copy (slice) and reference copy?
+
+slice() creates new array (shallow copy).
+
+= just assigns reference (changes reflect in both).
+
+Can you explain the time complexity of push() and unshift()?
+
+push() → O(1) (fast)
+
+unshift() → O(n) (slow, because all elements shift)
+
+How can you check if a value is actually an array?
+👉 Using Array.isArray(value).
+
+How do you find even numbers from an array using array methods?
+👉 Using filter().
+
+let arr = [1, 2, 3, 4, 5, 6];
+let evens = arr.filter(num => num % 2 === 0);
+console.log(evens); // [2, 4, 6]
+
+
+🔥 Bonus:
+
+Difference between map(), filter(), and reduce()? (very common in interviews).
+
+Does sort() mutate the original array? (Yes).
+
+Is splice() destructive? (Yes, it changes original).

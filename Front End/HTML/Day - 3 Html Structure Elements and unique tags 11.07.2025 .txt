@@ -1,0 +1,62 @@
+Steps to improve your HTML stucuture:
+1. We need to create a file - file.html
+2. Choose Any Editor - VScode or sublime
+3. Browser run - google,edge,safari
+4. Got a Output
+
+TAGS :-
+A Tag is a keyword in anhle brackets <> used to define parts of webpage.
+
+Example:
+<h1> This is a heading</h1>
+
+Elements :-
+An Element is the complete set of Opening tag and content and closing tag is called a element
+
+Example :-
+<p> This complete set is a Element </p>
+
+
+1. Unique tags or One Time Use tags :-
+These are tags that should apper only once per page (mostly for structure or identity)
+
+1. <html> - Root tag
+2. <head> - Title and Meta info, links
+3. <title> - page title (it shows browser tab)
+4. <body> - page content
+5. <h1> - Main Heading
+
+the above 5 tags is used only one time in one webpage.
+
+3. Create a weppage using h1 to h6 and p 
+understand the elements and groping root and container elements
+
+MOSTLY USED HTML TAGS :-
+
+Semantic Tags
+
+| Tag         | Use Case                            |
+| ----------- | ----------------------------------- |
+| `<header>`  | Top section (logo, nav)             |
+| `<nav>`     | Navigation bar                      |
+| `<main>`    | Main content                        |
+| `<section>` | Group related content               |
+| `<article>` | Blog posts, news, independent items |
+| `<footer>`  | Page/footer info                    |
+| `<aside>`   | Sidebar, ads                        |
+| `<form>`    | Input forms                         |
+| `<table>`   | Displaying tabular data             |
+
+Non-Semantic Tags (Still commonly used)
+
+
+| Tag      | Use Case                        |
+| -------- | ------------------------------- |
+| `<div>`  | Generic container (very common) |
+| `<span>` | Inline styling container        |
+| `<br>`   | Line break                      |
+| `<hr>`   | Horizontal rule/divider         |
+
+
+
+

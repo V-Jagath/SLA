@@ -1,0 +1,45 @@
+Modals and Cursol properties.
+create a one modal and cursol propeties are explained.
+ https://github.com/codesmashers31/10to12_online_notes/blob/main/Bootstrap/modal.html
+
+📘 Bootstrap Modals & Carousel
+🔹 Modal (Popup Window)
+
+A Modal is a dialog box/popup that appears on top of the current page.
+Used for login forms, alerts, confirmation dialogs, etc.
+
+✅ Modal Properties
+
+data-bs-toggle="modal" → Opens the modal.
+
+data-bs-target="#idName" → Links button to modal by ID.
+
+modal-dialog → Defines modal size & position (modal-lg, modal-sm, modal-dialog-centered).
+
+modal-content → Holds header, body, and footer.
+
+modal-header → Title + close button.
+
+modal-body → Content (forms, text, images).
+
+modal-footer → Action buttons (Save, Close).
+
+🔹 Carousel (Image Slider)
+
+A Carousel is a slideshow component for cycling through elements (images, text, etc.).
+
+✅ Carousel Properties
+
+data-bs-ride="carousel" → Starts auto-sliding.
+
+carousel-indicators → Small dots/buttons for navigation.
+
+carousel-inner → Contains all slides.
+
+carousel-item → Each individual slide.
+
+active → Marks the current slide.
+
+carousel-control-prev / carousel-control-next → Left/right arrows.
+
+data-bs-interval="2000" → Time delay for auto-slide (in ms).

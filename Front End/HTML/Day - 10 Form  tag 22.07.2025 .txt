@@ -1,0 +1,70 @@
+what is navicate?
+one page to aother page or one page to same page or one page to another online macchine or online domain
+
+Types :-
+ONLINE
+HTTP is the route using URL - inside the URL is  the http is the route.
+the http trasfer the text data only in the URL.
+
+we have methods also.
+
+POST
+GET
+PUT
+DELETE
+
+-https - type --> 1.ssl
+                 2.csl    
+
+DNS
+
+http: default port number - 80
+https:default port number - 443
+
+
+OFFLINE TYPES
+
+1.Local machine in the folder
+2. port number using navicate
+
+local host
+http: default port number - 80
+https:default port number - 443
+
+
+../ - one folder back vara itha use pannanum
+
+
+
+class - (.)
+id - (#)
+
+
+
+<section id = "#"> - Local file
+
+name is help to store datas in URL.
+URl la ? ku aprm datas ha eduthutu pogum.
+? ithu query string
+
+post secure URL la show agathu but datas url la tha irukum
+unlimited datas store panna mudium.
+ 
+get is url la datas store agum - 2 kb only tranfer panna mudium.
+
+url la text mattum the duthutu poga mudium file la eduthuttu poga mudiyathu.
+
+form attribute 
+post and get
+  
+action
+
+method
+
+encript
+
+
+task 
+
+1. Navication local folder local file and other folder and othrr website
+2. 

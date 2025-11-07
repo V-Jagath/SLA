@@ -1,0 +1,53 @@
+1. Local Storage :-
+ permanent data stored in your browser.
+ object like string key and value pairs stored in browser.
+ but its datatype is not object. its a text format
+ 5 MB to 10MB datas are stored
+ sweegy and zomoto is used this storage
+2. session storage :-
+
+its a temporary storage.without server you can use session storage its only store a single signle datas stored in browser
+
+browser tab is closed storage is gone.
+
+5 MB datas are stored. its used ecommerce webpage 
+
+3. cookies :-
+
+4kb only stored. its worked in serverside.
+
+
+
+LOCAL STORAGE:-
+
+LocalStorage.setItem('name',value) --->insert
+LocalStorage.getItem('name') --->fetch
+LocalStorage.clear('name') --->detele
+
+
+JSON(Object Formet string) -javascropt object notetion.---->very very important topic
+
+JSON.parse()  ---->very very important
+
+change json string to js object need to use js process.
+
+JSON.stringify - change js object to json string.
+
+localstorage application tab la irukum 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

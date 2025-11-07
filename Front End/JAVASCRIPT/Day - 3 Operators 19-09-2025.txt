@@ -1,0 +1,402 @@
+Operators:
+
+1. Arithmatic opertor:-
+
++,-,/,%
+
+** ---> Exponenation Power poda use agum
+++ ---> Increment  example X++ = X=X+1 
+-- ---> Decrement  example X-- = X=X-1
+
+banking and e commerce webpage la use agum.
+
+2. Assienment Operator:-
+
+only assignment process not return. its use dynamic 
+
+= ---> assign the value
++= ---> add and assign
+-= ---> subract and assign
+*= ---> multiply and assign
+/= ---> devide and assign
+%= ---> mod and assign
+**= ---> exponenation and assign
+
+example
+
+let totel = 500;
+
+totel +=50;
+
+output ----> 550 (totel=totel+50)
+
+3. Logical Operator:-
+
+logical operatoronly return boolean values only
+
+	 And operator(&&) :-
+
+true + true = ture
+true + false = false
+false + true = false
+false + false = false
+
+	OR Operator (||):-
+
+true + true = ture
+true + false = true
+false + true = true
+false + false = false
+
+	NOT Operator (!):-
+
+True --> False
+False --> True
+
+4. Comparison operator (==):-
+
+(==) Equal to ---> loose comparison 
+
+(===) Stringt equal ----> Strigt comparison 
+
+Not-equal (!=) :-
+
+not equal is true
+
+Strict Equal (!==) :-
+
+
+< (less then)
+<= (less then are equal to)
+> (greater then)
+>= (greater then are equal to)
+
+
+Tasks
+
+3 type of variable key words 
+declaration
+inzalization
+re assign
+operator 4 types (AACL)
+
+
+-----------------------------------------------------------------------
+
+🔑 3 Types of Variable Keywords in JavaScript
+
+var
+
+Declaration → Allowed
+
+Initialization → Allowed
+
+Re-assign → Allowed
+
+Scope → Function scope (old way, not recommended)
+
+let
+
+Declaration → Allowed
+
+Initialization → Allowed
+
+Re-assign → Allowed
+
+Scope → Block scope (recommended for values that may change)
+
+const
+
+Declaration → Allowed
+
+Initialization → Must be initialized at declaration
+
+Re-assign → ❌ Not allowed
+
+Scope → Block scope (used for fixed values)
+
+⚡ Operators (4 Main Types = AACL)
+
+1. Arithmetic Operators
+
++ (Addition)
+
+- (Subtraction)
+
+* (Multiplication)
+
+/ (Division)
+
+% (Modulus → remainder)
+
+** (Exponentiation → power)
+
+++ (Increment → x++ = x+1)
+
+-- (Decrement → x-- = x-1)
+
+👉 Example:
+
+let x = 5;
+x++;   // 6
+x**2;  // 36
+
+2. Assignment Operators
+
+= → Assign
+
++= → Add & assign
+
+-= → Subtract & assign
+
+*= → Multiply & assign
+
+/= → Divide & assign
+
+%= → Mod & assign
+
+**= → Exponentiation & assign
+
+👉 Example:
+
+let total = 500;
+total += 50;   // 550
+
+3. Comparison Operators
+
+== → Equal to (loose, ignores type)
+
+=== → Strict equal (checks value + type)
+
+!= → Not equal
+
+!== → Strict not equal
+
+< → Less than
+
+<= → Less than or equal to
+
+> → Greater than
+
+>= → Greater than or equal to
+
+👉 Example:
+
+5 == "5";   // true
+5 === "5";  // false
+
+4. Logical Operators
+
+&& (AND)
+
+true && true → true
+
+otherwise → false
+
+|| (OR)
+
+false || true → true
+
+true || false → true
+
+true || true → true
+
+false || false → false
+
+! (NOT)
+
+!true → false
+
+!false → true
+
+👉 Example:
+
+let a = true, b = false;
+a && b;  // false
+a || b;  // true
+!a;      // false
+
+
+✅ Quick Memory Trick:
+
+Variables: var, let, const
+
+Operators: AACL = Arithmetic, Assignment, Comparison, Logical
+
+
+🔑 Interview Questions on JavaScript Variables & Operators
+🎯 Variables (var, let, const)
+1. What is the difference between var, let, and const?
+
+Answer:
+
+var → Function scope, can re-declare, can re-assign (old way, avoid).
+
+let → Block scope, cannot re-declare, can re-assign (preferred).
+
+const → Block scope, cannot re-declare, cannot re-assign (used for constants).
+
+2. Why is var not recommended in modern JavaScript?
+
+Answer:
+Because var is function scoped and causes hoisting issues.
+Example:
+
+console.log(x); // undefined (not error!)
+var x = 10;
+
+
+👉 With let / const, this would throw an error (safer).
+
+3. Can const objects be modified in JavaScript?
+
+Answer:
+
+You cannot re-assign a const object.
+
+But you can change its properties.
+Example:
+
+const user = { name: "Ram" };
+user.name = "Sam";  // ✅ allowed
+user = { name: "John" }; // ❌ error
+
+4. What is block scope vs function scope?
+
+Answer:
+
+Block scope → Variable exists only inside { }. (let, const)
+
+Function scope → Variable exists inside the whole function. (var)
+
+5. What happens if we declare a variable without var/let/const?
+
+Answer:
+It becomes a global variable (not recommended).
+
+x = 10;  // becomes global
+
+🎯 Operators (AACL)
+6. Difference between == and === in comparison?
+
+Answer:
+
+== → Loose equality (performs type conversion).
+
+=== → Strict equality (checks value + type).
+
+Example:
+
+5 == "5";   // true
+5 === "5";  // false
+
+7. What is the difference between ++x and x++?
+
+Answer:
+
+++x (pre-increment): Increases first, then returns value.
+
+x++ (post-increment): Returns value first, then increases.
+
+Example:
+
+let x = 5;
+console.log(++x); // 6
+console.log(x++); // 6 (then x becomes 7)
+
+8. What is the difference between = and == and ===?
+
+Answer:
+
+= → Assignment operator.
+
+== → Loose equality.
+
+=== → Strict equality.
+
+9. Explain short-circuit evaluation with logical operators.
+
+Answer:
+
+In && → If the first value is false, JS skips the second.
+
+In || → If the first value is true, JS skips the second.
+
+Example:
+
+false && console.log("Not executed"); // skipped
+true || console.log("Not executed");  // skipped
+
+10. What is the result of "5" + 3 and "5" - 3?
+
+Answer:
+
+"5" + 3 → "53" (string concatenation).
+
+"5" - 3 → 2 (number conversion).
+
+👉 + behaves differently because it’s also used for string concatenation.
+
+11. What is NaN in JavaScript?
+
+Answer:
+NaN means Not a Number, but its type is "number".
+
+console.log(typeof NaN); // number
+console.log("abc" - 5);  // NaN
+
+12. What is the difference between null and undefined?
+
+Answer:
+
+null → Assigned value, represents "nothing".
+
+undefined → Default for uninitialized variables.
+
+Example:
+
+let a;
+console.log(a);   // undefined
+let b = null;
+console.log(b);   // null
+
+13. What is the difference between && and || in JavaScript?
+
+Answer:
+
+&& (AND) → True if all are true.
+
+|| (OR) → True if at least one is true.
+
+14. What is operator precedence?
+
+Answer:
+Operator precedence decides which operator runs first.
+Example:
+
+let result = 5 + 3 * 2; // 11 (multiplication first, then addition)
+
+15. Trick Question ⚡ What is the output?
+console.log(0 == false);   // ?
+console.log(0 === false);  // ?
+
+
+Answer:
+
+0 == false → true (because type conversion).
+
+0 === false → false (different types: number vs boolean).
+
+✅ Quick Revision Points (for Interview):
+
+Remember var vs let vs const differences.
+
+const objects can mutate but cannot be reassigned.
+
+== vs === is a hot interview question.
+
+"5" + 3 vs "5" - 3 (string vs number conversion).
+
+7 falsy values: false, 0, -0, 0n, "", null, undefined, NaN.
+
+Short-circuit evaluation is often asked.

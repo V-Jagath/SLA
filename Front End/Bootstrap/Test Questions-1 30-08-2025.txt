@@ -1,0 +1,303 @@
+Test Questions - 30-08-2025
+Theory Questions
+
+1. What is the difference between .container and .container-fluid in Bootstrap?
+
+
+2. Explain the role of .row and .col in the Bootstrap grid system.
+
+
+3. What is the use of .d-flex, .justify-content-center, and .align-items-center?
+
+
+4. Difference between .form-control and .form-select.
+
+
+5. What are spacing utilities? Example: .m-3, .p-4.
+
+
+6. Explain .text-center, .text-start, .text-end with examples.
+
+
+7. What’s the difference between .btn, .btn-primary, .btn-outline-primary?
+
+
+8. How do you make a navbar responsive in Bootstrap? Which classes are important?
+
+
+9. Explain .shadow, .border, .rounded, .rounded-circle.
+
+
+10. What is the use of .g-3 in Bootstrap grid system?
+
+
+
+Practical Tasks
+
+1. Center a div vertically and horizontally using Bootstrap classes only.
+
+
+2. Write a Bootstrap form with fields: Email, Password, Submit button. Use proper classes.
+
+
+3. Create a button with Bootstrap classes that looks like an outline success button.
+
+
+4. Make an image circular using Bootstrap class only.
+
+
+5. Add margin bottom of 4 units and padding top of 5 units to a div. Which classes will you use?
+
+
+6. How to make text uppercase using Bootstrap class?
+
+
+7. Make a card with shadow and padding using Bootstrap classes.
+
+
+8. Difference between .col-6, .col-md-6, .col-lg-6. Write a code example.
+
+
+
+
+
+
+Difference between .container and .container-fluid in Bootstrap
+
+.container → Fixed-width container. Its width changes at different breakpoints (sm, md, lg, xl), not full width.
+
+.container-fluid → Always 100% width, regardless of the screen size.
+
+
+Class	Width Behavior
+
+.container	Fixed width, responsive at breakpoints
+.container-fluid	Full width (100%) at all sizes
+
+
+
+---
+
+2. Role of .row and .col in Bootstrap grid system
+
+.row: Creates a horizontal group of columns. It removes horizontal padding (gutters) using negative margins.
+
+.col: Defines columns inside a row. It uses flexbox to distribute space.
+
+
+Example:
+
+<div class="container">
+  <div class="row">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+  </div>
+</div>
+
+
+---
+
+3. Use of .d-flex, .justify-content-center, .align-items-center
+
+.d-flex → Turns the element into a flex container.
+
+.justify-content-center → Horizontally centers content in the flex container.
+
+.align-items-center → Vertically centers items in the flex container.
+
+
+Example:
+
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  Centered Content
+</div>
+
+
+---
+
+4. Difference between .form-control and .form-select
+
+.form-control → Used for text-based inputs like <input>, <textarea>.
+
+.form-select → Used for <select> dropdowns.
+
+
+
+---
+
+5. What are spacing utilities?
+
+They control margin (m) and padding (p).
+
+Format:
+{property}{sides}-{size}
+
+Property: m (margin), p (padding)
+
+Sides: t (top), b (bottom), s (start), e (end), x (left & right), y (top & bottom)
+
+Size: 0-5 (e.g., m-3, p-4)
+
+
+Example:
+.m-3 → margin: 1rem;
+.p-4 → padding: 1.5rem;
+
+
+---
+
+6. Explain .text-center, .text-start, .text-end
+
+.text-center → Aligns text center.
+
+.text-start → Aligns text left (start).
+
+.text-end → Aligns text right (end).
+
+
+Example:
+
+<p class="text-center">Centered</p>
+<p class="text-start">Left aligned</p>
+<p class="text-end">Right aligned</p>
+
+
+---
+
+7. Difference between .btn, .btn-primary, .btn-outline-primary
+
+.btn: Base button class (unstyled).
+
+.btn-primary: Primary button with solid background.
+
+.btn-outline-primary: Primary button with border only (transparent background).
+
+
+
+---
+
+8. How do you make a navbar responsive? Important classes
+
+Use .navbar-expand-{breakpoint} (e.g., navbar-expand-lg) → Expands navbar on large screens.
+
+Use .collapse and .navbar-collapse → For collapsible menu.
+
+Use .navbar-toggler and .navbar-toggler-icon → Toggle button.
+
+
+
+---
+
+9. Explain .shadow, .border, .rounded, .rounded-circle
+
+.shadow → Adds box shadow (variants: .shadow-sm, .shadow-lg).
+
+.border → Adds border to an element.
+
+.rounded → Adds small border radius.
+
+.rounded-circle → Makes element perfectly circular.
+
+
+
+---
+
+10. Use of .g-3 in Bootstrap grid system
+
+.g-* = Gutter spacing between columns.
+
+.g-3 → Adds gap of 1rem between columns in grid.
+
+
+
+---
+
+✅ Practical Tasks with Code
+
+
+---
+
+1. Center a div vertically and horizontally using Bootstrap classes
+
+<div class="d-flex justify-content-center align-items-center" style="height:100vh;">
+  <div class="p-3 bg-light border">Centered Div</div>
+</div>
+
+
+---
+
+2. Bootstrap form with Email, Password, Submit
+
+<form class="p-3">
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="password" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+---
+
+3. Outline success button
+
+<button class="btn btn-outline-success">Success</button>
+
+
+---
+
+4. Make an image circular
+
+<img src="image.jpg" class="rounded-circle" alt="Circular Image" width="150">
+
+
+---
+
+5. Add margin-bottom 4 and padding-top 5
+
+<div class="mb-4 pt-5 bg-light">Content</div>
+
+
+---
+
+6. Make text uppercase
+
+<p class="text-uppercase">This will be uppercase</p>
+
+
+---
+
+7. Card with shadow and padding
+
+<div class="card shadow p-4" style="width:18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card Title</h5>
+    <p class="card-text">This is a Bootstrap card.</p>
+  </div>
+</div>
+
+
+---
+
+8. Difference between .col-6, .col-md-6, .col-lg-6
+
+.col-6 → Always takes half width on all devices.
+
+.col-md-6 → Half width on ≥768px screens.
+
+.col-lg-6 → Half width on ≥992px screens.
+
+
+Example:
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 bg-light">Always Half</div>
+    <div class="col-md-6 bg-secondary">Half on md+</div>
+    <div class="col-lg-6 bg-info">Half on lg+</div>
+  </div>
+</div

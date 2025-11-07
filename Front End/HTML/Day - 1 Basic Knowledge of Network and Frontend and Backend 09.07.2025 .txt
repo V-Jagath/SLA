@@ -1,0 +1,64 @@
+1. what is full stack devlopment?
+two things is importent 
+
+I. FRONT END 
+
+STATIC : HTML -structure you webpage css, cass, bootstarp
+Tailwind,MUI - Material UI,thnes - layout and styke animations
+
+DYNAMIC : js, jquery, ajax, react js, angular js, vue js.
+
+SQL - Structured Query Language
+Query Management languages database - orcle , microsoft, xampp, workbench, pg wemp
+
+NO SQL
+Mongodb , cloud, AWS
+
+II. BACKEND 
+
+Action - Function
+php , java, node js, Python.
+
+Machine - Electrical chips, Hardwares,Ram, Rom.
+
+What is Web ?
+Network - Group of two or more computers or devices that are connected together to share information, data, resource or internet acccess.
+LAN - Local Area Network (small area network) with a building
+WAN - Wide Area Network (Covers large distance)
+MAN - Metropolitan Area Network (Covers a city or campus area)
+why to use Network
+* Internet Access 
+* Share files and printers
+* Send a Mail
+* Play a Online game
+* Store a data in cloud
+ARPANET - Advnced Research Projects Agency Network it is a first network that uses a packet switching and is condidered the foundation of the modern internet. 
+Why ARPANET is Important - It introduced the basic concepts of networking
+TCP - Transmission Control Protocol Ensures reliable communication between computers or a network by checking for lost or missing data.
+IP - Internet Protocol Assigns a unique addressto every device on the internet.
+WWW - World Wide Web A system of interlinked web pages and resources accessed via the internet.
+URL - Uniform Resource Locator (The addrss of web page)
+HTTP - Hyper Text Transfer Protocol ( A Protocol used to load web pages using plain text but it's not secure
+HTTPS - Hyper Text Transfer Protocol Secure ( A secure version of HTTP that encrypts data for safety
+DNS - Domain Name System (Convrts Website Names into IP addresses)
+ISP - Internet Service Provider the company that provides internet access
+SSL - Secure Sockets layer it is a security Technology that encrypts the connection between a we browser and a web serer. Main Purpose - Protect data
+SEO - Search Engine Optimization (SEO is the process of improving a websit so that it ranks higher search engines like Google.Main Purpose - More Visitors to a website by appearing on top of search
+SEO TYPES 
+I . ON PAGE SEO - Keywords, content and titles and meta tags.
+II. OFF PAGE SEO - Backlinks, social sharing,authority.
+III.TECHNICAL SEO - Website speed, Mobile-friendlines, secure,etc....
+What is Web Page ?
+a Web Pag is a single document that you ca view in a web brower like chrome and firefox. it is written in languages like HTML,CSS AND Java Script
+SLA SYLLABUS
+HTML,CSS, BOOTSTRAP,JS - Common for all
+
+JAVA
+PYTHON
+NODE
+any one choose
+WORKBENCH,XAMPP,MONGO - DIPEND FOR OUR BACKEND
+
+MUGUND SIR SYLLABUS:
+
+COMMUNICATION, APPTITUDE, TECHNOLOGIES, DISPLINE, PRACTICES, REAL TIME PROJECT, MEETING, NETWORK, DIGITAL MARKETING, STARTUP COMPANY BUILD.

@@ -1,0 +1,510 @@
+CSS ➖
+
+
+Flex Model
+Box model
+And basic properties - 15
+
+Internela and external css Syntax
+
+H1 {color:blue; font-size:12px;}
+
+Iline syntax
+style=”color:red”
+
+4 cases
+
+camel Case first letter small and 2nd word capital
+Bascal case (upper camel case) -  
+cabob case - all small
+Snake case  
+
+
+4 selectors
+
+Universal selector *
+Class selector .
+Id selector #
+
+
+100% - 12 coloumn
+
+
+—-------------------------------------------------------------------------------------------------------------------------
+
+  30.07.2025 Class Notes
+****************************
+
+
+What is css?
+Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation,layout and styling of a document written in a markup language such as HTML.
+
+Syntax: Selector {property:value}
+
+
+why is css?
+
+In web developement we have css to style and layout the web page. only - scss
+
+
+where you apply? 
+
+.HTML .js .jsx - JS
+
+.CSS is depented by .HTML (.js .jsx - react)
+
+
+main porpuse?
+Style,layout,responcive
+
+
+type of css? - 3
+
+
+Inline css   -  <h1 style="prop:value;prop:value;prop:value;prop:value;">Content</h1>
+
+internal css - inside the head <style>selector {prop:value;prop:value;prop:value;prop:value;}</style>
+
+external css - selector {prop:value;prop:value;prop:value;prop:value;}
+
+
+
+CSS Syntax:
+Explaining the structure of CSS rules, including selectors, properties, and values.
+
+CSS Selectors:
+Detailing different ways to target HTML elements for styling, such as element selectors, class selectors, ID selectors, and more advanced selectors.
+
+CSS Properties:
+Providing a vast reference of CSS properties for styling text, backgrounds, borders, margins, padding, layout (Flexbox, Grid), and other visual elements.
+
+CSS Box Model:
+Illustrating how elements are rendered in a box-like structure, including content, padding, border, and margin.
+
+CSS Layouts:
+Explaining different layout techniques like floats, positioning, Flexbox, and CSS Grid for arranging elements on a page.
+
+Responsive Web Design:
+Demonstrating how to use media queries to create designs that adapt to different screen sizes and devices.
+
+Advanced CSS Topics:
+Covering transitions, animations, transformations, and other dynamic CSS features.
+
+
+Universel selecter *
+Class selector .
+id selector #
+Tags selector 
+group selector : ,
+muilty selector  tag .#
+pseudo - element selector:hover
+
+
+
+✅ 1. camelCase
+Definition: Starts with a lowercase letter, and each new word begins with a capital letter.
+
+
+Used In:
+
+
+JavaScript variables and functions
+
+
+Inline styles in React (style={{backgroundColor: 'red'}})
+
+
+Example:
+
+ js
+CopyEdit
+let fontSizeLarge = "18px";
+const backgroundColor = "blue";
+
+
+
+✅ 2. PascalCase (also called UpperCamelCase or UpCamel)
+Definition: Every word starts with an uppercase letter.
+
+
+Used In:
+
+
+React component names
+
+
+Class definitions in JS/TS
+
+
+Example:
+
+ jsx
+CopyEdit
+function MyComponent() {
+  return <h1>Hello</h1>;
+}
+
+class UserProfile {}
+
+
+
+✅ 3. kebab-case
+Definition: All letters are lowercase, and words are separated by hyphens (-).
+
+
+Used In:
+
+
+CSS class names
+
+
+CSS file names
+
+
+Example:
+
+ css
+CopyEdit
+.main-container {
+  background-color: lightblue;
+}
+
+.nav-item-active {
+  color: red;
+}
+
+
+
+✅ 4. snake_case
+Definition: All letters are lowercase, with words separated by underscores (_).
+
+
+Used In:
+
+
+Python variable names
+
+
+Some database fields
+
+
+Rare in CSS/JS, but still seen in old styles or config files
+
+
+Example:
+
+ python
+CopyEdit
+user_name = "Jagath"
+
+🎯 Summary Table:
+Case
+Syntax Example
+Common Usage
+camelCase
+fontSizeLarge
+JavaScript, React inline styles
+PascalCase
+MyComponent
+React components, classes
+kebab-case
+main-container
+CSS class names, file names
+snake_case
+user_name
+Python, configs, old databases
+
+
+🌟 Types of CSS (Cascading Style Sheets)
+CSS is used to style HTML documents. There are 3 main types of CSS:
+
+✅ 1. Inline CSS
+Definition: Style is written directly inside the HTML tag using the style attribute.
+
+
+Usage: Applies styles to a single element only.
+
+
+Advantage: Quick and easy for small styling.
+
+
+Disadvantage: Not reusable, not maintainable for large projects.
+
+
+🔹 Example:
+html
+CopyEdit
+<h1 style="color: red; font-size: 24px;">Inline Styled Heading</h1>
+
+
+✅ 2. Internal CSS
+Definition: CSS rules are written inside the <style> tag in the <head> section of the HTML document.
+
+
+Usage: Useful when styling a single HTML file.
+
+
+Advantage: Keeps styles in one place for the page.
+
+
+Disadvantage: Doesn’t apply across multiple pages.
+
+
+🔹 Example:
+html
+CopyEdit
+<head>
+  <style>
+    h1 {
+      color: blue;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Internal Styled Heading</h1>
+</body>
+
+
+✅ 3. External CSS
+Definition: CSS rules are written in a separate .css file, and linked to the HTML using <link>.
+
+
+Usage: Ideal for large projects or multiple webpages.
+
+
+Advantage: Reusable, easier to maintain and edit.
+
+
+Disadvantage: Requires additional file loading.
+
+
+🔹 Example:
+HTML file (index.html):
+html
+CopyEdit
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>External Styled Heading</h1>
+</body>
+
+CSS file (styles.css):
+css
+CopyEdit
+h1 {
+  color: green;
+  font-size: 32px;
+}
+📝 Summary Table:
+Type
+Location
+Scope
+Use Case
+Inline CSS
+Inside HTML tag
+One element only
+Quick fixes or testing
+Internal CSS
+Inside <style> tag
+One HTML file
+Small or single-page sites
+External CSS
+Separate .css file
+Multiple HTML files
+Large websites, best practice
+
+
+
+
+CHAT GPT VERSION
+
+
+
+What is CSS?
+Cascading Style Sheets (CSS) is a style sheet language used to specify the presentation, layout, and styling of a document written in a markup language like HTML.
+Syntax:
+selector {
+  property: value;
+}
+
+
+Why is CSS Important?
+In web development, CSS is essential to style and layout web pages. It allows developers to:
+Control the appearance of elements
+
+
+Make websites visually appealing
+
+
+Enable responsive designs that adapt to screen sizes
+
+
+Note: SCSS is a preprocessor for CSS that adds features like variables and nesting.
+
+Where is CSS Applied?
+.html, .js, .jsx files (for styling within HTML and JavaScript/React)
+
+
+.css files (external stylesheets)
+
+
+React (.js, .jsx) supports CSS via inline styles, styled-components, or modules
+
+
+Note: .css is used by .html or components in .js/.jsx
+
+Main Purpose of CSS
+Styling (colors, fonts, sizes)
+
+
+Layout (positioning, spacing)
+
+
+Responsive Design (adapting to devices)
+
+
+
+Types of CSS
+Inline CSS
+ Directly inside an HTML element.
+
+ <h1 style="color:red; font-size:24px;">Hello CSS</h1>
+
+
+Internal CSS
+ Inside the <style> tag in the <head> of an HTML document.
+
+ <style>
+  h1 {
+    color: blue;
+    font-size: 30px;
+  }
+</style>
+
+
+External CSS
+ Linked from a separate .css file.
+
+ h1 {
+  color: green;
+  font-size: 28px;
+}
+ <link rel="stylesheet" href="style.css">
+
+
+
+CSS Syntax
+Selector: Targets the HTML element
+
+
+Property: The style attribute (e.g., color, font-size)
+
+
+Value: The assigned value for the property
+
+
+p {
+  color: blue;
+  font-size: 16px;
+}
+
+
+CSS Selectors
+Universal Selector: * — selects all elements
+
+
+Class Selector: .classname — selects elements with specific class
+
+
+ID Selector: #idname — selects element with specific ID
+
+
+Tag Selector: tagname — selects by element type (e.g., h1, p)
+
+
+Group Selector: selector1, selector2 — applies same styles to multiple selectors
+
+
+Multi Selector: tag.class#id — more specific targeting
+
+
+Pseudo-class Selector: :hover, :active, etc.
+
+
+Pseudo-element Selector: ::before, ::after
+
+
+
+CSS Properties
+Text: color, font-family, font-size, text-align
+
+
+Box Model: margin, border, padding, width, height
+
+
+Background: background-color, background-image
+
+
+Layout: display, position, float, clear
+
+
+Flexbox & Grid: display: flex;, grid-template-columns, etc.
+
+
+
+CSS Box Model
+Each element is a box made of:
+Content – actual text/image
+
+
+Padding – space around content
+
+
+Border – edge around the padding
+
+
+Margin – space outside the border
+
+
+
+CSS Layout Techniques
+Floats
+
+
+Positioning: relative, absolute, fixed, sticky
+
+
+Flexbox
+
+
+Grid Layout
+
+
+
+Responsive Web Design
+Using media queries to adapt layout and style based on screen size:
+@media (max-width: 768px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+
+Advanced CSS Topics
+Transitions
+
+
+Animations
+
+
+Transformations
+
+
+Custom Properties (CSS variables)
+
+
+
+This is your complete structured CSS notes — styled, formatted, and organized for clarity.
+

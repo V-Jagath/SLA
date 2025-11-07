@@ -1,0 +1,306 @@
+
+DOM (Document Object Model) :-
+
+	Bridege between Front end Method (html,css and bootstrap) and javascript. Dynamic process ha webpage la panna DOM use aguthu. 
+when a webpage loads browser creates a tree structure (object model) for all html tags. each element like become the node in the tree.
+using js i can access and change these  nodes dynamically.
+
+Dom is not part of js but a browser API with js uses.(API - Application Programming Interface - Object orianted data)
+
+
+HTML + Document(like api)+ js = interactive webpage
+
+DOM Disadvantage - when you chagne any one content but overall page are refresh so its a disadvantage.
+
+html ha object ha mathidum
+
+console.log(document.body) ---> body content eduthutu varum.
+
+SELECTOR:-
+
+getElementById("")   ----> Access your ID Process
+
+getElementByClassName("")  ----> Access your Class Process
+
+getElementByTagName("") ----> Access your ID Process
+
+querySelector("#name or .name")  ----> Access your first elements
+
+querySelectorAll("")  ----> Access all the elements Using selectors
+
+createElement("")   -----> Create one element
+
+APPENDING THE TAG:-
+
+document.body.appendChild (var name)
+
+EVENT HANDING:-
+
+inline with function call - onclick - onchange - onsubmit - onselect - onkeyup - onkeydown - onkeypress
+Event Handing --- click --- mouse movements --- keyboard process
+
+Evenet Listener(Modern Method New Process)
+
+addEventListeners('',()=>{})
+
+
+PROPERTY :-
+
+element.innerHTML = "value"; ----> tag + Cntent
+
+style.cssproperty = "";
+	
+innerText = "";	-----> Only Text
+
+document.write()
+
+text.Content="";	----> only text
+
+
+TASK 1 :
+
+	18 times need to create a page for selectors
+
+properties - using with selectors
+2 event onclick - one event listener
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+syntax
+const variable_name = document.getElementbyId("ID_name")
+
+const btn_new = document.getElementbyId("btn")
+
+btn_new .addEventListener("click")
+
+----------------------------------------------------------------------------------------------------------------
+
+🌐 Document Object Model (DOM)
+
+🔹 Definition
+
+The DOM is the bridge between the frontend (HTML, CSS, Bootstrap) and JavaScript.
+
+When a webpage loads, the browser creates a tree structure (object model) of all HTML elements.
+
+Each HTML element is represented as a node in this tree.
+
+JavaScript can access, modify, create, or remove these nodes dynamically using the DOM.
+
+The DOM is not part of JavaScript. It is a Browser API that JavaScript uses.
+
+👉 Formula: HTML + Document (API) + JavaScript = Interactive Webpage
+
+🔹 Disadvantage
+
+When you change even one small part of the DOM, the browser may re-render or refresh the whole page layout, which can affect performance.
+
+🔹 Example
+console.log(document.body); // Prints the body content of the page
+
+📌 DOM Selectors
+
+getElementById("id") → Select an element by its ID.
+
+getElementsByClassName("class") → Select all elements with a class (returns HTMLCollection).
+
+getElementsByTagName("tag") → Select elements by tag name.
+
+querySelector("selector") → Selects the first match (id, class, or tag).
+
+querySelectorAll("selector") → Selects all matches (returns NodeList).
+
+📌 Creating & Appending Elements
+const newDiv = document.createElement("div"); 
+newDiv.innerText = "Hello DOM"; 
+document.body.appendChild(newDiv);
+
+📌 Events
+✅ Inline Events (old method)
+<button onclick="alert('Clicked!')">Click Me</button>
+
+✅ Event Listener (modern method)
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  alert("Button clicked using Event Listener!");
+});
+
+
+👉 Common Events:
+
+Mouse → click, mouseover, mouseout
+
+Keyboard → keydown, keyup, keypress
+/
+Form → submit, change, select
+
+📌 Properties of Elements
+
+innerHTML → Get/set HTML content (includes tags).
+
+innerText → Get/set only visible text (ignores HTML tags).
+
+textContent → Get/set all text (even hidden ones).
+
+style.property → Change CSS styles dynamically.
+
+document.write() → Writes text into the page (not recommended for modern apps).
+
+🎯 TASK (Practice)
+
+Requirement:
+
+Use 18 examples of selectors
+
+Use properties with selectors
+
+Add 2 inline events (like onclick)
+
+Add 1 event listener
+
+✅ Example Template
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Practice</title>
+</head>
+<body>
+  <h1 id="heading">Hello DOM</h1>
+  <p class="para">This is a paragraph.</p>
+  <button id="btn">Click Me</button>
+  
+  <script>
+    // Selectors
+    const head = document.getElementById("heading");
+    const para = document.getElementsByClassName("para")[0];
+    const btn = document.querySelector("#btn");
+
+    // Properties
+    head.style.color = "blue";
+    para.innerText = "Text changed using innerText";
+
+    // Inline event example 1
+    head.onclick = function() {
+      alert("Heading clicked!");
+    };
+
+    // Inline event example 2
+    para.onmouseover = function() {
+      para.style.color = "red";
+    };
+
+    // Event Listener example
+    btn.addEventListener("click", () => {
+      alert("Button clicked using Event Listener!");
+    });
+  </script>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------
+
+✅ DOM Interview Questions & Answers
+Q1. What is the DOM?
+
+Answer:
+The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the document as a tree structure, where each node is an object representing part of the page (elements, attributes, text). JavaScript can use the DOM to dynamically change content, structure, and styling of a webpage.
+
+Q2. Is DOM part of JavaScript?
+
+Answer:
+No, the DOM is not part of JavaScript. It is a Browser API provided by the browser. JavaScript can use this API to manipulate HTML and CSS.
+
+Q3. What are DOM Selectors?
+
+Answer:
+DOM selectors are methods to select elements from the document. Examples:
+
+getElementById("id")
+
+getElementsByClassName("class")
+
+querySelector("selector")
+
+querySelectorAll("selector")
+
+Q4. Difference between innerHTML, innerText, and textContent?
+
+Answer:
+
+innerHTML: Gets/sets HTML including tags.
+
+innerText: Gets/sets only visible text (ignores hidden text & tags).
+
+textContent: Gets/sets all text, including hidden ones, without parsing HTML.
+
+Q5. How do you create and insert a new element using the DOM?
+
+Answer:
+
+const div = document.createElement("div");
+div.innerText = "New Element";
+document.body.appendChild(div);
+
+Q6. What is the difference between == (inline event handlers) and addEventListener?
+
+Answer:
+
+Inline / old way (onclick): You can attach only one handler at a time. If you assign a new one, the old one is replaced.
+
+addEventListener: You can attach multiple handlers to the same event, and it is the modern recommended method.
+
+Q7. What are common DOM events?
+
+Answer:
+
+Mouse events → click, mouseover, mouseout
+
+Keyboard events → keydown, keyup, keypress
+
+Form events → submit, change, focus
+
+Q8. What is event bubbling and event capturing?
+
+Answer:
+
+Event Bubbling (default): Event starts from the target element and bubbles up to parent elements.
+
+Event Capturing: Event starts from the root/parent and goes down to the target element.
+👉 You can control this by using addEventListener(event, handler, useCapture).
+
+Q9. What is the difference between NodeList and HTMLCollection?
+
+Answer:
+
+NodeList: Returned by querySelectorAll(). Can contain element nodes, text nodes, etc. It is static (doesn’t auto-update).
+
+HTMLCollection: Returned by getElementsByClassName(), getElementsByTagName(). Contains only element nodes and is live (updates automatically when DOM changes).
+
+Q10. What are the disadvantages of the DOM?
+
+Answer:
+
+Performance issues: Changing one node may cause the entire page to re-render.
+
+Large DOM trees are expensive to update frequently.
+
+DOM manipulations can slow down performance if not optimized.
+
+Q11. How do you remove an element from the DOM?
+
+Answer:
+
+const element = document.getElementById("myDiv");
+element.remove();  // Modern way
+// OR
+element.parentNode.removeChild(element); // Old way
+
+Q12. How does the DOM differ from the Virtual DOM (used in React)?
+
+Answer:
+
+DOM: Direct representation of the webpage. Updates are costly since they re-render the page.
+
+Virtual DOM: A lightweight copy of the DOM (in memory). Only the changed parts are updated, improving performance.

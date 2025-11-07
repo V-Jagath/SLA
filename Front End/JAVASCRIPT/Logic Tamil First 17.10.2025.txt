@@ -1,0 +1,291 @@
+Math Functions -
+
+1:14 pm 17/10/2025
+
+1. Math.round()
+round value 
+
+example
+
+Math.round(5.7)--->6
+
+Math.round(5.3)--->5
+
+2. Math.sqrt()
+
+its use to find a squreroot 
+
+example
+
+Math.sqrt(64)---->8
+
+Math.sqrt(55)----> 7.4161
+
+3. Math.abs()
+
+its use to avoid negative number
+
+example
+
+Math.abs(-64)---->64
+
+Math.abs(55)----> 55
+
+4. Math.pow(base,power value)
+
+to find a power value
+
+Math.pow(2,3)---->8
+
+Math.pow(3,3)----> 27
+
+5.Math.min()
+
+to find a minimum value
+
+Math.min(25,36,7,90,20)---->20
+
+6.Math.max()
+
+to find a max value
+
+Math.mix(25,36,7,90,20)---->90
+
+7. Math.random()
+
+random values are generated 0 to 1.
+
+example 
+
+Math.random()--->0.2234823
+
+Math.random()--->0.343423
+
+1 to 100 random number generate
+
+Math.floor(Math.random()*100)+1--->29,32,45,90,34,23...
+
+8.Math.floor()
+
+its use to decress the value 
+
+example 
+
+Math.floor(4.78)--->4
+Math.floor(9.98)--->9
+
+9.Math.ceil()
+
+its use to decress the value 
+
+example 
+
+Math.ceil(4.78)--->5
+Math.ceil(9.001)--->10
+
+10. Math.PI ---> 3.14 and Math.E--->2.71
+
+STRING FUNCTIONS:-
+
+1:30 pm 17/10/2025
+
+
+1. SLICE(starting value and ending value):-
+
+	let string= "ItsASliceMethod"
+
+	console.log(string.slice(3,9)) //----->ASlice
+
+first 3 values not show & total 9 strings show  
+
+	let arr=[1,2,3,4,5]
+
+	let string= "ItsASliceMethod"
+
+	console.log(string.slice(4)) //---->SliceMethod
+
+first 4 values not show and balance values are show.
+
+	let string= "ItsASliceMethod"
+
+	console.log(string.slice(-6)) //---->Method
+
+	last 6 values only show
+
+2. SUBSTR(starting value and length)
+
+	let string= "ItsASliceMethod"
+
+	console.log(string.substr(4,8))  //---->SliceMet
+  
+first 4 values not show and total 4 to 8 values are show
+
+	let string= "ItsASliceMethod"
+
+	console.log(string.slice(4,8)) //---->Slic
+slice -->first 4 character not show and starting to 
+
+3. REPLACE()
+
+	let string= "ItsASliceMethodIts important"
+
+	console.log(string.replace("Its","it is")) // -----> it isASliceMethod
+
+its replace first string only not all strings 
+
+3. REPLACEALL()
+
+	let string= "ItsASliceMethodIts important"
+
+	console.log(string.replaceAll("Its","it is")) //--->it isASliceMethodit is important
+
+its replace all strings 
+
+4. toUpperCase()
+
+modify the tring uppercase
+
+	string.toUpperCase()---> ITS A SLICE METHOD
+
+4. toLowerCase()
+
+modify the tring lowercase
+
+	string.toLowerCase()---> it a slice method
+
+5. length {() - dont use brackts}
+
+length of the string
+
+	let string= "ItsASliceMethodIts important"
+
+	console.log(string.length) //---->28
+
+6.trim()
+
+used to remove spaces
+
+	let string= "  ItsASliceMethodIts important   "
+
+	console.log(string.trim()) 
+
+7. padEnd(length,"add to a array")
+
+
+let bill="Rs.10"//---length-5
+
+bill.padEnd(7,"0")---->"Rs.1000"
+
+bill.padEnd(8,"0")---->"Rs.10000"
+
+bill.padEnd(9,"0")---->"Rs.100000"
+
+bill.padEnd(6,"0")---->"Rs.100"
+
+8. padStart(length,"add to a array")
+
+let bill="Rs.10";//-->length =5
+
+bill.padStart("Rupees",5)//---->"Rs.1000"
+
+5:36 pm 17/10/2025
+
+ARRAY:-
+
+let arr=[[45,98,6],[43,3,33],[65,3]]
+
+consoloe.log(arr[1][2])--->6
+
+ARRAY METHODS:-
+
+let array=['a','b','c',1,2,3]
+
+1.Push()
+
+add elements to the  array
+
+array.push('f')--->['a','b','c',1,2,3,'f']
+
+2. pop()
+
+remove a last element in array
+arrary.pop()--->['a','b','c',1,2,3]
+
+3. shift()
+
+1st element or 0 index are remove
+
+array.shift()--->['b','c',1,2,3,'f']
+
+4. unshift()
+
+1st element or 0 index are add
+
+array.unshift('a')--->['a','b','c',1,2,3,'f']
+
+5. delete
+
+delete array[2]--->['a','b',undefined,1,2,3,'f']
+
+6.splice(index_value,length,new_element_insert)
+
+insert replace and delete ellame panna mudium
+
+	let array =[2,4,6,7,8,9]
+
+	console.log(array.splice(3,2))//--->[ 7, 8 ]
+
+	console.log(array)//--->[ 2, 4, 6, 9 ]
+
+index value 3 la irunthu 2 values delete pannum.atha show pannum
+
+	let array =[2,4,6,7,8,9]
+
+	console.log(array.splice(2,1,"a")) //--->[ 6 ]
+
+	console.log(array) //---->[2, 4, "a", 9]
+
+7. Slice(start_index,end_index)
+
+	let array=['a','b','c',1,2,3,'f']
+
+	console.log(array.slice(1,5))// --->[ 'b', 'c', 1, 2 ]
+
+	console.log(array)//--->['a', 'b', 'c', 1,2,   3,   'f']
+
+its dont affact a original array its only show a output.but slice method is affact original array
+
+8.reverse()
+
+array.reverse()
+
+6:20 pm 18/10/2025
+
+FOR EACH :-
+
+let arr=['Jagath','Suriya','Hari']
+
+arr.forEach(print)
+
+function print(val){
+console.log(val.toUpperCase())
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

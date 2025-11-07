@@ -1,0 +1,122 @@
+Types of Web Pages
+
+1. Landing Pages
+
+Purpose: Marketing, lead generation, product promos, signup forms. (Main Page)
+
+Example: https://amazon.com
+
+2. Business Pages (Informational)
+
+Purpose: About, services, pricing, contact, blogs.(Bunisss official page)
+
+Example: https://tcs.com
+
+3. Maintenance/Operational Pages (Dashboards/CRM/Admin Panels)
+
+Purpose: Internal tools, user dashboards, analytics, CRMs.
+website update or repair pannum pothu temporaryha kattura webpage
+
+Example : Site Under Maintenence
+
+CRM - Customer Relationship Management (CRM is a One of the software)
+
+Company is used CRM Store customer info, email them, record past interactions and boost business.
+
+DASH BOARD :-
+ A Dashboard is a page that shows a importent data or info in one place.
+example 
+amazon custemer service & other service lam intha page la show pannum
+
+SEMANTIC TAGS :-
+
+Sementic tags are html tags tht clearity describe the meaning of the content.
+they helps browers nd devlopers understand the structure of the webpage.
+
+COMMON SEMENTIC TAGS :-
+
+<header> - TCP selection of the page.
+<nav> - Navigation links
+<main> - Main Content
+<selection> - Selection of the content 
+<article> - Blog post or article
+<aside> - Side content (ads,tips,etc..)
+<footer> - Bottom of the page.
+
+1. CLOSING TAG
+A Closing tag us used t mark the end of hhtml element
+<html> </html> - Whole html document
+<head> </head> - Head selection
+<title> </title> - Browser tab selection
+<body> </body> - Main visible content
+<h1>  </h1> to <h6>  </h6> - Headings
+<p> </p> - Paragraph text
+<b> </b> - Bold
+<i> </i> - Itlic
+<u> </u> -underline
+<div> </div> - Block Container
+<span> </span> - Inline Container
+<a> </a> - link
+<ul> </ul> , <ol> </ol> - Lists
+<li> </li> - List Item
+<table> </table> - Table
+<tr> </tr> - Table row
+<td> </td> -  Table data
+<th> </th> - Table Heading
+<form> </form> -  Html Form
+<label> </label> - Form Label
+<txtarea> </txtarea> - Multi line Input
+
+2. SELFCLOSING TAGS :-
+
+These tags do not need clsoing tags
+they do not wrap content.
+
+<br> - Line Break (new line)
+<hr> - Horizantal line Drivider
+<img> - Image Display
+<input> - Form Input Field
+<link> - Linking CSS File
+<meta> - Metadata (SEO,Charset)
+<source> - Source for Media (Audio,Video)
+<area> - Area inside Image Map 
+<base> - Base URL for all links
+<col> - Column in table
+<embed> - Embed Media (like Videos)
+<track> - Subtitles for video/audio
+<wbr> - Word Break hint.
+
+ommon Block-Level HTML Tags
+Tag	Purpose
+<div>	Generic container
+<p>	Paragraph
+<h1> to <h6>	Headings (H1 is largest)
+<section>	Group related content
+<article>	Self-contained content (blog/news)
+<nav>	Navigation links
+<header>	Intro content for page or section
+<footer>	Footer content
+<aside>	Sidebar or secondary content
+<main>	Main content of the document
+<ul>	Unordered list
+<ol>	Ordered list
+<li>	List item (inside <ul> or <ol>)
+<form>	Form for user input
+<table>	Table layout
+<fieldset>	Group form elements
+<hr>	Horizontal rule (divider)
+<pre>	Preformatted text
+<address>	Contact info
+<blockquote>	Long quotations
+<figure>	Group media + caption
+
+
+
+
+
+
+
+
+
+
+

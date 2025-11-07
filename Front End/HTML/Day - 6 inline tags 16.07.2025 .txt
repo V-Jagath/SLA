@@ -1,0 +1,66 @@
+what is inline:-
+
+1.inline is also take the content width!
+2.its not start with new line!
+3.inline tags always keep the content only.
+4.inline not accepted the block level.
+5.one block level element have multipul inline elements
+
+MOSTLY USED INLINE TAGS
+
+| Tag        | Purpose / Usage                                         |
+| ---------- | ------------------------------------------------------- |
+| `<a>`      | Creates hyperlinks (very commonly used)                 |
+| `<span>`   | Generic inline container for styling (used with CSS/JS) |
+| `<img>`    | Embeds an image                                         |
+| `<strong>` | Semantically important text (usually bold)              |
+| `<em>`     | Emphasized text (usually italic)                        |
+| `<b>`      | Bold text (visual only, no emphasis)                    |
+| `<i>`      | Italic text (visual only)                               |
+| `<u>`      | Underlined text                                         |
+| `<br>`     | Line break                                              |
+| `<input>`  | Single-line input field                                 |
+| `<label>`  | Label for form elements                                 |
+| `<small>`  | Smaller font text                                       |
+| `<code>`   | Displays code snippets (monospaced font)                |
+| `<mark>`   | Highlights text                                         |
+| `<sub>`    | Subscript text (e.g., H<sub>2</sub>O)                   |
+| `<sup>`    | Superscript text (e.g., X<sup>2</sup>)                  |
+|`<textarea>` | Multi-line text input (inline by default in forms)   |
+| `<time>`    | Date/time value 
+| `<button>`  | Clickable button (inline by default)                |
+
+COMMON INLINE TAGS IN HTML :-
+
+
+| Tag          | Description                                          |
+| ------------ | ---------------------------------------------------- |
+| `<a>`        | Defines a hyperlink                                  |
+| `<abbr>`     | Abbreviation or acronym                              |
+| `<b>`        | Bold text (without emphasis)                         |
+| `<bdo>`      | Overrides the current text direction                 |
+| `<br>`       | Line break (technically void element, but inline)    |
+| `<cite>`     | Title of a work                                      |
+| `<code>`     | Computer code fragment                               |
+| `<dfn>`      | Definition term                                      |
+| `<em>`       | Emphasized text (usually italic)                     |
+| `<i>`        | Italic text (without emphasis)                       |
+| `<img>`      | Embeds an image                                      |
+| `<input>`    | Input field                                          |
+| `<kbd>`      | Keyboard input                                       |
+| `<label>`    | Label for form input                                 |
+| `<mark>`     | Marked or highlighted text                           |
+| `<q>`        | Short inline quotation                               |
+| `<s>`        | Strikethrough text                                   |
+| `<samp>`     | Sample output from a program                         |
+| `<select>`   | Drop-down list                                       |
+| `<small>`    | Smaller text                                         |
+| `<span>`     | Generic inline container                             |
+| `<strong>`   | Important (usually bold) text                        |
+| `<sub>`      | Subscript text                                       |
+| `<sup>`      | Superscript text                                     |
+| `<textarea>` | Multi-line text input (inline by default in forms)   |
+| `<time>`     | Date/time value                                      |
+| `<u>`        | Underlined text                                      |
+| `<var>`      | Variable in a mathematical or programming expression |
+

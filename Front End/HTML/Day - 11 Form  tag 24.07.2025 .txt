@@ -1,0 +1,48 @@
+Input datas handling
+max - when we use Number
+min - when we use number
+minlength - when we use text, string,spl character,varchar
+maxlength - when we use text, string,spl character,varchar
+pattern -  when create any pattern link uppercase,lowercase,splcharecter,any8number
+accept - .jpg,.png,.doc - this is fr you file only.
+placeholder  - for your watermark inside your inputbox it will be remove when you enter any types or datas.
+
+
+
+
+input handling
+hidden   - this only need for developer purpose. the hidden feild its not showing your browser. but in back its will use for develoepr. and it is insdie your form elements
+readonly - this only read the datas inside your input box
+required - all the input tags - its is validation for your empty input.
+type     - when we need a different kind of data we identify the input.
+selected - using in option for one value or one option
+disabled - here we using inside the option.
+
+data retrive handling
+id       - using of js
+class    - usig for css
+name     - take the value to the form or action page
+
+
+data hold handling
+value    - its hold the datas inside you input feilds
+
+
+images   - this is showing the normal images
+
+
+
+form - 
+action     - we move to the datas to some pages its must be php or js or backend files
+method     - post,get this is for you https process to move the datas to one page to anoter
+encryptype - this is for if you using file input you must give this
+accept     - thsi is for tell your file extesion
+
+input
+select
+option
+lable
+optgroup
+feildset
+legend
+textarea

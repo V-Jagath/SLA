@@ -1,0 +1,31 @@
+Git:
+Git is the open source software to controle your code verions in your local and online.
+Downlaod link:
+https://git-scm.com/downloads
+
+Use case:
+You can push your code upto 120mb.
+you can control you verions - and you can pull the project
+you can clone the project.
+you can collaburate with you team members.
+
+
+Git Hub:
+This is the online cloud storage for your Project. this is open source domain.
+its a community for developers/solical media activers/freelancers/business peoples.
+Directly you can upload you files to the githug - upto 25mb.
+Link : https://github.com/
+
+
+You can host your html files.
+you can host your React Projects.
+you can maintain your project.
+
+
+
+Linkedin in Accout:
+
+https://www.linkedin.com/
+
+This is open sourse carrier Social media Platform. to business peoples, job search.
+

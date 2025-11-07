@@ -1,0 +1,511 @@
+
+collection of structured data = object
+
+const word= "jagath"
+console.log(word[0])
+
+Functions:-
+	 A function is a block of reuseable code that perfrom a specfic task.
+the function is mainly using for perform a simple simple task. 
+no need to create a new process every time staticaly.
+using function we perform dynamic process. when you call the function it will perfrom a process.
+check the all process good.
+
+3 types of functions are there,
+
+1. Function Declaration - es1 - es5
+normal function - normal ha fucnion ha declare pannum
+
+SYNTAX:-
+
+FUNCTION function_name(PERAMETERS){
+// code block
+RETURN value; 
+
+}
+
+(console.log only print not return values
+you can return a value using function
+retun ku kizha ethavathu code iruntha run agathu.)
+
+example:-
+
+function add (a,b){
+return 1+2;
+}
+
+document.write(add)
+
+add (1,2)
+output:-
+
+3
+
+intha function la hoisting apa full function um top of scope la poi vachidum. so error show agathu . output varum.
+
+es6+ --> Function Expression:-
+
+you declare a variable
+
+when ever you call the function that function 
+
+ 
+2. Arrow Function - es6
+
+syntax:-
+
+const addnumber = ()=>{
+
+code ;
+
+}
+
+example:-
+const add = ()=> document.write("yes running") OR const add = ()=> {document.write("yes running")}
+
+3. Anonymous function - es6
+
+SYNTAX:-
+
+example:-
+
+let even=function (){
+
+}
+
+variable la function store panrathu tha function
+
+Tasks:-
+
+1. normal,arrow and anonymous function ku differances
+2. function declaration and function expression differance
+3. arrow function and normal function differances
+(normal function la tha class use panna mudium.)
+4. arrow funtion la constractor use panna mudiyathu normal fucntion la the use panna mudium
+5. why use function?
+reuse
+cleandesign 
+debugging 
+6. what is pera meter what is argument and what is normal perameter
+
+
+PERAMETERS:-
+
+	veriable la directha decler panrathu
+
+example:-
+
+const add = (a,b)=>{
+
+return a+b
+
+}
+
+document.write(add(3,5))
+
+
+perameter ku kodukura values tha arguements.
+ithu tha buildin function la use agum.
+
+
+
+oru function ku ulla innoru function is call back functions
+
+
+for(let a =1 ; a<=5; a++){
+
+	for(let b=1,b<=a;b++){
+console.write(b)
+}
+
+
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+✅ Functions in JavaScript
+🔹 Definition
+
+A function is a block of reusable code that performs a specific task.
+It avoids rewriting the same code again and again.
+
+1. Types of Functions
+(a) Function Declaration (ES1–ES5)
+
+👉 Normal way of defining a function.
+
+Hoisted (can be called before definition).
+
+SYNTAX:-
+
+function function_name(){}
+
+// Function Declaration
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("Jagath")); // Hello, Jagath!
+
+(b) ✅ Function Expression
+
+👉 A function expression is when a function is assigned to a variable.
+👉 It can be anonymous (no name) or named.
+👉 Unlike function declarations, it is not hoisted (must define before use).
+
+SYNTAX:-
+
+const function name = function(){}
+
+// Anonymous function expression
+const add = function(a, b) {
+  return a + b;
+};
+
+console.log(add(3, 4)); // 7
+
+
+(c) Arrow Function (ES6)
+
+👉 Shorter syntax, no own this.
+
+Cannot be used as a constructor.
+
+SYNTAX:-
+
+const functionName = (parameters) => {
+  // code block
+  return value;
+};
+
+
+const add = (a, b) => {a + b};
+
+console.log(add(3, 5)); // 8
+
+(d) Anonymous Function
+
+👉 Function without a name, stored in variables or used as callbacks.
+
+const variableName = function(parameters) {
+  // code block
+  return value;
+};
+
+let even = function (num) {
+  return num % 2 === 0;
+};
+
+console.log(even(4)); // true
+
+2. Differences Normal vs Arrow vs Anonymous
+
+
+Feature		Normal Function		Arrow Function		 Anonymous Function
+Syntax		function 		add(){}	()=>{}		 let x = function(){}
+Hoisting	✅ Yes			❌ No			 ❌ No
+this keyword	Has own this		Inherits from parent	 Has own this
+Constructor	✅ Yes			❌ No			 ✅ Yes (if declared normally)
+Usage		General tasks		Short, inline, callbacks Inline/callback use
+
+
+🔹 Function Declaration vs Function Expression
+Function Declaration	Function Expression
+Hoisted	Not hoisted
+
+
+function fn(){}	const fn = function(){}
+🔹 Normal vs Arrow Function
+
+Normal function has its own this, arrow does not.
+
+Normal function can be a constructor, arrow cannot.
+
+Normal function supports arguments object, arrow does not.
+
+3. Why use Functions?
+
+✅ Reusability
+
+✅ Clean design
+
+✅ Easy debugging
+
+✅ Dynamic (with parameters/arguments)
+
+4. Parameters vs Arguments
+
+Parameter → Variable declared inside function.
+
+Argument → Actual value passed to function.
+
+function greet(name) {   // name = parameter
+  console.log("Hello " + name);
+}
+
+greet("Jagath"); // "Jagath" = argument
+
+5. Callback Function
+
+👉 Function passed as argument to another function.
+
+function process(callback) {
+  callback();
+}
+
+process(() => console.log("Callback executed!"));
+
+6. Nested Loop Example
+for (let a = 1; a <= 5; a++) {
+  for (let b = 1; b <= a; b++) {
+    console.log(b);
+  }
+}
+
+
+-------------------------------------------------------------------------------------------------------------
+
+🔥 JavaScript Functions – Interview Questions
+
+1. What is a function in JavaScript?
+
+A function is a block of reusable code that performs a specific task when called.
+
+2. What are the different types of functions in JavaScript?
+
+Function Declaration
+
+Function Expression
+
+Arrow Function
+
+Anonymous Function
+
+3. What is the difference between function declaration and function expression?
+
+Function Declaration is hoisted → can be used before definition.
+
+Function Expression is not hoisted → must be defined before calling.
+
+4. What is an arrow function? Why is it used?
+
+Arrow functions are a shorter syntax for writing functions (introduced in ES6).
+
+They don’t have their own this.
+
+Cannot be used as constructors.
+
+Mostly used in callbacks and inline code.
+
+5. What is the difference between normal function and arrow function?
+
+Normal function has its own this, arrow inherits from parent.
+
+Normal function can be a constructor, arrow cannot.
+
+Normal function supports arguments object, arrow does not.
+
+6. What is an anonymous function?
+
+A function without a name, usually stored in a variable or passed as a callback.
+
+Example:
+
+let x = function(a, b) { return a + b; };
+
+7. What is hoisting in functions?
+
+Function declarations are hoisted → moved to the top of scope at runtime.
+
+Function expressions & arrow functions are not hoisted.
+
+8. What are parameters and arguments in functions?
+
+Parameters → Variables listed in the function definition.
+
+Arguments → Actual values passed when calling the function.
+
+9. What is a callback function?
+
+A function passed as an argument to another function.
+
+setTimeout(() => console.log("Hello"), 1000);
+
+10. Why do we use functions in JavaScript?
+
+Code reusability
+
+Clean design
+
+Easy debugging
+
+Dynamic execution
+
+11. Can arrow functions be used as constructors?
+
+❌ No, arrow functions cannot be used as constructors.
+Only normal functions can.
+
+12. What is the difference between returning a value and logging a value?
+
+return → sends the value back to the caller.
+
+console.log → only prints the value to console, but doesn’t return anything.
+
+13. What is an Immediately Invoked Function Expression (IIFE)?
+
+A function that executes immediately after it is defined.
+
+(function() {
+  console.log("IIFE running");
+})();
+
+
+👉 Intha 13 Q&A functions la most asked interview questions.
+
+❓Venuma naan tricky advanced questions um prepare panni kudukka? (Like higher-order functions, closures, default parameters, rest/spread with functions etc.)
+
+You said:
+yes
+ChatGPT said:
+
+Super 👍 ippo naan advanced + tricky interview questions prepare pannitu kudukiren.
+Idhu intermediate → advanced level la interview ku helpful ah irukkum.
+
+⚡ Advanced JavaScript Functions – Interview Q&A
+14. What is a Higher-Order Function?
+
+👉 A function that either takes another function as an argument OR returns a function.
+
+Example:
+
+function higher(fn) {
+  return fn(5);
+}
+console.log(higher(x => x * 2)); // 10
+
+15. What is a First-Class Function?
+
+👉 In JavaScript, functions are treated like values:
+
+Stored in variables
+
+Passed as arguments
+
+Returned from other functions
+
+This property makes JS a first-class function language.
+
+16. What is a Closure?
+
+👉 A closure is formed when a function remembers variables from its outer scope even after the outer function has finished executing.
+
+Example:
+
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    return count;
+  };
+}
+
+const counter = outer();
+console.log(counter()); // 1
+console.log(counter()); // 2
+
+17. What is the difference between return and console.log in functions?
+
+return → sends value back to caller.
+
+console.log → just prints for debugging, doesn’t return.
+
+18. What is an IIFE (Immediately Invoked Function Expression)? Why is it used?
+
+👉 A function that executes immediately after definition.
+👉 Used to create private scope and avoid global pollution.
+
+(function () {
+  console.log("IIFE running");
+})();
+
+19. What is the difference between default parameters and arguments?
+
+Default parameters allow you to set a fallback value if no argument is passed.
+
+function greet(name = "Guest") {
+  console.log("Hello " + name);
+}
+greet(); // Hello Guest
+
+20. What is the arguments object in a function?
+
+👉 A special array-like object inside normal functions that holds all arguments passed.
+👉 Not available in arrow functions.
+
+function sum() {
+  let total = 0;
+  for (let val of arguments) {
+    total += val;
+  }
+  return total;
+}
+console.log(sum(1, 2, 3, 4)); // 10
+
+21. What is the Rest Parameter in functions?
+
+👉 Allows collecting multiple arguments into a single array.
+
+function add(...nums) {
+  return nums.reduce((a, b) => a + b);
+}
+console.log(add(1, 2, 3, 4)); // 10
+
+22. What is the Spread Operator in function calls?
+
+👉 Expands elements of an array into individual arguments.
+
+function add(a, b, c) {
+  return a + b + c;
+}
+const nums = [1, 2, 3];
+console.log(add(...nums)); // 6
+
+23. What is the difference between function scope and block scope?
+
+Function scope → Variables declared with var inside a function are accessible only inside that function.
+
+Block scope → Variables declared with let and const are restricted to { }.
+
+24. What is function currying?
+
+👉 Breaking a function with multiple arguments into a series of functions each taking one argument.
+
+function curry(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    };
+  };
+}
+console.log(curry(1)(2)(3)); // 6
+
+25. What is memoization in functions?
+
+👉 A performance optimization technique where function results are cached for repeated inputs.
+
+function memoize(fn) {
+  const cache = {};
+  return function (n) {
+    if (cache[n]) return cache[n];
+    let result = fn(n);
+    cache[n] = result;
+    return result;
+  };
+}
+
+const square = memoize(x => x * x);
+console.log(square(5)); // 25 (calculated)
+console.log(square(5)); // 25 (cached)

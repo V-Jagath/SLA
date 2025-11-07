@@ -1,0 +1,41 @@
+What is HTML?
+
+- HTML stands for HyperText Markup Language.
+- It is a **structured language** used to organize and format information on a webpage.
+- HTML is the **foundation of all webpages**.
+- It creates the structure of a webpage and supports integration with:
+    - CSS (for styling)
+    - Bootstrap (for responsive design)
+    - JavaScript, PHP, AJAX (for dynamic behavior)
+    - React, Angular, Python, Java (for advanced front-end and backend functionality)
+
+------------------------------------------------------
+
+Why HTML?
+
+- It is essential to build any webpage.
+- Every web application starts with HTML for layout and content structure.
+
+------------------------------------------------------
+
+How to Create an HTML File?
+
+What Do We Need?
+- A computer system
+- A text editor
+- Basic knowledge of HTML language
+
+Recommended Text Editors:
+- Notepad (Basic)
+- Notepad++
+- VS Code
+- Sublime Text
+- Brackets
+- Atom
+
+------------------------------------------------------
+
+Where to Create HTML?
+- You can create HTML files in any of the text editors listed above.
+- Save the file with the **.html** extension (e.g., `index.html`).
+- Open it in any web browser (Chrome, Firefox, Edge, etc.) to view the webpage.

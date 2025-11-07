@@ -1,0 +1,13 @@
+What is html?
+html is te structured language to structured your info.
+html is used the create a structured webpage.
+html is the only thing to devlop the webpages, and it will accpeted css, boot, js, php,ajax.
+react, angular, oython and java
+
+why html?
+how to create html file?
+what we need?
+system, oru text editor, html languages --> website structure		
+notepad, notepad++, vs code, sublime, brakets, atom.
+where to create html?
+

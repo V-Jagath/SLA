@@ -1,0 +1,153 @@
+img.src=../../../html/images/logo/
+
+FORM:-
+
+event object ----> ()=>{}
+
+Prevent Default :-
+
+	preventDefault is a method that stops the default behaviour of an a event form happening. datas are stored in event object.
+("This part is a event objet")=>{} 	 
+
+form la data edukum pothu .value add pannanum.
+
+----------------------------------------------------------------------------------------------------------------
+
+📌 JavaScript with Forms – Key Topics
+
+1. Event Object
+
+Whenever you submit a form or click a button, an event object is created.
+
+It contains details about what happened (like which form, which input, etc.).
+
+Example:
+
+form.addEventListener("submit", (event) => {
+    console.log(event); // shows all details about the event
+});
+
+2. preventDefault()
+
+By default, when you submit a form, the page reloads.
+
+To stop this, we use event.preventDefault().
+
+Example:
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // stops page refresh
+});
+
+3. .value Property
+
+To get the data a user typed into an input box, we use .value.
+
+Example:
+
+const name = document.getElementById("username").value;
+const email = document.getElementById("email").value;
+
+4. Form Validation
+
+Before submitting, we can check if the inputs are filled correctly.
+
+Example:
+
+if (name === "") {
+    alert("Name is required!");
+}
+
+5. DOM Access Methods
+
+These are used to select form elements in JavaScript:
+
+getElementById("id") → select by id
+
+getElementsByClassName("class") → select by class
+
+querySelector("selector") → select by CSS selector
+
+6. Form Submit Flow
+
+User types in the form.
+
+User clicks Submit.
+
+JavaScript catches the submit event.
+
+preventDefault() stops reload.
+
+Inputs are read using .value.
+
+Data is either shown, validated, or sent to a server.
+
+----------------------------------------------------------------------
+
+📌 JavaScript with Forms – Key Topics
+1. Event Object
+
+Whenever you submit a form or click a button, an event object is created.
+
+It contains details about what happened (like which form, which input, etc.).
+
+Example:
+
+form.addEventListener("submit", (event) => {
+    console.log(event); // shows all details about the event
+});
+
+2. preventDefault()
+
+By default, when you submit a form, the page reloads.
+
+To stop this, we use event.preventDefault().
+
+Example:
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // stops page refresh
+});
+
+3. .value Property
+
+To get the data a user typed into an input box, we use .value.
+
+Example:
+
+const name = document.getElementById("username").value;
+const email = document.getElementById("email").value;
+
+4. Form Validation
+
+Before submitting, we can check if the inputs are filled correctly.
+
+Example:
+
+if (name === "") {
+    alert("Name is required!");
+}
+
+5. DOM Access Methods
+
+These are used to select form elements in JavaScript:
+
+getElementById("id") → select by id
+
+getElementsByClassName("class") → select by class
+
+querySelector("selector") → select by CSS selector
+
+6. Form Submit Flow
+
+User types in the form.
+
+User clicks Submit.
+
+JavaScript catches the submit event.
+
+preventDefault() stops reload.
+
+Inputs are read using .value.
+
+Data is either shown, validated, or sent to a server.

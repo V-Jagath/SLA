@@ -1,0 +1,71 @@
+Steps to Improve Your HTML Structure:
+
+1. Create a file → file.html
+2. Choose any text editor → VS Code, Sublime Text
+3. Run it in a browser → Chrome, Edge, Safari
+4. You will see the output
+
+--------------------------------------------------
+
+TAGS:
+- A **tag** is a keyword enclosed in angle brackets `<>` used to define parts of a webpage.
+
+Example:
+    <h1>This is a heading</h1>
+
+--------------------------------------------------
+
+ELEMENTS:
+- An **element** is a complete set that includes:
+  - Opening tag
+  - Content
+  - Closing tag
+
+Example:
+    <p>This complete set is an element</p>
+
+--------------------------------------------------
+
+1. Unique Tags (One-Time Use Tags):
+- These tags are used **only once per webpage**, typically for structure or identity:
+
+    1. `<html>`   - Root tag (wraps the entire HTML document)
+    2. `<head>`   - Contains metadata, title, links to stylesheets
+    3. `<title>`  - Page title (shown on browser tab)
+    4. `<body>`   - Contains visible content
+    5. `<h1>`     - Main heading (primary title on the page)
+
+--------------------------------------------------
+
+2. Practice Task:
+- Create a sample webpage using:
+    - Headings: `<h1>` to `<h6>`
+    - Paragraph: `<p>`
+- Understand:
+    - **Elements** (full tag sets)
+    - **Root and container tags**
+
+--------------------------------------------------
+
+MOSTLY USED HTML TAGS:
+
+A. Semantic Tags:
+| Tag         | Use Case                            |
+| ----------- | ----------------------------------- |
+| `<header>`  | Top section (logo, navigation)      |
+| `<nav>`     | Navigation bar                      |
+| `<main>`    | Main content area                   |
+| `<section>` | Groups related content              |
+| `<article>` | Independent content like blog/news  |
+| `<footer>`  | Page footer, copyright info         |
+| `<aside>`   | Sidebar or additional content       |
+| `<form>`    | User input forms                    |
+| `<table>`   | Tabular data                        |
+
+B. Non-Semantic Tags:
+| Tag      | Use Case                        |
+| -------- | ------------------------------- |
+| `<div>`  | Generic container (block-level) |
+| `<span>` | Inline container for styling    |
+| `<br>`   | Line break                      |
+| `<hr>`   | Horizontal rule/divider         |

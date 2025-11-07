@@ -1,0 +1,301 @@
+Hoisting Method(Error Handling Method):-
+
+Before inizalization you call variable its undefined that medthod is called Hoisting.
+ 
+var a;
+document.write(a)
+var a=10;
+
+let and const la undefined varathu 
+TBZ -Temparal Dead Zone (referance error)
+
+
+NON PRIMITIVE DATATYPES:-
+
+very important.
+
+1.Array
+2.object - Array of object
+3.function	
+
+
+Array:-
+
+strore a multiple element in a single variable
+collection of value is strore in a single variable.
+
+let arr = [1,2,3,"datas"]
+
+indexing element ha tha eduthukum 
+0,1,2,3,4
+
+you can access the datas using indexing elements.
+
+let arr = [1,2,3,"datas"]
+
+you can access the "datas"
+
+console.log(arr[3]);
+
+output:-
+
+datas
+
+2. Two dinamtional array
+
+let arr=[["datas","js","react"],[1,2,3]]
+console.log(arr[1])
+
+output:-
+
+datas,js,react
+
+2. OBJECT:-
+very very important topic.
+
+structured data its stored as a key valued pair supraed in (,).keys shoud be a variable.
+
+let obj = {name:"react",intro:"2017",subject:"js"} 
+console.log(obj);
+
+output:-
+
+name:react,intro:2017,subject:js
+
+obj la irunthu key  edukanum na (.) use pannanum
+
+console.log(obj.name)---->react
+
+nested objct:-
+ 
+let obj = {name:"react",intro:"2017",subject:"js",obj1{name:"js",year:2022}}
+
+console.log(obj.obj1.name)
+
+
+24 times vera vera object names 
+
+Fibonacci series
+
+0,1,1,2,3,5,8,13
+
+n=10
+
+
+----------------------------------------------------------------------------------------------------------
+
+1. Hoisting (Error Handling Related)
+
+Definition:
+Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope before code execution.
+
+Variables declared with var are hoisted and initialized with undefined.
+
+Variables declared with let and const are hoisted but not initialized, accessing them before declaration throws a ReferenceError. 
+This period is called Temporal Dead Zone (TDZ).
+
+Example with var:
+
+console.log(a); // undefined
+var a = 10;
+console.log(a); // 10
+
+
+Example with let or const:
+
+console.log(b); // ReferenceError
+let b = 20;
+
+2. Non-Primitive Data Types
+
+Non-primitive (reference) types store collections of values or structured data.
+
+2.1 Array
+
+Definition: An array stores multiple values in a single variable and allows access by index.
+
+let arr = [1, 2, 3, "datas"];
+console.log(arr[3]); // "datas"
+
+
+Two-dimensional array example:
+
+let arr2D = [["datas","js","react"], [1,2,3]];
+console.log(arr2D[0]); // ["datas","js","react"]
+console.log(arr2D[1][2]); // 3
+
+2.2 Object
+
+Definition: Objects store structured data as key-value pairs. Keys are unique identifiers, and values can be of any type.
+
+Simple object example:
+
+let obj = {name: "react", intro: "2017", subject: "js"};
+console.log(obj); 
+// {name: "react", intro: "2017", subject: "js"}
+console.log(obj.name); // "react"
+
+
+Nested object example:
+
+let obj = {
+    name: "react",
+    intro: "2017",
+    subject: "js",
+    obj1: {name: "js", year: 2022}
+};
+console.log(obj.obj1.name); // "js"
+
+2.3 Function
+
+Definition: Functions are reusable blocks of code. They can be stored in variables, passed as arguments, or returned from other functions.
+
+function greet(name) {
+    return `Hello, ${name}`;
+}
+console.log(greet("Jagath")); // "Hello, Jagath"
+
+3. Fibonacci Series
+
+Definition: A Fibonacci series is a sequence where each number is the sum of the two preceding numbers.
+
+Sequence: 0, 1, 1, 2, 3, 5, 8, 13, …
+
+Example – First 10 numbers:
+
+let n = 10;
+let fib = [0, 1];
+for(let i = 2; i < n; i++){
+    fib[i] = fib[i-1] + fib[i-2];
+}
+console.log(fib); 
+// [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+INTERVIEW BASED QUESTIONS:-
+
+
+1. Hoisting
+
+Q1. What is hoisting in JavaScript?
+Answer: Hoisting is JavaScript’s behavior of moving declarations of variables and functions to the top of their scope before execution. 
+Variables declared with var are initialized with undefined, while let and const remain uninitialized (TDZ - Temporal Dead Zone).
+
+Q2. What is Temporal Dead Zone (TDZ)?
+Answer: TDZ is the period between the start of a scope and when a let or const variable is initialized. 
+Accessing them in TDZ causes a ReferenceError.
+
+Q3. Can functions be hoisted?
+Answer:
+
+Function declarations are fully hoisted.
+
+Function expressions (including arrow functions) are not hoisted.
+
+2. Arrays
+
+Q4. How do you access elements of an array?
+Answer: By their index, starting at 0. Example: arr[0]
+
+Q5. What is a two-dimensional array?
+Answer: An array of arrays. Example: let arr = [[1,2], [3,4]]
+
+Q6. How can you loop through an array?
+Answer: Using for, for..of, forEach, or map.
+
+Q7. How can you add/remove elements in an array?
+Answer:
+
+Add: push(), unshift()
+
+Remove: pop(), shift()
+
+At specific index: splice()
+
+3. Objects
+
+Q8. What is an object in JavaScript?
+Answer: An object stores data as key-value pairs.
+
+Q9. How do you access object properties?
+Answer:
+
+Dot notation: obj.name
+
+Bracket notation: obj["name"]
+
+Q10. What is a nested object?
+Answer: An object that contains another object as a value. Example:
+
+let obj = {name: "react", details: {year: 2017}};
+console.log(obj.details.year); // 2017
+
+
+Q11. How to clone an object?
+Answer: Using Object.assign({}, obj) or spread operator {...obj}
+
+4. Functions
+
+Q12. What is the difference between function declaration and function expression?
+Answer:
+
+Declaration: function greet(){} → hoisted
+
+Expression: let greet = function(){} → not hoisted
+
+Q13. Can functions be passed as arguments?
+Answer: Yes, functions are first-class citizens and can be passed as callbacks.
+
+Q14. What are arrow functions and their features?
+Answer: Shorter syntax for functions. They do not have their own this, and cannot be used as constructors.
+
+5. Fibonacci Series
+
+Q15. How do you generate Fibonacci series in JavaScript?
+Answer: Using loops or recursion.
+
+Example (loop):
+
+let n = 10;
+let fib = [0, 1];
+for(let i = 2; i < n; i++){
+    fib[i] = fib[i-1] + fib[i-2];
+}
+console.log(fib);
+
+
+Q16. Difference between iterative and recursive Fibonacci implementation?
+Answer:
+
+Iterative: uses loop, efficient, less memory.
+
+Recursive: elegant, but can cause stack overflow for large n.
+
+6. Advanced/Tricky Questions
+
+Q17. What will be the output?
+
+console.log(a);
+var a = 5;
+
+
+Answer: undefined (due to hoisting)
+
+Q18. What about this?
+
+console.log(b);
+let b = 5;
+
+
+Answer: ReferenceError (TDZ)
+
+Q19. How do you deep clone an object?
+Answer: Using JSON.parse(JSON.stringify(obj)) for simple objects
+
+Q20. How do you destructure arrays and objects?
+
+let arr = [1,2,3];
+let [a,b] = arr; // a=1, b=2
+
+let obj = {name:"react", year:2017};
+let {name, year} = obj;

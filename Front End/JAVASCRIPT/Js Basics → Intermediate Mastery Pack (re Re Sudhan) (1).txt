@@ -1,0 +1,168 @@
+JavaScript Student Notes with Interview-Focused
+Questions
+Conditions for This Content
+• Language must stay easy and clear for students.
+• Every topic should have explanation + small interview focus.
+• Must include if, else if, else conditions clearly.
+• Include topic-level interview questions and coding practice questions.
+
+1) Variables
+• Declaration → let a; (only name created).
+👉 Interview: Default value is undefined .
+• Initialization → a = 10; (value assigned).
+👉 Interview: Without initialization, variable is undefined.
+• var → old, function scope, hoisted.
+👉 Interview: Avoid var because of hoisting bugs.
+• let → block scope, used when value can change.
+👉 Interview: Good for counters and reassigning values.
+• const → block scope, fixed binding.
+👉 Interview: Object properties can change, but reference cannot.
+
+2) Operators
+• Arithmetic (+ - * / % ++ --)
+👉 Interview: Common in loops and counters.
+• Comparison (==, ===, !=, !==, >, <, >=, <=)
+👉 Interview: Always prefer === for strict comparison.
+• Logical (&&, ||, !)
+👉 Interview: Used for multiple condition checks.
+
+1
+
+• Assignment (=, +=, -=, *=, /=)
+👉 Interview: Used to update values quickly.
+
+3) Conditions (if / else if / else)
+• if → Runs only if condition true.
+
+if (marks >= 35) {
+console.log("Pass");
+}
+👉 Interview: Basic control structure; checks one condition.
+• else → Runs when if condition is false.
+
+if (marks >= 35) {
+console.log("Pass");
+} else {
+console.log("Fail");
+}
+👉 Interview: Gives alternative path.
+• else if → Multiple conditions check.
+
+if (marks >= 90) {
+console.log("Grade A");
+} else if (marks >= 75) {
+console.log("Grade B");
+} else if (marks >= 35) {
+console.log("Pass");
+} else {
+console.log("Fail");
+}
+👉 Interview: Shows ability to chain conditions for ranges.
+
+2
+
+4) Data Types
+• Primitive → string, number, boolean, null, undefined.
+👉 Interview: Stored directly in memory.
+• Non-Primitive → array, object, function.
+👉 Interview: Stored as references.
+Examples: - String → "Hello" - Number → 10 - Boolean → true/false - Array → [1,2,3] - Object →
+{name:"ReRe"} - Array of Objects → [{id:1},{id:2}]
+👉 Interview: typeof null is object (JavaScript bug).
+
+5) Functions
+• Function Declaration → function greet(){}
+👉 Interview: Hoisted.
+• Function Expression → const greet = function(){}
+👉 Interview: Not hoisted.
+• Arrow Function → const greet = () => {}
+👉 Interview: Does not have its own this .
+• Parameters vs Arguments
+👉 Parameters = placeholders, Arguments = real values.
+
+6) Loops
+• for → known count.
+• while → unknown count.
+• do...while → at least once.
+• nested loop → loop inside loop.
+👉 Interview: Loops test logical flow and array handling.
+
+7) Patterns (Nested Loops)
+• Right Triangle →
+
+3
+
+*
+**
+***
+• Inverted Triangle →
+***
+**
+*
+• Numbers Triangle →
+1
+12
+123
+👉 Interview: Classic loop logic test.
+
+8) Arrays + Loops
+• Print all values → with for loop.
+• Find even numbers → check % 2 == 0 .
+• Add all numbers → sum = sum + arr[i] .
+👉 Interview: Arrays + loops are core for coding tests.
+
+9) Array Methods (Basic Only)
+• push → add last.
+• pop → remove last.
+• shift → remove first.
+• unshift → add first.
+👉 Interview: These 4 are must-know basics.
+
+10) Prototype
+• Every array/object has prototype.
+👉 Interview: Built-in methods exist because of prototype.
+
+4
+
+• Prototype = blueprint for inheritance.
+👉 Interview: JS inheritance works with prototype chain.
+
+11) Interview Questions (Topic-Wise)
+Variables 1. Difference between var, let, const? 2. Can const objects be changed? 3. What happens if
+variable used before declaration?
+Operators 4. Difference between == and ===? 5. Where do we use logical operators?
+Conditions 6. Write if/else program for pass/fail. 7. Write else if ladder for grading system.
+Data Types 8. Primitive vs Non-Primitive? 9. Why is typeof null = object?
+Functions 10. 3 types of functions? 11. Difference between arrow and normal function?
+Loops 12. Where to use while loop in real life? 13. What is nested loop and example?
+Arrays 14. How to print even numbers from array? 15. Difference between push and unshift?
+Prototype 16. What is prototype? 17. How are array methods available by default?
+
+12) Coding Questions (Interview Style)
+1. Print numbers 1 to 10.
+2. Print even numbers from 2 to 20.
+3. Print multiplication table of 5.
+4. Reverse an array manually.
+5. Count vowels in string.
+6. Find maximum in array.
+7. Check palindrome string.
+8. Print square pattern of *.
+9. Print right triangle of *.
+10. Print inverted triangle of *.
+11. Print number triangle.
+12. Print numbers 10 to 1.
+13. Find sum of first N numbers.
+14. Swap two numbers without temp variable.
+15. Print factorial using loop.
+16. Write if/else if program for marks grading.
+17. Write program using while loop to print numbers until 100.
+18. Write nested loop to print multiplication tables 1–10.
+
+5
+
+👉 Now content includes if, else if, else conditions with explanation + examples at the right place, plus
+strong coding and interview questions.
+
+6
+
+

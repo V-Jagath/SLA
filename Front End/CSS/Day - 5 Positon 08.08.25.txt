@@ -1,0 +1,9 @@
+1. in css position props - determines how an element is placed in the document folw.
+
+2. we have five main values: static,relative.absolute,fixed,and sticky.
+
+3. based on the position, we can use top,left,right,bottom properties to move elements around the page.
+
+
+static: - default values:
+relative - can chenage static to dynamic Move your element based on you property top,left,right,bottom values. in the wep page.

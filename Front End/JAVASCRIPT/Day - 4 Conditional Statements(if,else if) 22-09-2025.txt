@@ -1,0 +1,637 @@
+✅ Conditional Statements in JavaScript
+
+arithmatic and comparision operator is very importent for this if condition 
+
+IF SYNTAX:-
+in this condition is use for desition making. if desition is true the blcok is run. wheter this condtion true or false only check
+condtion is true code inside if block in run. otherwise false skip the block and go to else part and run the code for else part 
+  
+IF (CONDITION){
+
+}
+ELSE
+{}
+
+TRUE HA IRUNTHA INTHA BLOCK ULLA VARUM 
+
+ELSE IF:-
+
+IF (CONDITION){}
+ELSE IF (CONDITION){
+ELSE
+{}
+
+ELSE
+
+NESTED IF
+
+ES6+ 
+
+Ternory Operator (single line condition)
+
+CONDITION?"":""
+
+true ha iruntha 1st operate agum
+false ha iruntha 2nd operate agum.
+
+var a = 10
+var b =12
+
+if (a>b(condition)){
+document.write ("yes this is a bigger then b")
+}
+else
+{
+document.write ("No, this not big")
+}
+
+output
+no, this is not big
+
+
+template iltres (``) - string concadination panna use agum es6 la feature.
+
+document.write(`yes ${a}, is bigger then ${b}`)
+
+
+        var age_a = 20
+        if (age_a > 18) {
+            document.write("Eligible")
+        }
+        else if (age_a >= 18) {
+            doument.write("Varification needed")
+        }
+        else {
+            document.write("not allowed")
+        }
+
+
+type of ---> datatype ha automatic ha change pannikum.
+
+null ---> type of la null --> object nu varum
+
+Example:-
+
+var login=true;
+
+var admin_login=false;
+
+if(login===true && admin_login ===true){
+document.write("ok DOne!! You login")
+}
+
+else{
+document.write("no need to login")
+}
+
+
+       mark =40
+       
+
+       if (mark==70){
+           console.log("Going to class o")
+       }
+       else if(mark ==69){
+           console.log("going to class a")
+       }
+       else if (mark>70){
+           console.log("going to class b")
+       }
+       else{
+           console.log("Move to re-exam")
+       }
+
+
+
+even or odd number :-
+
+number%2==0?"even":"odd";
+
+
+Truthy value and Falsy values:-
+
+Truthy value:-
+examples:-
+
+string la 0 potta true value return pannum.
+Non zero numebers also return true values.
+even array and object
+empty function is true  
+
+if false ha irutha true value retun pannathu
+
+flasy value examples:-(interview ku importent)
+
+0 
+-0
+empty string
+null
+undefined
+
+if(0){
+document.write("yes its 0")
+}
+else 
+{
+doument.write("no its not 0")
+}
+
+output 
+
+no its not 0
+
+
+---------------------------------------------------------------------
+
+✅ Conditional Statements in JavaScript
+🔹 Conditional Statements in JavaScript
+
+Conditional statements allow us to make decisions in code.
+They check conditions (true / false) and execute different code depending on the result.
+
+JavaScript mainly supports:
+
+if
+
+if...else
+
+if...else if...else
+
+nested if
+
+ternary operator (ES6+)
+
+1️⃣ IF Statement
+
+👉 Used when you want to execute a block of code only if the condition is true.
+
+Syntax:
+if (condition) {
+   // code runs if condition is true
+}
+
+Example:
+let age = 20;
+
+if (age >= 18) {
+   console.log("You are eligible to vote ✅");
+}
+
+2️⃣ IF...ELSE Statement
+
+👉 Runs one block if the condition is true, otherwise runs the else block.
+
+Syntax:
+if (condition) {
+   // runs if true
+} else {
+   // runs if false
+}
+
+Example:
+let number = -5;
+
+if (number >= 0) {
+   console.log("Positive number 👍");
+} else {
+   console.log("Negative number 👎");
+}
+
+3️⃣ IF...ELSE IF...ELSE Statement
+
+👉 Used when you have multiple conditions.
+JavaScript checks them one by one.
+
+Syntax:
+if (condition1) {
+   // if condition1 true
+} else if (condition2) {
+   // if condition2 true
+} else {
+   // if none are true
+}
+
+Example:
+let marks = 75;
+
+if (marks >= 90) {
+   console.log("Grade: A+ 🌟");
+} else if (marks >= 75) {
+   console.log("Grade: A 👍");
+} else if (marks >= 50) {
+   console.log("Grade: B 🙂");
+} else {
+   console.log("Failed ❌");
+}
+
+4️⃣ Nested IF Statement
+
+👉 Putting one if statement inside another.
+Used for complex decision making.
+
+Syntax:
+if (condition1) {
+   if (condition2) {
+      // runs if both are true
+   }
+}
+
+Example:
+let username = "admin";
+let password = "12345";
+
+if (username === "admin") {
+   if (password === "12345") {
+      console.log("Login successful 🔓");
+   } else {
+      console.log("Incorrect password ❌");
+   }
+} else {
+   console.log("User not found ❌");
+}
+
+5️⃣ Ternary Operator (ES6+)
+
+👉 Short-hand way of writing if...else.
+Used for single-line conditions.
+
+Syntax:
+condition ? valueIfTrue : valueIfFalse;
+
+Example:
+let age = 18;
+
+let result = (age >= 18) ? "Adult ✅" : "Minor ❌";
+console.log(result);
+
+
+➡️ You can also nest ternary operators (but keep it simple for readability).
+
+let marks = 85;
+
+let grade = (marks >= 90) ? "A+" :
+            (marks >= 75) ? "A" :
+            (marks >= 50) ? "B" : "Fail";
+
+console.log(grade);
+
+
+✅ Summary in Tamil (for your easy recall):
+
+IF – Condition true na block oda run agum.
+
+IF...ELSE – True na if block, illa na else block.
+
+ELSE IF – Many conditions check panna use panrom.
+
+Nested IF – Oru if kulla vera if.
+
+Ternary – Single line condition check.
+
+5. Template Literals (ES6)
+
+👉 Used for string concatenation with variables.
+
+let a = 10, b = 12;
+document.write(`Yes, ${a} is smaller than ${b}`);
+
+6. Logical Operators
+
+&& → AND (all must be true)
+
+|| → OR (at least one true)
+
+! → NOT
+
+👉 Example:
+
+let login = true;
+let admin_login = false;
+
+if (login === true && admin_login === true) {
+   document.write("Login Successful");
+} else {
+   document.write("Access Denied");
+}
+
+7. Typeof Operator
+
+Checks data type of a value.
+
+Example:
+
+console.log(typeof "Hello");   // string
+console.log(typeof 10);        // number
+console.log(typeof true);      // boolean
+console.log(typeof null);      // object (special case in JS!)
+console.log(typeof undefined); // undefined
+
+8. Truthy & Falsy Values
+
+👉 Truthy Values:
+
+Non-zero numbers (1, -5)
+
+Non-empty strings ("hello", "0")
+
+Arrays ([])
+
+Objects ({})
+
+Functions (function() {})
+
+👉 Falsy Values (Interview Important 💡):
+
+0
+
+-0
+
+"" (empty string)
+
+null
+
+undefined
+
+NaN
+
+Example:
+
+if (0) {
+   console.log("Yes, it’s 0");
+} else {
+   console.log("No, it’s not 0");
+}
+
+
+Output:
+No, it’s not 0
+
+9. Mark Example
+let mark = 40;
+
+if (mark == 70) {
+   console.log("Going to class O");
+} else if (mark == 69) {
+   console.log("Going to class A");
+} else if (mark > 70) {
+   console.log("Going to class B");
+} else {
+   console.log("Move to re-exam");
+}
+
+
+Output:
+Move to re-exam
+
+✅ Truthy & Falsy Values in JavaScript
+🔹 What are Truthy & Falsy values?
+
+In JavaScript, any value can be coerced (converted) into a boolean (true / false) when used in a condition (if, while, &&, ||, etc.).
+
+Truthy: Values that become true when converted to boolean.
+
+Falsy: Values that become false when converted to boolean.
+
+🔴 Falsy Values in JavaScript
+
+Only 7 values are considered falsy in JS:
+
+false → Boolean false itself
+
+0 → Zero
+
+-0 → Negative zero
+
+0n → BigInt zero
+
+"" → Empty string (single, double, or backtick quotes)
+
+null
+
+undefined
+
+NaN → Not a Number
+
+👉 Example:
+
+if (0) {
+   console.log("Truthy");
+} else {
+   console.log("Falsy");
+}
+// Output: Falsy
+
+🟢 Truthy Values in JavaScript
+
+Everything other than the falsy values is truthy.
+Some examples:
+
+true
+
+Non-zero numbers (1, -5, 3.14)
+
+Non-empty strings ("hello", " ", "0")
+
+Arrays ([])
+
+Objects ({})
+
+Functions (function() {})
+
+Dates (new Date())
+
+👉 Example:
+
+if ("0") {
+   console.log("Truthy");
+} else {
+   console.log("Falsy");
+}
+// Output: Truthy
+
+⚡ Checking Truthy & Falsy
+
+You can quickly check using Boolean(value) or double negation !!value:
+
+console.log(Boolean(0));       // false
+console.log(Boolean(""));      // false
+console.log(Boolean([]));      // true
+console.log(Boolean({}));      // true
+console.log(Boolean("hello")); // true
+console.log(Boolean(NaN));     // false
+
+📌 Example in Condition
+let username = "";
+
+if (username) {
+   console.log("Welcome " + username);
+} else {
+   console.log("Please enter username");
+}
+// Output: Please enter username (because "" is falsy)
+
+🔑 Interview Tip
+
+👉 When asked "How many falsy values in JS?", always answer:
+There are 7 falsy values → false, 0, -0, 0n, "", null, undefined, NaN.
+Everything else is truthy.
+
+⚡ So in short:
+
+Use if / else for multi-block conditions.
+
+Use ternary for quick one-liners.
+
+Remember truthy & falsy (important in interviews).
+
+typeof helps in debugging & type-checking.
+
+Template literals (``) simplify string concatenation.
+
+
+💡 Interview Questions on Conditional Statements in JavaScript
+
+1. What are conditional statements in JavaScript?
+
+Answer:
+Conditional statements are used to make decisions in code. They check a condition (true/false) and execute different blocks depending on the result.
+👉 Types: if, if...else, if...else if, nested if, ternary operator.
+
+2. What is the difference between if and if...else?
+
+if → Executes a block only if condition is true.
+
+if...else → Provides an alternative block when condition is false.
+
+Example:
+
+let n = 5;
+if (n > 0) console.log("Positive");
+else console.log("Negative");
+
+3. When should we use if...else if...else instead of nested if?
+
+if...else if...else → Better when you have multiple separate conditions.
+
+nested if → Used when decisions depend on multiple levels of conditions.
+
+4. What is the ternary operator in JavaScript?
+
+Answer:
+The ternary operator (condition ? expr1 : expr2) is a shorthand for if...else.
+👉 It is best for one-line conditions.
+
+Example:
+
+let age = 20;
+let status = (age >= 18) ? "Adult" : "Minor";
+
+5. Can we nest ternary operators?
+
+Answer: Yes, but it reduces readability.
+
+Example:
+
+let marks = 85;
+let grade = (marks >= 90) ? "A+" : (marks >= 75) ? "A" : "B";
+console.log(grade); // A
+
+6. What are truthy and falsy values in JavaScript?
+
+Answer:
+
+Falsy values (7 only): false, 0, -0, 0n, "", null, undefined, NaN
+
+Truthy values: Everything else (like "0", [], {}, " " etc.).
+
+7. How many falsy values are in JavaScript?
+
+Answer: 7 values → false, 0, -0, 0n, "", null, undefined, NaN.
+👉 Important interview question 💡
+
+8. Difference between == and === in conditional statements?
+
+== → Loose equality (does type conversion).
+
+=== → Strict equality (checks value + type).
+
+Example:
+
+console.log(0 == "0");  // true
+console.log(0 === "0"); // false
+
+9. What is the use of typeof in JavaScript conditions?
+
+Answer:
+typeof is used to check the type of a variable.
+
+console.log(typeof 10);      // number
+console.log(typeof "Hello"); // string
+
+
+👉 Useful in conditions to validate inputs.
+
+10. Difference between && and || in conditional checks?
+
+&& (AND) → Returns true only if all conditions are true.
+
+|| (OR) → Returns true if at least one condition is true.
+
+Example:
+
+if (user && password) { ... }  // both must be valid  
+if (user || guest) { ... }     // at least one valid  
+
+11. Can we use conditions without if?
+
+Answer: Yes → using &&, ||, and ternary operators.
+
+Example:
+
+let isLogged = true;
+isLogged && console.log("Welcome User"); // short-circuit check
+
+12. What happens if we use a non-boolean in an if condition?
+
+Answer:
+JavaScript automatically converts it to a boolean using truthy/falsy rules.
+
+Example:
+
+if ("0") console.log("Runs!");  // "0" is truthy
+if (0) console.log("Never runs"); // 0 is falsy
+
+13. What is the output of this code? (Tricky ⚡)
+if ([] == false) console.log("Yes");
+else console.log("No");
+
+
+Answer: Output → "Yes"
+👉 Because [] is truthy, but in comparison [] == false does type coercion ([].toString() → "" → 0 → false).
+
+14. Can we replace if...else with switch-case?
+
+Answer: Yes, if comparing the same variable against multiple values.
+But for ranges (e.g., marks >= 50) → if...else is better.
+
+15. Interview Trick Question 💡
+if (" ") console.log("Run");
+else console.log("Not Run");
+
+
+Answer: "Run"
+👉 Because " " (a space string) is truthy, even though it looks empty.
+
+✅ Quick Revision (Interview Keywords):
+
+7 falsy values (must remember).
+
+== vs ===.
+
+Ternary operator (syntax + example).
+
+Truthy values (like "0", " ", [], {} are all true!).
+
+Short-circuit evaluation with && and ||.
+
+Nested if vs else if difference.

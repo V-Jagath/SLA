@@ -1,0 +1,94 @@
+Pseudo - classes:
+
+A Pseudo - classes: defines a special state of an element.
+
+Syntx: selector:Pseudo-class {P:values}
+
+
+:hover - when mouse is over the elements. - Most of the wep pages
+p:hover {color:red}
+
+:active - when element is being clicked. - Links a href - Botton
+a:active {background-color:blue}
+
+:focus - when input is focused (clicked/typed). - Input box, form elements.
+
+:first-child - selects first child inside you parent.
+ul:first-child {color:red}
+
+<ul>
+<li></li> - apply
+<li></li>
+<li></li>
+</ul>
+
+:last-child - selects last child inside your parent.
+
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>  - Apply
+</ul>
+
+:checked - checkbox/radio when selected.
+
+:disabled/:enabled - input field disabled/enabled
+
+:not(selector): selected everything expect given selector - Powerfull filters:
+
+Pseudo - Elements:
+
+A Pseudo - Elements lets you style specific parts of an element.
+
+Syntx: selector::Pseudo-elements {P:values}
+
+::before - inserts content before elements content - add icons,shapes
+
+::after - inserts content after elements's content. - deccarative elements
+
+::first-letter - styles first letter - articles - drop-cap style
+
+::first-line - styles first line:
+
+::selection styles text when user selectes it.
+
+::marker - styles list markers (bullets/number/dot)
+
+
+Animations:
+CSS animations are mainly done with transition for simple state changes and @keyframes with animations-* properties for complex, repeated or timed effects.
+
+Transition - smooth change of property over the time.
+
+Transform  - moves,rotates,scales,skews elements
+
+@keyframes - defines animation steps.
+
+animations-name - Name
+
+animation-duration - time
+
+animation-* - (duratio,iteration-cout,direction,fill-mode)
+
+
+
+Media Query:
+1. A media query is a feature of css that allows web content to adapt  to different screen size and device types like (phone,tablets,laptops,desktops).
+2. media queries help create responsive web designs, which means your site looks good on all devies.
+
+media queries check for certain conditions (like screen width). apply css rules only if those conditions are true
+
+
+sytax -
+ @media (condition) {
+
+	selector {pros:values}
+
+}
+
+450,520,600-px - small screen.
+1200,1350-px - large screen.
+Dark Mode:

@@ -1,0 +1,30 @@
+Universal selector
+
+*
+
+Universal selector: *
+
+To control your All element of your webpage.
+
+
+Element Selector <tags>
+To use the elements for design. 
+
+
+Class Selector .name
+
+
+
+id  Selector #name
+
+/* Grope selector */ - elements group
+
+Descendant Selector - perent - child
+
+attribute selector - input[type="text"]{}
+
+pseudo-class selector
+a:hover
+
+pseudo-element selector
+P::fist-line{}

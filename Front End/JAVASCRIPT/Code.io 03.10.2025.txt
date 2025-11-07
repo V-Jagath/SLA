@@ -1,0 +1,2532 @@
+TYPE OF :-
+
+let sum = 10+20;
+console.log (type of sum);
+
+------------------------------------------------
+🧩 Topic: typeof Operator in JavaScript
+🔹 What is it?
+
+typeof is a JavaScript operator used to find the data type of a variable or value.
+
+It tells you whether something is a number, string, boolean, object, etc.
+
+🔹 Why is it used?
+
+We use typeof to:
+
+Debug and check variable types during coding.
+
+Make sure a variable is of the expected type before performing operations.
+
+Handle different data types dynamically (especially useful in form validations, APIs, etc.)
+
+🔹 Where is it used?
+
+In JavaScript debugging (to check what kind of data a variable holds).
+
+In input validation (to confirm if input is string/number).
+
+In conditional checks (before arithmetic or string operations).
+
+In dynamic typing (since JavaScript allows variable types to change).
+
+🔹 Example
+
+✅ Correct Code:
+
+let sum = 10 + 20;
+console.log(typeof sum);
+
+🧾 Output:
+number
+
+
+❌ Wrong Code (common mistake):
+
+console.log(type of sum);
+
+
+Because there’s no space allowed — it must be typeof (one word).
+
+🔹 More Examples
+console.log(typeof "Jagath");   // string
+console.log(typeof 123);        // number
+console.log(typeof true);       // boolean
+console.log(typeof undefined);  // undefined
+console.log(typeof null);       // object (a known JS bug)
+console.log(typeof {});         // object
+console.log(typeof []);         // object
+console.log(typeof function(){}); // function
+
+🔹 Interview Questions
+
+Q: What does the typeof operator do?
+A: It returns the data type of a variable or value as a string.
+
+Q: What is the output of typeof null?
+A: "object" — it’s a historical bug in JavaScript.
+
+Q: What is the output of typeof NaN?
+A: "number" — because NaN is still of number type.
+
+Q: What is the output of typeof []?
+A: "object" — because arrays are special kinds of objects.
+
+Q: What is the output of typeof function() {}?
+A: "function" — a special type of object.
+
+Q: Can typeof be used with undeclared variables?
+A: Yes! It safely returns "undefined" instead of throwing an error.
+
+Q: What’s the difference between typeof and instanceof?
+A: typeof checks data type, while instanceof checks object inheritance.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+BIG INT:-
+
+2^53-1 this is a bigint number.
+
+normal number you can add numbers 
+89823484745766743345 + 1 =89823484745766743346
+
+89823484745766743345 + 2=89823484745766743346  // wrong ans 
+
+so you can use bigint
+
+bigint(n) +bigint(n)=bigint(n) 
+
+2384827648274543n+5n=2384827648274548n
+
+---------------------------------------------------------------------------------------------------------------------------------------
+🧩 Topic: BigInt in JavaScript
+🔹 What is BigInt?
+
+BigInt is a special numeric data type in JavaScript used to represent very large integers that cannot be handled accurately by the normal Number type.
+
+Normal numbers in JavaScript are 64-bit floating-point numbers, and they can only safely represent integers up to:
+
+👉 2^53 - 1 (which is 9007199254740991)
+
+Beyond that, JavaScript numbers lose accuracy — and that’s where BigInt helps.
+
+🔹 Why is BigInt used?
+
+Because normal numbers:
+
+Cannot handle very large integers accurately.
+
+Cause rounding errors when doing arithmetic with huge values (like credit card IDs, phone numbers, or cryptography).
+
+✅ BigInt solves this by allowing safe storage and operations on huge integers.
+
+🔹 Where is BigInt used?
+
+BigInt is useful in:
+
+Cryptography (large prime numbers)
+
+Banking / finance (high-precision IDs or transaction numbers)
+
+Data IDs (very large unique IDs)
+
+Scientific calculations requiring exact integer math
+
+Backend calculations that deal with large datasets
+
+🔹 Example
+❌ Normal Number (Incorrect)
+console.log(89823484745766743345 + 2);
+
+
+👉 Output: 89823484745766743344 (⚠️ wrong due to overflow/precision loss)
+
+✅ Using BigInt (Correct)
+console.log(89823484745766743345n + 2n);
+
+
+👉 Output: 89823484745766743347n ✅
+
+🔹 How to Declare BigInt
+
+By adding n at the end:
+
+let big1 = 123456789012345678901n;
+
+
+Using the BigInt() function:
+
+let big2 = BigInt(123456789012345678901);
+
+🔹 Arithmetic with BigInt
+
+You can use all normal operators:
++, -, *, /, %, **
+(but only between BigInts — you can’t mix normal numbers and BigInts)
+
+let a = 2384827648274543n;
+let b = 5n;
+
+console.log(a + b);  // 2384827648274548n
+console.log(a - b);  // 2384827648274538n
+console.log(a * b);  // 11924138241372715n
+
+
+⚠️ Note:
+
+console.log(5n + 2); // ❌ TypeError (can’t mix BigInt and Number)
+
+🔹 Key Points
+Feature	Description
+Data Type	bigint
+Declaration	add n at end or use BigInt()
+Max Safe Integer	2^53 - 1
+Mixing with normal numbers	❌ Not allowed
+Used for	very large integers
+🔹 Interview Questions
+
+Q: What is the purpose of BigInt in JavaScript?
+A: To represent integers larger than 2^53 - 1 accurately.
+
+Q: How do you declare a BigInt value?
+A: By adding n at the end of the number or using BigInt() function.
+
+Q: Can you mix BigInt and normal numbers in operations?
+A: No, doing so will cause a TypeError.
+
+Q: What is the output of typeof 123n?
+A: "bigint"
+
+Q: What is the max safe integer in JavaScript’s normal Number type?
+A: 2^53 - 1 (9007199254740991)
+
+Q: Can BigInt represent decimals?
+A: No, it’s only for whole integers.
+
+Q: What happens if you divide BigInts?
+A: It returns the integer result only (decimal part is removed).
+
+Example:
+
+console.log(10n / 3n); // 3n
+--------------------------------------------------------------------------------------------------------------------------------
+
+PROMT:-
+
+input= promt("what is your name?");
+output=confirm(`is your name${input}`)
+
+console.log(output)
+
+true or false is printed in our console
+-----------------------------------------------------------------------------------------------------------------------------------
+
+🧩 Topic: prompt() in JavaScript
+🔹 What is prompt()?
+
+prompt() is a browser function in JavaScript that asks the user for input through a small dialog box.
+
+It lets the user type some text, which is then stored in a variable.
+
+🔹 Why is it used?
+
+We use prompt() to:
+
+Get user input directly from the browser (like a name, age, or number).
+
+Create interactive webpages without needing HTML forms.
+
+Test or demonstrate simple programs quickly.
+
+🔹 Where is it used?
+
+You’ll commonly see prompt() in:
+
+Basic JavaScript learning or demos.
+
+Simple games or quizzes that ask user questions.
+
+Client-side input collection for testing.
+(Note: In real-world web apps, forms are used instead.)
+
+🔹 Syntax
+prompt("message", "default value");
+
+
+"message" → the text shown to the user.
+
+"default value" (optional) → pre-filled text in the box.
+
+🔹 Example
+let name = prompt("What is your name?");
+console.log("Hello, " + name);
+
+
+🖥️ Output (on browser):
+
+Popup: What is your name?
+User enters: Jagath
+Console: Hello, Jagath
+
+🔹 Your Example (with confirm):
+let input = prompt("What is your name?");
+let output = confirm(`Is your name ${input}?`);
+
+console.log(output);
+
+🧠 Explanation:
+
+prompt() asks for your name and stores it in input.
+
+confirm() shows a pop-up message like:
+
+“Is your name Jagath?”
+
+If you click OK, output = true
+
+If you click Cancel, output = false
+
+console.log(output) prints the result.
+
+🖥️ Console Output:
+
+true  ✅ (if OK)
+false ❌ (if Cancel)
+
+🔹 Related Browser Functions
+Function	Purpose	Returns
+alert("msg")	Shows a message	Nothing (undefined)
+prompt("msg")	Asks for user input	String
+confirm("msg")	Yes/No question	Boolean (true/false)
+🔹 Interview Questions
+
+Q: What does prompt() do?
+A: It shows a dialog box asking for user input and returns that input as a string.
+
+Q: What is the return type of prompt()?
+A: String (or null if Cancel is clicked).
+
+Q: What does confirm() return?
+A: A boolean value — true for OK, false for Cancel.
+
+Q: What happens if you click Cancel in a prompt()?
+A: It returns null.
+
+Q: Can prompt() be used in Node.js?
+A: ❌ No, it only works in browsers (it’s part of the Window API).
+
+Q: What is the difference between alert(), prompt(), and confirm()?
+A:
+
+alert() → shows message only
+
+prompt() → asks for text input
+
+confirm() → asks for yes/no choice
+
+✅ Summary Table
+Function	Example	Returns	Used For
+alert()	alert("Hi!")	undefined	Show message
+prompt()	prompt("Name?")	String / null	Get input
+confirm()	confirm("Are you sure?")	true / false	Confirm action
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+TYPE CONVERSIONS:-
+
+1.Number to String
+
+let age =23;
+console.log(typeof age)--->number
+age=String(age)
+console.log(typeof age)--->string
+
+2. String to Number
+
+let age ="23";
+console.log(typeof age)--->string
+age=number(age)
+console.log(typeof age)--->number
+
+
+Nan- Not a Number
+null  ---> 0
+true  ---> 1
+false ---> 0
+
+3. Boolean Convertion:-
+
+let x=1;
+console.log(typeof x) ---->number
+x=Boolean(x) ------>True
+x=0  ----->false but x="0"---->true(because 0 is a string so it's value is true)
+x=-89---->true
+
+anystring (or) onespace --->true
+emptystring --->false
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+🧩 Topic: Type Conversions in JavaScript
+🔹 What is Type Conversion?
+
+Type Conversion means changing the data type of a value from one type to another.
+
+In JavaScript, this can happen in two ways:
+
+Implicit (Type Coercion) → JS converts automatically.
+
+Explicit (Type Casting) → You convert manually using functions like String(), Number(), or Boolean().
+
+🔹 Why is it used?
+
+We use type conversion to:
+
+Match data types before performing operations (e.g., addition, comparison).
+
+Avoid unexpected results from JavaScript’s automatic coercion.
+
+Work correctly with user inputs (which come as strings from prompt(), HTML forms, etc.)
+
+🔹 Where is it used?
+
+You’ll find type conversions in:
+
+Form inputs (where everything is a string by default).
+
+Mathematical calculations (to ensure numbers are used).
+
+Condition checks (to ensure truthy/falsy values are handled correctly).
+
+API or JSON data processing (where data types may vary).
+
+🔹 Types of Type Conversions
+1️⃣ Number → String
+let age = 23;
+console.log(typeof age);   // number
+
+age = String(age);
+console.log(typeof age);   // string
+
+
+📘 Explanation:
+String(value) converts a number into a string.
+Same can be done with age.toString().
+
+2️⃣ String → Number
+let age = "23";
+console.log(typeof age);   // string
+
+age = Number(age);
+console.log(typeof age);   // number
+
+
+📘 Note:
+Be careful with non-numeric strings:
+
+Number("hello");  // NaN
+
+⚡ Special Conversions
+Value	Number(value) Result
+"23"	23
+"23abc"	NaN
+null	0
+true	1
+false	0
+undefined	NaN
+
+🧠 NaN → Not a Number
+Means the conversion failed — it’s a special “number” value in JS.
+
+3️⃣ Boolean Conversion
+
+You can convert any value into true or false using Boolean().
+
+let x = 1;
+console.log(Boolean(x));  // true
+
+x = 0;
+console.log(Boolean(x));  // false
+
+x = -89;
+console.log(Boolean(x));  // true
+
+x = "0";
+console.log(Boolean(x));  // true (because "0" is a non-empty string)
+
+x = "";
+console.log(Boolean(x));  // false
+
+⚡ Truthy vs Falsy Values
+Falsy Values	Truthy Values
+0	Any non-zero number
+"" (empty string)	" " (space)
+null	Any non-empty string
+undefined	Objects ({}, [])
+NaN	Functions
+🔹 Example (Mixed Conversion)
+let value = "100";
+console.log(typeof value); // string
+
+value = Number(value);
+console.log(typeof value); // number
+
+value = Boolean(value);
+console.log(value);        // true
+
+🔹 Shortcuts for Conversion
+Conversion	Shortcut Example
+String → Number	+str → +"23" → 23
+Number → String	num + "" → 23 + "" → "23"
+Any → Boolean	!!value
+
+Example:
+
+console.log(+"45");     // 45 (string → number)
+console.log(!!"hello"); // true
+
+🔹 Interview Questions
+
+Q: What is the difference between implicit and explicit type conversion?
+A: Implicit is automatic (done by JS); explicit is manual (using functions).
+
+Q: What is the output of Number("123abc")?
+A: NaN
+
+Q: What is the output of Boolean(0) and Boolean("0")?
+A: false and true
+
+Q: What will Number(true) and Number(false) return?
+A: 1 and 0
+
+Q: What is typeof NaN?
+A: "number" (special case in JS)
+
+Q: How to convert a string to number in short form?
+A: By using the unary plus (+) operator → + "45" gives 45.
+
+Q: What is the Boolean value of an empty string?
+A: false
+
+Q: Why is Number(null) equal to 0?
+A: Because null is treated as “no value,” and JS coerces it to zero.
+
+✅ Summary Table
+From	To	Method	Example	Result
+Number	String	String()	String(23)	"23"
+String	Number	Number()	Number("23")	23
+Any	Boolean	Boolean()	Boolean("")	false
+Boolean	Number	Number(true)	1	
+null	Number	Number(null)	0	
+undefined	Number	Number(undefined)	NaN
+
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+OPERATOR:-
+
+operators ----->+,-,*,/,%
+operands ---->numbers (1,2,3,....)
+
+1.UNARY OPERATOR:-(single operands)
+
+let x=-1;
+x=-x;
+console.log(x)
+
+2.BINARY OPERATOR:-
+
+let a =12;
+let b=14;
+let sum= a+b
+console.log(sum)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Operators in JavaScript
+🔹 What is an Operator?
+
+An operator is a symbol that tells JavaScript to perform a specific operation (like addition, subtraction, comparison, etc.) on one or more operands (values or variables).
+
+👉 Example:
+
+let x = 5 + 3;
+
+
++ → operator
+
+5 and 3 → operands
+
+Result → 8
+
+🔹 Why are Operators used?
+
+Operators are used to:
+
+Perform mathematical calculations
+
+Make logical decisions
+
+Compare values
+
+Assign data to variables
+
+Control program flow
+
+🔹 Where are Operators used?
+
+You use them everywhere in JavaScript:
+
+In arithmetic (addition, subtraction, etc.)
+
+In conditions (if, while)
+
+In loops
+
+In assignments
+
+In functions and expressions
+
+🔹 Types of Operators
+
+Let’s look at the major types 👇
+
+1️⃣ Arithmetic Operators
+Operator	Description	Example	Output
++	Addition	10 + 5	15
+-	Subtraction	10 - 5	5
+*	Multiplication	10 * 5	50
+/	Division	10 / 5	2
+%	Modulus (remainder)	10 % 3	1
+**	Exponentiation	2 ** 3	8
+2️⃣ Unary Operator (Single Operand)
+
+Used with one value only.
+
+Example:
+
+let x = -1;
+x = -x;
+console.log(x);
+
+
+🧾 Output:
+
+1
+
+
+📘 Explanation:
+
+-x negates the value of x.
+
+If x was -1, then -(-1) becomes 1.
+
+3️⃣ Binary Operator (Two Operands)
+
+Used with two values (like addition, subtraction, etc.)
+
+Example:
+
+let a = 12;
+let b = 14;
+let sum = a + b;
+console.log(sum);
+
+
+🧾 Output:
+
+26
+
+
+📘 Explanation:
+
+Here, + is a binary operator that adds a and b.
+
+4️⃣ Assignment Operators
+Operator	Example	Meaning
+=	x = 10	Assigns 10 to x
++=	x += 5	x = x + 5
+-=	x -= 5	x = x - 5
+*=	x *= 5	x = x * 5
+/=	x /= 5	x = x / 5
+%=	x %= 5	x = x % 5
+5️⃣ Comparison Operators
+
+Used to compare two values.
+They always return a boolean (true or false).
+
+Operator	Description	Example	Result
+==	Equal to	5 == "5"	true
+===	Equal (strict)	5 === "5"	false
+!=	Not equal	5 != 4	true
+!==	Strict not equal	5 !== "5"	true
+>	Greater than	10 > 5	true
+<	Less than	10 < 5	false
+>=	Greater or equal	10 >= 10	true
+<=	Less or equal	10 <= 10	true
+6️⃣ Logical Operators
+
+Used to combine multiple conditions.
+
+Operator	Meaning	Example	Result
+&&	Logical AND	(5 > 3 && 2 < 4)	true
+`		`	Logical OR
+!	Logical NOT	!(5 > 3)	false
+7️⃣ Increment & Decrement Operators
+Operator	Description	Example	Result
+++	Increment by 1	x++ or ++x	Adds 1
+--	Decrement by 1	x-- or --x	Subtracts 1
+
+Example:
+
+let x = 5;
+x++;
+console.log(x); // 6
+
+8️⃣ Ternary Operator (Conditional)
+
+Shortcut for an if-else statement.
+
+let age = 18;
+let result = (age >= 18) ? "Adult" : "Minor";
+console.log(result);
+
+
+🧾 Output:
+
+Adult
+
+🔹 Bonus: typeof Operator
+
+We already learned this earlier 😉
+
+typeof 100   // "number"
+typeof "Hi"  // "string"
+
+🔹 Interview Questions
+
+Q: What is the difference between unary and binary operators?
+A: Unary → single operand, Binary → two operands.
+
+Q: What is the output of 10 % 3?
+A: 1 (remainder)
+
+Q: What’s the difference between == and ===?
+A: == checks value only; === checks value + type.
+
+Q: What’s the result of "5" + 2 and "5" - 2?
+A: "52" (string concatenation) and 3 (number subtraction).
+
+Q: What’s the output of !true?
+A: false
+
+Q: What’s the use of the % operator?
+A: It gives the remainder after division.
+
+Q: What’s a ternary operator?
+A: A shorthand for if-else → (condition) ? trueValue : falseValue.
+
+Q: What’s the output of x = 5; x += 2;?
+A: 7
+
+✅ Summary Table
+Type	Example	Operands	Description
+Unary	-x	1	Single operand
+Binary	a + b	2	Two operands
+Arithmetic	+ - * / %	2	Math operations
+Assignment	= += -=	2	Assign values
+Comparison	==, ===, >	2	Compare values
+Logical	`&&,		, !`
+Ternary	? :	3	Conditional operator
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+04.10.2025 ------> saturday
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+COMPARISONS:-
+1. NUMBER COMPARISON :-
+comparison is always retun boolean values only 
+
+you compare a and b => 
+
+a=12;
+b=12;
+
+a==b 
+
+2. STRING COMPARISON :-
+
+let a = "node"
+let b= "react"
+let resule=a<b;---->true
+
+javascript is used to unique code for comparison alphabets.
+
+you can easily identify dicznary value a-1,b-2,c-3
+capital letters is first priority
+
+
+let a = "2"
+let b= 1
+let resule=a<b;---->true
+
+
+let a = false
+let b= 0  
+let resule=a<b;---->true
+(0 is a false value so this is true)
+
+
+let a =false
+let b= 1
+let resule=a<b;---->false
+
+
+let a ="0" --->string not empty so value is true but empty string is false
+a=boolean(a)
+let b= 0
+b=boolean(b)
+console.log(a,b)
+
+output
+a --- true
+b --- false
+
+=  ----> Assign the values
+== ---> value check but type conversion automatically
+===  ----> check value and datatypes
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Comparisons in JavaScript
+🔹 What is Comparison?
+
+A comparison in JavaScript is an operation where we compare two values and the result is always a boolean (true or false).
+
+🔹 Why are Comparisons used?
+
+Comparisons are used to:
+
+Make decisions in code (if, else, while, etc.)
+
+Check equality or inequality
+
+Compare numbers, strings, or other values
+
+Control program flow based on conditions
+
+🔹 Where are Comparisons used?
+
+Conditional statements: if, else if, while, for loops
+
+Validations: checking user input, form data
+
+Sorting and filtering arrays
+
+Anywhere you need logical decisions
+
+🔹 Types of Comparisons
+1️⃣ Number Comparison
+
+Compare numeric values using operators like ==, ===, >, <, >=, <=.
+
+let a = 12;
+let b = 12;
+
+console.log(a == b);   // true
+console.log(a === b);  // true
+console.log(a > b);    // false
+console.log(a <= b);   // true
+
+
+Result is always boolean (true or false)
+
+2️⃣ String Comparison
+
+Strings are compared alphabetically based on Unicode values.
+
+Lowercase letters are after uppercase letters.
+
+Comparison works like a dictionary order.
+
+let a = "node";
+let b = "react";
+
+console.log(a < b);   // true ("n" comes before "r")
+
+3️⃣ Mixed Type Comparison
+
+JavaScript converts types automatically in some comparisons:
+
+let a = "2";
+let b = 1;
+console.log(a < b);   // true  (string converted to number)
+
+let a = false;
+let b = 0;
+console.log(a < b);   // false
+
+let a = false;
+let b = 1;
+console.log(a < b);   // true
+
+4️⃣ Boolean Conversion in Comparison
+
+Non-empty string → true
+
+Empty string → false
+
+false → 0, true → 1
+
+let a = "0"; // non-empty string
+a = Boolean(a); // true
+
+let b = 0;
+b = Boolean(b); // false
+
+console.log(a, b); // true false
+
+🔹 Comparison Operators Summary
+Operator	Description
+=	Assignment (store value)
+==	Value equality (converts types if needed)
+===	Strict equality (checks value + type)
+!=	Not equal (value only)
+!==	Strict not equal (value + type)
+>	Greater than
+<	Less than
+>=	Greater than or equal
+<=	Less than or equal
+🔹 Key Notes / Gotchas
+
+"2" < 1 → true because "2" is converted to number 2.
+
+false < 1 → true because false = 0.
+
+Always use === instead of == in real projects to avoid type coercion bugs.
+
+String comparison uses dictionary order (capital letters have higher priority).
+
+🔹 Interview Questions
+
+Q: What is the difference between == and ===?
+A: == compares values (type conversion applied), === compares value + type strictly.
+
+Q: What will console.log("2" < 3) output?
+A: true (string converted to number)
+
+Q: What will false == 0 and false === 0 return?
+A: true and false
+
+Q: How are strings compared in JavaScript?
+A: Alphabetically using Unicode values (dictionary order).
+
+Q: What is the output of console.log(Boolean(""))?
+A: false
+
+Q: What is the difference between > and >=?
+A: > → strictly greater, >= → greater or equal
+
+Q: What happens if you compare a string and number?
+A: JavaScript converts the string to number automatically (type coercion).
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+NULL AND UNDEFINED :-
+
+null>0  ---> false
+null<=0 ----> true
+null<0  ---->false
+null=0  ---->false
+
+undefined
+undefined>0  ---> false
+undefined<=0 ----> true
+undefined==0  ---->false
+undefined type conversion --->Nan (Not a Number)
+
+null==undefined--->true
+null and undefined not equal for any values
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+🧩 Topic: Null and Undefined in JavaScript
+🔹 What is null and undefined?
+
+null
+
+null is an assignment value.
+
+It represents “no value” or empty value.
+
+Example:
+
+let a = null;
+console.log(a);       // null
+console.log(typeof a); // object (this is a known JavaScript quirk)
+
+
+undefined
+
+undefined means a variable has been declared but not assigned a value.
+
+Example:
+
+let b;
+console.log(b);       // undefined
+console.log(typeof b); // undefined
+
+🔹 Why are Null and Undefined important?
+
+Helps differentiate between intentional “no value” (null) and “not yet assigned” (undefined).
+
+Important for conditional checks, function returns, and error handling.
+
+🔹 Where are Null and Undefined used?
+
+Null: when you want to explicitly clear a variable or mark no value.
+
+Undefined: default value of uninitialized variables, missing function parameters, or non-existent object properties.
+
+🔹 Comparisons
+Null comparisons
+console.log(null > 0);   // false
+console.log(null < 0);   // false
+console.log(null <= 0);  // true
+console.log(null == 0);  // false
+
+Undefined comparisons
+console.log(undefined > 0);    // false
+console.log(undefined < 0);    // false
+console.log(undefined <= 0);   // false
+console.log(undefined == 0);   // false
+
+
+⚠️ Type conversion:
+
+null converts to 0 in numeric comparisons.
+
+undefined converts to NaN in numeric comparisons.
+
+🔹 Equality Check Between Null and Undefined
+console.log(null == undefined);   // true
+console.log(null === undefined);  // false
+
+
+== → loose equality (considers null and undefined equal)
+
+=== → strict equality (checks type and value, so they are different)
+
+🔹 Key Notes
+
+null → intentional “no value”
+
+undefined → uninitialized variable / missing value
+
+In numeric comparisons:
+
+null → 0
+
+undefined → NaN
+
+null == undefined → true
+
+null === undefined → false
+
+🔹 Interview Questions
+
+Q: What is the difference between null and undefined?
+A: null is explicitly assigned “no value,” undefined means a variable has not been assigned.
+
+Q: What is typeof null?
+A: "object" (a historical JavaScript bug)
+
+Q: What is typeof undefined?
+A: "undefined"
+
+Q: What will null == undefined and null === undefined return?
+A: true and false
+
+Q: What is the result of null > 0 and null <= 0?
+A: false and true
+
+Q: What happens if you add null + 5?
+A: 5 (null is treated as 0 in numeric addition)
+
+Q: What happens if you add undefined + 5?
+A: NaN (undefined converts to NaN in arithmetic)
+
+Q: Can you assign null to a variable?
+A: Yes, to indicate “no value.”
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+
+CONDITIONAL STATEMENTS:-
+
+let person = 40;
+let age=10;
+if(age<18){
+person="is adult"
+}
+
+else if (age<12){
+person="child" 
+}
+
+else {
+person="old man"
+}
+
+CONDITIONAL OPERATORS:- (TERONORY OPERATOR)
+SYNTAX:-
+(condition) ? value_if_true : value_if_false
+
+
+let person;
+let age = 18;
+person = (age < 18)? 'Adult': (age>25)? 'Men':'Child';
+
+if ('0'){
+console.log('hi')
+}----> hi (because, "" -> empty string is false but not empty string is true so if condition is run )
+
+PRACTICE:-
+
+1.POSITIVE /NAGATIVE NUMBER:-
+
+let num =20;
+
+number = (num>0)? 'Positive Number':(num<0):'Nagative Number':'its zero'
+console.log(number)
+
+2. LEAP YEAR:-
+ first 400 kodukanum yen na 1s condition true na apdiye leep year ku poidum. else if ha pakkathu.
+why 400 first ithu 4 and 400 la divide agum so 400 is first.
+
+First check → %400 === 0 (special leap year)
+
+Next check → %100 === 0 (century but not leap)
+
+Then check → %4 === 0 (normal leap)
+
+Else → not leap
+
+year =2024;
+if (year %400 ===0){
+    console.log(`${year} : leap year`)
+}
+
+else if (year%100===0){
+    console.log(`${year} : not leap year`)
+}
+else if(year%4 ===0){
+    console.log(`${year} : leap year`)
+}
+else{
+    console.log(`${year} : not leap year`)
+}
+
+3.ODD OR EVEN
+
+num = 12;
+
+if(num%2===0){
+console.log("its even")
+}
+else if(num===0){
+console.log("its zero")
+}
+else{
+console.log("its odd")
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Conditional Statements in JavaScript
+🔹 What are Conditional Statements?
+
+Conditional statements allow a program to execute different code based on whether a condition is true or false.
+
+Common types:
+
+if
+
+if...else
+
+if...else if...else
+
+Ternary operator (? :)
+
+🔹 Why are they used?
+
+To control the flow of the program.
+
+To make decisions based on variable values.
+
+To handle different cases dynamically (like age groups, leap years, positive/negative numbers).
+
+🔹 Where are they used?
+
+Form validations (if age < 18 → deny access)
+
+Games or interactive apps (score checking, player moves)
+
+Calculators (odd/even, leap year checks)
+
+Real-world decision-making in code (banking, shopping carts, etc.)
+
+🔹 Syntax & Examples
+1️⃣ Basic if Statement
+let age = 10;
+let person;
+
+if (age < 18) {
+    person = "Child";
+}
+
+console.log(person); // Child
+
+2️⃣ if...else if...else Statement
+let age = 40;
+let person;
+
+if (age < 12) {
+    person = "Child";
+} 
+else if (age < 18) {
+    person = "Teen";
+} 
+else {
+    person = "Adult";
+}
+
+console.log(person); // Adult
+
+3️⃣ Ternary Operator (Conditional Operator)
+
+Syntax:
+
+(condition) ? value_if_true : value_if_false
+
+
+Example:
+
+let age = 18;
+let person = (age < 18) ? 'Child' : (age > 25) ? 'Men' : 'Adult';
+console.log(person); // Adult
+
+
+✅ Shortcut for if...else with simple conditions.
+
+4️⃣ Truthy / Falsy Example in if
+if ('0') {
+    console.log('hi');
+}
+// Output: hi
+
+
+Non-empty strings → true
+
+Empty strings → false
+
+🔹 Practice Examples
+a) Positive / Negative / Zero
+let num = 20;
+let number = (num > 0) ? 'Positive Number' : (num < 0) ? 'Negative Number' : 'Zero';
+console.log(number); // Positive Number
+
+b) Leap Year Check
+
+Rules:
+
+Divisible by 400 → leap year
+
+Divisible by 100 → not leap year
+
+Divisible by 4 → leap year
+
+Else → not leap year
+
+let year = 2024;
+
+if (year % 400 === 0) {
+    console.log(`${year} : leap year`);
+} 
+else if (year % 100 === 0) {
+    console.log(`${year} : not leap year`);
+} 
+else if (year % 4 === 0) {
+    console.log(`${year} : leap year`);
+} 
+else {
+    console.log(`${year} : not leap year`);
+}
+
+c) Odd or Even
+let num = 12;
+
+if (num === 0) {
+    console.log("Its zero");
+} 
+else if (num % 2 === 0) {
+    console.log("Its even");
+} 
+else {
+    console.log("Its odd");
+}
+
+🔹 Key Notes
+
+Always start with most specific condition first (like %400 === 0 for leap years).
+
+Non-empty strings, non-zero numbers → truthy
+
+Empty strings, 0, null, undefined → falsy
+
+Use ternary operator for shorter if-else statements.
+
+🔹 Interview Questions
+
+Q: What is the difference between if and else if?
+A: if checks a condition first; else if checks additional conditions if the first fails.
+
+Q: How does the ternary operator work?
+A: (condition) ? value_if_true : value_if_false
+
+Q: How do you check a leap year in JavaScript?
+A: First %400, then %100, then %4 checks, else not leap year.
+
+Q: What values are considered falsy in JS?
+A: 0, "", null, undefined, NaN, false
+
+Q: What happens if you put a non-empty string in if()?
+A: It is considered true and executes the block.
+
+Q: Write a ternary operator to check if a number is positive or negative.
+A:
+
+let result = (num > 0) ? "Positive" : (num < 0) ? "Negative" : "Zero";
+
+
+Q: Why do we check %400 first in leap year?
+A: Because years divisible by 400 are leap years, even if divisible by 100.
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+LOGICAL OPERATORS:-
+
+AND && ---> first false its condition is false
+OR || --->  first input true its return first input. but first input is false its goes to second input and return values not boolean values 
+Not -  ---> true or false 
+
+NULL COALESCING ??
+ its used for any null or undefined variable assign the values using null coalescing operator. its not modify the original values .its only
+assign the undefined or null only.
+
+let age ;
+let current_age=age??19;
+console.log(current_age)---->19
+
+
+let age =18 ;
+let current_age=age??19;
+console.log(current_age)---->18
+
+practice question:-
+console.log(null || 0 || undefined)
+
+null → falsy
+
+0 → falsy
+
+undefined → falsy
+
+Since all 3 are falsy → OR operator returns last value, i.e. undefined.
+
+ITTERATION STATEMENTS (LOOP) :- 
+RULE:-
+Initialization;validation and updation
+
+1.WHILE (Entry control loops)
+
+let num =1;
+while(num<=10){
+	console.log(num)
+num++;
+}
+
+2.DO WHILE (Exit control loop)
+
+let num =1;
+do{
+console.log(num)
+num++;
+}
+while(num<=10)
+
+3. FOR (let num =1;num<=10;num++) {
+console.log(num)
+}
+
+
+PRACTICE QUESTIONS:-
+
+1.FACTORIAL:-
+
+let n=5;
+let fact =1;
+for(let i =1;i<=5;i++){
+    fact =fact*i
+}
+console.log(fact)
+
+2. SUM OF N NUMBERS 
+
+let number =10
+let sum = 0;
+for(let i=0;i<=number;i++){
+    sum=sum+i
+console.log(sum)
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Logical Operators, Nullish Coalescing, and Iteration Statements in JavaScript
+🔹 1. Logical Operators
+
+Logical operators are used to combine or invert boolean values.
+
+AND (&&)
+
+Returns true only if all operands are truthy.
+
+Stops evaluating as soon as it finds false (short-circuit).
+
+console.log(true && false);  // false
+console.log(true && true);   // true
+
+OR (||)
+
+Returns the first truthy value.
+
+If all are falsy, returns the last value.
+
+Does not always return boolean — returns actual value.
+
+console.log(null || 0 || "Hello"); // "Hello"
+console.log(null || 0 || undefined); // undefined
+
+NOT (!)
+
+Inverts a boolean value.
+
+console.log(!true);  // false
+console.log(!false); // true
+
+🔹 2. Nullish Coalescing Operator (??)
+
+Assigns a value only if the variable is null or undefined.
+
+Does not overwrite other values (like 0 or empty string).
+
+let age;
+let current_age = age ?? 19;
+console.log(current_age); // 19
+
+age = 18;
+current_age = age ?? 19;
+console.log(current_age); // 18
+
+
+✅ Use case: Default values for uninitialized variables.
+
+🔹 3. Iteration Statements (Loops)
+
+Loops are used to repeat code multiple times.
+
+General Rule: Initialization; Condition; Update
+
+a) while Loop (Entry-controlled)
+let num = 1;
+while(num <= 10) {
+    console.log(num);
+    num++;
+}
+
+
+Checks condition before executing the loop.
+
+b) do...while Loop (Exit-controlled)
+let num = 1;
+do {
+    console.log(num);
+    num++;
+} while(num <= 10);
+
+
+Executes at least once, then checks condition.
+
+c) for Loop
+for(let num = 1; num <= 10; num++) {
+    console.log(num);
+}
+
+
+Most commonly used loop with initialization, condition, and increment in one line.
+
+🔹 Practice Examples
+1️⃣ Factorial of a Number
+let n = 5;
+let fact = 1;
+
+for(let i = 1; i <= n; i++) {
+    fact *= i;
+}
+
+console.log(fact); // 120
+
+2️⃣ Sum of First N Numbers
+let number = 10;
+let sum = 0;
+
+for(let i = 0; i <= number; i++) {
+    sum += i;
+}
+
+console.log(sum); // 55
+
+🔹 Key Notes
+
+&& → stops at first falsy (short-circuit)
+
+|| → returns first truthy, or last value if all falsy
+
+?? → returns only if variable is null or undefined
+
+while → entry-controlled
+
+do...while → exit-controlled
+
+for → standard loop with initialization, condition, update
+
+🔹 Interview Questions
+
+Q: Difference between || and ???
+A: || returns first truthy (0 or "" considered falsy), ?? ignores 0 or "" and only checks for null or undefined.
+
+Q: What is short-circuit evaluation?
+A: In && or ||, evaluation stops as soon as the result is known.
+
+Q: Difference between while and do...while?
+A: while checks before loop; do...while checks after executing at least once.
+
+Q: How do you write a for loop?
+A: for(initialization; condition; update){ /* code */ }
+
+Q: Write code to calculate factorial using a loop.
+A:
+
+let fact = 1;
+for(let i=1; i<=5; i++){ fact *= i; }
+console.log(fact);
+
+
+Q: What is the result of null || 0 || undefined?
+A: undefined (all falsy → returns last value)
+
+Q: What does num ?? defaultValue do?
+A: Returns num if it’s not null/undefined, otherwise returns defaultValue.
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+JUMP STATEMENTS:-
+
+1. CONTINUE ---> SKIP
+
+
+2. BREAK ---->STOP THE LOOP
+
+let n=4;
+let ans=0;
+for(let i=1;i<=4;i++){
+if(i===2){
+break;
+}
+ans += i    //--->(ans=ans+1)
+}
+console.log(ans); //---->8
+
+i=== 2 ha irukum pothu loop break agidum so 1 only print agum.
+
+
+
+SWITCH CASE:-
+same variable but differnt values you can use switch case
+Switch is like else if but 
+
+syntax
+
+switch(variable_name){output_values} 
+
+example 
+
+task 1:-
+print 1 is one, 2 is two, 3 is three,4 is four,5 is five.
+
+let n=5;
+
+switch(n){
+
+case 1(1 is a value):
+	console.log('one');
+	break;
+case 2(2 is a value):
+	console.log('two');
+	break;
+case 3(3 is a value):
+	console.log('three');
+	break;
+case 4(4 is a value):
+	console.log('four');
+	break;
+case 5(5 is a value):
+	console.log('five');
+default:
+	console.log('Number Greater then 5')
+	break;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Jump Statements and Switch Case in JavaScript
+🔹 1. Jump Statements
+
+Jump statements are used to control the flow of loops.
+
+a) continue
+
+Skips the current iteration and moves to the next iteration of the loop.
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue; // skip 3
+    }
+    console.log(i);
+}
+// Output: 1 2 4 5
+
+b) break
+
+Stops the entire loop immediately.
+
+let n = 4;
+let ans = 0;
+
+for (let i = 1; i <= 4; i++) {
+    if (i === 2) {
+        break; // loop stops here
+    }
+    ans += i; // ans = ans + 1
+}
+console.log(ans); // 1
+
+
+📘 Explanation:
+
+Loop breaks at i === 2.
+
+Only the first value (1) is added before breaking.
+
+🔹 2. Switch Case
+
+switch is used for multiple conditions on the same variable.
+
+Similar to multiple else if statements.
+
+Each case is compared using strict equality (===).
+
+Syntax:
+
+switch(variable) {
+    case value1:
+        // code
+        break;
+    case value2:
+        // code
+        break;
+    default:
+        // code if no match
+        break;
+}
+
+Example Task: Print Number in Words
+let n = 5;
+
+switch(n) {
+    case 1:
+        console.log('one');
+        break;
+    case 2:
+        console.log('two');
+        break;
+    case 3:
+        console.log('three');
+        break;
+    case 4:
+        console.log('four');
+        break;
+    case 5:
+        console.log('five');
+        break;
+    default:
+        console.log('Number greater than 5');
+        break;
+}
+
+
+🖥️ Output:
+
+five
+
+🔹 Key Notes
+
+break → stops loop or switch case
+
+continue → skips current iteration in a loop
+
+switch → better readability for multiple conditions
+
+Always use break in switch to avoid fall-through
+
+default → executes if no case matches
+
+🔹 Interview Questions
+
+Q: What is the difference between break and continue?
+A: break stops the loop completely; continue skips current iteration and moves to the next.
+
+Q: What happens if you don’t use break in a switch case?
+A: Code will fall-through and execute subsequent cases until a break is encountered.
+
+Q: Can switch cases handle ranges (like n > 5 && n < 10)?
+A: ❌ No, switch only checks exact values. Use if-else for ranges.
+
+Q: What is the purpose of the default case?
+A: It runs when none of the cases match the variable value.
+
+Q: Can switch be used with strings?
+A: ✅ Yes, switch works with numbers, strings, and even booleans.
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+
+FUNCTIONS :-
+	use : code reusability
+SYNTAX:-
+
+FUNCTION function_name(variable1, variable2(perameters)=7){
+	console.log()
+}
+
+example
+function operation (a,b){
+	console.log(a+b*a=b?a)
+}
+
+operation(12,16)
+opration (1,5)
+operation(1,8)
+
+operation(10)--- that case that operation function is take a value variable 2 is 7 beacuse its already declared. but you 
+have assign 2 values that defalut value is not assign. 
+----------------------------------------------------------------------------------------------------------------------------------------------
+🧩 Topic: Functions in JavaScript
+🔹 What is a Function?
+
+A function is a block of code designed to perform a particular task.
+
+Functions can take inputs (parameters) and may return an output.
+
+They help make code reusable, modular, and clean.
+
+🔹 Why are Functions Used?
+
+Avoid repeating code (code reusability)
+
+Organize logical units of code
+
+Accept input and return output
+
+Easier debugging and maintenance
+
+🔹 Where are Functions Used?
+
+Any place where the same operation is repeated
+
+Event handling (onclick, onchange)
+
+Calculations, validations, API calls
+
+Loops, conditionals, and complex logic
+
+🔹 Syntax of a Function
+function function_name(parameter1, parameter2 = default_value) {
+    // code to execute
+}
+
+
+parameter2 = default_value → sets a default if the argument is not provided
+
+return → optional, used to send a value back
+
+🔹 Example 1: Basic Function
+function operation(a, b = 7) {
+    console.log(a + b * a - b);
+}
+
+// Function calls
+operation(12, 16);  // Uses both arguments
+operation(1, 5);    // Uses both arguments
+operation(10);      // Uses default value b = 7
+
+
+🖥️ Explanation:
+
+If you provide both arguments, the default is ignored.
+
+If you omit the second argument, the default value is used.
+
+🔹 Example 2: Function with Return
+function sum(a, b = 5) {
+    return a + b;
+}
+
+let result = sum(10); // 10 + 5 = 15
+console.log(result);
+
+🔹 Key Notes
+
+Functions help avoid repeating code
+
+Parameters can have default values
+
+Functions can return a value or just perform actions
+
+Can be called multiple times with different inputs
+
+🔹 Interview Questions
+
+Q: What is a function in JavaScript?
+A: A reusable block of code that can take input, perform operations, and optionally return output.
+
+Q: What is a default parameter in a function?
+A: A value assigned to a parameter that is used if no argument is passed.
+
+Q: Can a function have no parameters?
+A: ✅ Yes, a function can have zero parameters.
+
+Q: Difference between console.log() and return inside a function?
+A: console.log() prints value, return sends value back to caller.
+
+Q: What happens if you call a function with fewer arguments than parameters?
+A: Parameters without values get undefined, unless default values are assigned.
+
+Q: Can a function call itself?
+A: ✅ Yes, that’s called recursion.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+SCOPE:-
+ let c;
+function operation(a,b){
+	c = a+b-a+a-b
+}
+operation (10,12)
+console.log(c)---->10
+
+but,
+ 
+function operation(a,b){
+	let c = a+b-a+a-b
+	return c;
+}
+operation (10,12)
+console.log(c)---->undefined because let is a block scope
+
+let number =8;
+
+function oddEven (){
+if(number%2===0){
+console.log("its even")	
+}	
+else {
+console.log("its odd")
+}
+}
+
+oddEven()
+
+you assign the function into one variable
+
+method 1: let oddorEven=oddEven()
+method 2:
+
+let oddEven =function oddEven (){
+if(number%2===0){
+console.log("its even")	
+}	
+else {
+console.log("its odd")
+}
+}
+
+Method 3:- arrow function or nameless function
+
+let oddEven=(a)=>a%===2? "even":"odd";
+
+console.log(oddEven(5)) //----> Even
+
+CALLBACK FUNCTION (perameter or argument inside function):-
+
+you assign the one function into another function perameter its a callback function
+
+example
+
+function operation (func,a,b){
+
+return func(a,b)
+
+}
+let add =(a,b) => a+b ;
+let sub =(a,b) => a-b;
+
+console.log(add,2,3) //---->5
+console.log(sub,2,3) //---->2
+add is a function
+2,3 is a perameters or arguments  
+
+example for arrow function
+let number=(num)=> num*5;
+console.log(number(10))
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+Topic: Scope, Functions, and Callback Functions in JavaScript
+🔹 1. Scope in JavaScript
+
+Scope determines where a variable can be accessed in a program.
+
+Types of Scope
+
+Global Scope → accessible anywhere
+
+Function Scope / Local Scope → accessible only inside the function
+
+Block Scope → accessible only inside {} (for let and const)
+
+Example 1: Global Scope
+let c;
+
+function operation(a, b){
+    c = a + b - a + a - b;
+}
+
+operation(10, 12);
+console.log(c); // 10
+
+
+c is declared outside → global → accessible outside function
+
+Example 2: Function Scope
+function operation(a, b){
+    let c = a + b - a + a - b;
+    return c;
+}
+
+operation(10, 12);
+console.log(c); // undefined
+
+
+let c is block scoped inside the function → cannot access outside
+
+🔹 2. Function Examples
+a) Using Global Variable
+let number = 8;
+
+function oddEven() {
+    if(number % 2 === 0){
+        console.log("its even");	
+    } else {
+        console.log("its odd");
+    }
+}
+
+oddEven(); // its even
+
+b) Function Assignment Methods
+
+Method 1: Call Function
+
+let oddOrEven = oddEven(); // call function directly
+
+
+Method 2: Anonymous Function
+
+let oddEven = function () {
+    if(number % 2 === 0) {
+        console.log("its even");	
+    } else {
+        console.log("its odd");
+    }
+}
+
+
+Method 3: Arrow Function
+
+let oddEven = (a) => a % 2 === 0 ? "even" : "odd";
+console.log(oddEven(5)); // odd
+
+🔹 3. Callback Functions
+
+A callback function is a function passed as a parameter to another function.
+
+Example 1: Using Normal Function
+function operation(func, a, b) {
+    return func(a, b);
+}
+
+let add = (a, b) => a + b;
+let sub = (a, b) => a - b;
+
+console.log(operation(add, 2, 3)); // 5
+console.log(operation(sub, 2, 3)); // -1
+
+
+add and sub are functions
+
+2 and 3 are arguments
+
+Example 2: Arrow Function Callback
+let multiply = (num) => num * 5;
+console.log(multiply(10)); // 50
+
+🔹 Key Notes
+
+Scope:
+
+let/const → block scope
+
+var → function/global scope
+
+Arrow functions → shorter syntax, often used in callbacks
+
+Callback functions → allow dynamic behavior (pass function as argument)
+
+Functions can be assigned to variables
+
+🔹 Interview Questions
+
+Q: What is the difference between global and local scope?
+A: Global → accessible anywhere; local → accessible only inside the function/block.
+
+Q: What is a block scope?
+A: Variables declared with let or const inside {} are accessible only inside that block.
+
+Q: What is a callback function?
+A: A function passed as an argument to another function to be executed later.
+
+Q: Write an arrow function to check if a number is odd or even.
+A:
+
+let oddEven = (a) => a % 2 === 0 ? "even" : "odd";
+console.log(oddEven(5));
+
+
+Q: Difference between normal function and arrow function?
+A: Arrow functions have shorter syntax, no this binding, often used in callbacks.
+
+Q: What happens if you try to access a let variable outside its block?
+A: undefined or ReferenceError
+
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+
+OBJECT :-
+
+key and value pairs
+
+let car ={name:'nexon',brand:'tata',drive:'petrol',price:200000};
+
+console.log(car.drive);//--->petrol
+
+
+you can delete any one pair 
+
+delete car.price //--->price value and key is deleted
+
+you can add any pair 
+
+car['modelyear']=2025; //---> model year is added to car object 
+
+you can change any pair
+
+car.name ="tataneo"
+
+you can add a function inside the object.
+
+let car ={name:'nexon',brand:'tata',drive:'petrol',price:200000,onRoad(Price){
+return this.price+2;
+}};
+
+this is a keyword ---> use:
+
+task
+let user={name:"jagath"};
+console.log(user);
+user.name="jagath v"
+console.log(user.name)
+user['salary']=20000;
+console.log(user)
+user ['location']="chennai"
+console.log(user)
+delete user.location
+console.log(user)
+user['location']="cocai"
+console.log(user)
+user.location="chennai"
+console.log(user)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Objects in JavaScript
+🔹 What is an Object?
+
+An object is a collection of key-value pairs.
+
+Keys are called properties and values can be any data type, including functions.
+
+Objects are used to group related data together.
+
+let car = {name: 'Nexon', brand: 'Tata', drive: 'Petrol', price: 200000};
+
+🔹 Why are Objects Used?
+
+To store multiple values in a single variable
+
+To model real-world entities (like cars, users, products)
+
+To easily access, update, or delete related data
+
+To include methods (functions) inside data
+
+🔹 Where are Objects Used?
+
+Represent real-world entities in code
+
+Store JSON data in APIs
+
+Manage user data, configurations, or app state
+
+Can hold functions as methods for behavior
+
+🔹 Basic Object Operations
+1️⃣ Accessing Values
+console.log(car.drive);    // Petrol
+console.log(car['brand']); // Tata
+
+2️⃣ Adding Properties
+car['modelYear'] = 2025;
+car.color = 'Red';
+console.log(car);
+
+3️⃣ Modifying Properties
+car.name = "Tata Neo";
+console.log(car.name); // Tata Neo
+
+4️⃣ Deleting Properties
+delete car.price;
+console.log(car);
+
+🔹 Adding Methods to Objects
+
+Functions can be added as properties (methods)
+
+Use this keyword to refer to the object itself
+
+let car = {
+    name: 'Nexon',
+    brand: 'Tata',
+    drive: 'Petrol',
+    price: 200000,
+    onRoadPrice() {
+        return this.price + 2000;
+    }
+};
+
+console.log(car.onRoadPrice()); // 202000
+
+🔹 Practice Example
+let user = {name: "Jagath"};
+
+console.log(user);          // {name: "Jagath"}
+
+user.name = "Jagath V";
+console.log(user.name);     // Jagath V
+
+user['salary'] = 20000;
+user['location'] = "Chennai";
+console.log(user);
+
+delete user.location;
+console.log(user);
+
+user['location'] = "Cocai";
+user.location = "Chennai";
+console.log(user);
+
+🔹 Key Notes
+
+Objects store related data as key-value pairs
+
+Keys are unique, values can be any type
+
+Use dot notation (object.key) or bracket notation (object['key'])
+
+Can add, update, delete properties dynamically
+
+Methods inside objects can use this to access object properties
+
+🔹 Interview Questions
+
+Q: What is an object in JavaScript?
+A: A collection of key-value pairs used to store related data.
+
+Q: How do you access object properties?
+A: Using dot notation (obj.key) or bracket notation (obj['key']).
+
+Q: How do you add a property to an object?
+A: obj.newProp = value or obj['newProp'] = value
+
+Q: How do you delete a property from an object?
+A: delete obj.key
+
+Q: How do you add a function as a method to an object?
+A:
+
+let obj = { 
+    methodName() { 
+        return this.value; 
+    } 
+};
+
+
+Q: What is the this keyword in an object method?
+A: Refers to the object itself
+
+Q: Can object values be another object or function?
+A: ✅ Yes, objects can have nested objects and functions as values.
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+
+IN OPERATOR:-
+
+let user ={
+
+name:"jagath",
+age:23,
+}
+console.log("age" in user) //--->true
+
+console.log(user)
+for (key in user){
+    console.log(key)
+    console.log(user[key])
+}
+
+output:
+
+true
+{ name: 'jagath', age: 23 }
+name
+jagath
+age
+23 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: in Operator in JavaScript
+🔹 What is the in Operator?
+
+The in operator checks if a property exists in an object.
+
+Returns true if the property exists, otherwise false.
+
+let user = { name: "Jagath", age: 23 };
+console.log("age" in user);   // true
+console.log("salary" in user); // false
+
+🔹 Why is it Used?
+
+To verify if a key exists in an object before accessing it.
+
+Helps avoid errors when accessing undefined properties.
+
+Useful in loops and dynamic object handling.
+
+🔹 Where is it Used?
+
+Checking user data fields
+
+Validating API response objects
+
+Iterating over objects dynamically
+
+🔹 Example 1: Check if Property Exists
+let user = { name: "Jagath", age: 23 };
+console.log("age" in user);   // true
+console.log("salary" in user); // false
+
+🔹 Example 2: Looping Over Object Properties
+
+Use for...in loop to iterate through all keys of an object:
+
+let user = { name: "Jagath", age: 23 };
+
+for (let key in user) {
+    console.log(key);        // name, age
+    console.log(user[key]);  // Jagath, 23
+}
+
+
+Output:
+
+name
+Jagath
+age
+23
+
+🔹 Key Notes
+
+in → checks if a property exists in an object
+
+for...in → loops over all enumerable properties of an object
+
+Use user[key] to access the value dynamically
+
+in returns a boolean, for...in iterates keys
+
+🔹 Interview Questions
+
+Q: What does the in operator do in JavaScript?
+A: Checks whether a property exists in an object and returns true or false.
+
+Q: How do you loop over all properties of an object?
+A: Using for...in loop.
+
+Q: What is the difference between in and hasOwnProperty()?
+A: in checks all properties (including inherited), hasOwnProperty() checks own properties only.
+
+Q: How do you access object values dynamically inside a loop?
+A: Using bracket notation: object[key]
+
+Q: What will ("toString" in {}) return?
+A: true (because toString is inherited from Object prototype)
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+VALUE VS REFERRANCE :-
+
+REFERRANCE EXAMPLE:-
+let a ={name:"react",year:2025};
+let b=a;
+console.log(a,b);
+b.year=75;
+console.log(a,b)
+
+output:-
+
+{ name: 'react', year: 2025 } { name: 'react', year: 2025 }
+{ name: 'react', year: 75 } { name: 'react', year: 75 }
+
+year is 75 is changed a and b beacuse b is a referance of a so its changed both
+
+GARBAG COLLECTION IN JS:-
+
+CONSTRUCTOR:-
+
+constructor is used to create a many object easy way.
+constructor first letter is capital.
+
+SYNTAX:-
+
+function Function_name(){
+code...
+} 
+
+
+example;
+
+let a ={
+name:"jagath"
+}
+
+function User(){
+this.name:"jagath"
+} 
+this is a keyword is used in constructor
+let jagath=new User();
+let siva=new User();
+new is a keyword is used in constructor
+
+
+function Add(){
+
+this.a=5;
+this.b=10;
+this.add=function (c){
+return this.a+this.b+c
+}}
+
+let sum=new Add();
+
+console.log(sum.Add(11))
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+🧩 Topic: Value vs Reference, Garbage Collection, and Constructor Functions
+🔹 1. Value vs Reference
+Value Types (Primitive)
+
+Stored directly in memory
+
+Examples: Number, String, Boolean, undefined, null, BigInt, Symbol
+
+Assignment creates a copy of the value
+
+let x = 10;
+let y = x;
+y = 20;
+console.log(x, y); // 10 20
+
+Reference Types (Objects)
+
+Stored as reference in memory
+
+Examples: Object, Array, Function
+
+Assignment points to same memory location, so changes affect all references
+
+let a = { name: "React", year: 2025 };
+let b = a;
+
+console.log(a, b); 
+// {name: "React", year: 2025} {name: "React", year: 2025}
+
+b.year = 75;
+console.log(a, b); 
+// {name: "React", year: 75} {name: "React", year: 75}
+
+
+✅ Explanation: b is a reference to a, so changing b.year changes a.year too.
+
+🔹 2. Garbage Collection in JavaScript
+
+JavaScript automatically frees memory that is no longer referenced
+
+Helps prevent memory leaks
+
+Works in the background; developers don’t manually delete memory
+
+🔹 3. Constructor Functions
+
+Used to create multiple similar objects easily
+
+Naming convention: First letter capitalized
+
+this keyword refers to the object being created
+
+new keyword creates a new object from the constructor
+
+Syntax
+function FunctionName() {
+    this.property = value;
+    this.method = function() { ... }
+}
+
+let obj = new FunctionName();
+
+Example 1: User Constructor
+function User() {
+    this.name = "Jagath";
+}
+
+let jagath = new User();
+let siva = new User();
+
+console.log(jagath.name); // Jagath
+console.log(siva.name);   // Jagath
+
+Example 2: Add Constructor
+function Add() {
+    this.a = 5;
+    this.b = 10;
+    this.add = function(c) {
+        return this.a + this.b + c;
+    }
+}
+
+let sum = new Add();
+console.log(sum.add(11)); // 26
+
+
+✅ Explanation: this.a and this.b are properties of the object sum. add is a method using this.
+
+🔹 Key Notes
+
+Value types → copied, independent
+
+Reference types → shared, changes affect all references
+
+Garbage Collection → automatically cleans unused memory
+
+Constructor Functions → reusable templates for objects
+
+this → refers to the object instance
+
+new → creates a new instance from a constructor
+
+🔹 Interview Questions
+
+Q: What is the difference between value and reference in JavaScript?
+A: Value types are copied independently; reference types share memory.
+
+Q: What is garbage collection in JavaScript?
+A: Automatic memory management that frees memory no longer in use.
+
+Q: What is a constructor function?
+A: A function used to create multiple objects with the same structure.
+
+Q: What does this refer to in a constructor function?
+A: The object being created.
+
+Q: How do you create a new object using a constructor?
+A: Using the new keyword: let obj = new ConstructorName();
+
+Q: What happens if you modify a property of a reference type?
+A: All references to that object reflect the change.
+---------------------------------------------------------------------------------------------------------------------------------------------------  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

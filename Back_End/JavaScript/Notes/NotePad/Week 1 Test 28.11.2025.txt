@@ -1,0 +1,92 @@
+1. What is the difference between var, let, and const in JavaScript?
+var :-  var is a es5 feature keyword its used to assign a value to variable. its a functional scope. var can be declare, redeclare and reassign all accepted.you can declere var globally you can access anywhere in the  program. its also act a global scope
+Let & Const :-let and const is a ES6 feature keyword its used to assign a value to variable.
+let is you can declare and reassign a values. but the const is don't declare and reassign. its  used to a store a variable constant.
+2. Why is temporal dead zone (TDZ) important when using let and const?
+You can access the value before initialization the execution time the javascript is move a declaration part only in a top of the scope its a Hoisting. the Hoisting method is run in let and const its not show a undefined. its show a referance error. That is called a TDZ.
+3. What is the difference between == and === operators?
+= - it's a Assignment operator. You can assgin any value using this operator
+== --> its called a Loose Equal. Because, its compare only values  not datatypes
+example 
+if(7=="7"){
+console.log("It's True")}
+that code execute if Condition.Because its not compare datatype. it's only compare a values.
+=== --> its called a Streat Equal. Because, it's compare a values and datatypes. 
+example 
+if(7=="7"){
+console.log("It's True")
+}else{
+console.log("Its False")
+}
+that code execute a false condition. Because its compare a value and datatypes.
+4. What is the purpose of the spread operator (...) and rest operator (...)?
+Spread Operator(...):-
+Spread operator is used to you can split or spread an array we can use spread operator. and its also join a 2 arrays.
+and you can copy a array.
+example:-
+let array1=[1,2,3,4]
+let array2=[5,6,7]
+let copyArray=[...array2]
+console.log(copyArray)
+let addElement=[...array2,8,9] 
+let joinArray=[...array1,...array2]   
+Rest Operator(...) :-
+Rest operator is only used for functions only. you have a many argument use this reast operator.
+Example :-
+function Numbers(...num){
+    return num
+}
+console.log(Numbers(24,5,6,7,88,11)) //[24,5,6,7,88,11]
+5. What are arrow functions, and how are they different from normal functions?
+Arrow function is a ES6 feature. its used to without function keyword and return keyword.
+you can use arrow function 
+single line like no return keyword and no object bracket (a,b)=>a+b
+single parameter mean without paranthises like that const value= a=>console.log(`a value is ${a}`)
+you can pass a default parameter like const add=(a=5,b=7)=>a+b
+6. What is destructuring, and how do you use it with objects and arrays?
+Destructuring is a one of the method for extract value from array and objects.
+example:-
+let studentObj={name:"Jagath",age:"23"}
+const {name,age}=studentObj
+let studentArr=["jagath",23]
+const [1stval,2ndval]=studentArr
+ array destructuring you can use any name but object destructuing you can use a object key name only.
+7. How do you access values inside a deeply nested object or array?
+You can access a value inside the object means you use .notation 
+Example
+let NestedObj={
+course:{course1:"Java",course2:"Python"},fee:40000
+}
+console.log(NestedObj.course.course2)
+output : Python
+You can access a value inside array means use indexvalue
+Example 
+let Array=["React",2024,"Python",2022]
+console.log(Array[2])
+Output: Python
+8. Explain different ways to clone an array or object in JavaScript.
+use a spread operator --> ...ArrayName or objectName
+example 
+let Array=[1,2,3]
+let Clone=[...Array]
+use a slice method  ---> ArrayName.slice()
+9. What is the difference between for…in, for…of, forEach(), and map() loops?
+for in method is used to Array. its not a reassign process so you use const keyword.
+for of method is used to Object its  not a reassign process so you use const keyword.
+forEach() --> forEach() is a array method. its run a function for every element one time.but its not return an Array
+Map() --> Map() is a array method. it's also same as a forEach method. But its return a array. so its used to a react.
+10. What is a closure, and where is it used in real-life applications?
+Closure is inner function is access a outter function variable. that value is remembered a inner function you can change the outter function variable value outside of the function its not affacted innerfunction variable because inner function that value is rememberd. Closure is like a private. You can access the value inside the function not outsiide. Real-Life Application --> salaryUpdate ,banking,counter,etc..
+11. What is a callback function, and why do we need it?
+callback function is a one function is send a another function parameter. its used to a async process.
+12 .What is the difference between function declaration, function expression, and arrow function?
+13. What are higher-order functions in JavaScript?
+14. What is the difference between map(), filter(), and reduce()?
+15. How does find() differ from findIndex(), some(), and every()?
+
+
+
+
+
+ 
+ 

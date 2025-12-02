@@ -25,4 +25,4 @@ let stu3 = new Student("Hari", 12, "C")
 
 console.log(stu1.getStu())
 console.log(stu3.getSec())
-console.log(stu2.getStu())
+console.log(stu2.getStu()) 

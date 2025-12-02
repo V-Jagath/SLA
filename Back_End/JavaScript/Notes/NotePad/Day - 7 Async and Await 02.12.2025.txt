@@ -1,0 +1,22 @@
+sync - line by line execution one the process with for another line
+same area datas are collecting its a sync process. but some times go to server and api call its a async
+
+MDN webdocs(refer this website more details)
+
+
+sync code will execute the process if nay any process related to
+time or outside of the browser or other 3rd arty apps so that the
+machine now know about what heppen on the other side. so ti will automattically run
+the next line.
+
+after that the outside process is done then that result
+
+to execute your async process to sync process use these methods
+
+1. callback function
+
+2. setTimeout
+
+3. promise - then catch
+
+4. async / await

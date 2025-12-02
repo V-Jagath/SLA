@@ -3,7 +3,7 @@
 
 let string = "This is String";
 
-let number = 23;
+// let number = 23;
 
-number = "jagath"  //Type 'string' is not assignable to type 'number'.
+// number = "jagath"  //Type 'string' is not assignable to type 'number'.
 

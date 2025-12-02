@@ -7,3 +7,4 @@ function move(a) {
 }
 
 move(Direction.right)
+

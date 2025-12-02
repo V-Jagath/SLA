@@ -21,6 +21,7 @@ class Employee {
 
 }
 
+
 class Manager extends Employee {
 
     position: string;

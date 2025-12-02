@@ -31,6 +31,7 @@
 
 // type ID = number | string;
 // let userId: ID = 3;
+// let userId: ID = "Jagan";
 
 // union + interface + type alias → Highly used in React & TS projects
 

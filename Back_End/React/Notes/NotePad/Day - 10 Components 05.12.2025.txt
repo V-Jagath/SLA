@@ -1,0 +1,55 @@
+JS - Purer JS file
+
+JSX - Inside the js we you html and css and other library - bs TWCSS
+
+
+JSX - Javascript XML 
+
+React is a component based architecture .
+
+1. What is Component ?
+2. What all are the types in component?
+3. How to you build the component based UI's in your react project ?
+
+1. What is Component ?
+
+components are build using class and function
+
+components are reusabe UI's you can access the UI's where every you
+want in your project you can just build on ecomponents and use many places
+
+component are small peice of UI.
+
+you can make a Numberr if component in the react project.
+
+
+1. Class Component :-
+constructor,super,render and return. its a inhertance based component 
+
+
+2. Function Component :-
+single component process making UI
+multi component process making UI
+
+StrictMode is used for deprecated(unused words,methods,syntax) elements are showing in error.it used to devlopers.
+its render 2 times. 
+
+TASK :-
+
+1. what are all the depricated values in React ?
+
+2. Make a single component
+
+Theme is make a movie poster or Movie Details
+
+firstcomponent is movie details
+
+3. You will make a react vite project and make 1 page application add multiple components in the components folder
+
+the Theme is 
+
+componets - small UI
+pages
+app.jsx
+
+You have a Own Planet -  name,money,visiting place, government - sector - 6 sectors ,education- 3sector.

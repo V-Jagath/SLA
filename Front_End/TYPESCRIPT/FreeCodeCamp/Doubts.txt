@@ -1,0 +1,10 @@
+1. why use export {} -- that is hide run time errors
+2. Type and interface diffrents
+3. how to set function return value typein arrow function
+
+const arrow=(name:string):string=>{
+
+}
+
+
+

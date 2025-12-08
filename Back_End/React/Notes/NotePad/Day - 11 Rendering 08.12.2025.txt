@@ -1,0 +1,100 @@
+Create Phase :-
+
+Components - class - functional
+
+Create phase - Dynamic Process
+
+keyword - var, let, const
+
+DataTypes - primitive (string,number,booolean,undefined,null)
+non primitive(array,object)
+
+Dynamic means declarative its used many times
+
+1. Screen Rendering :-
+2. Conditional Rendering :-
+3. Optional Rendering :-
+4. Nullish Rendering :-
+
+1. String Methods :-
+
+when you have a string and need ti use multiple in the single components we can you string rendering
+
+syntax =const data="This is String"
+
+
+2. Number Rendering :-
+
+when you have a number and you need to use multi places in the components you can use number.
+
+Syntax = const number=23:09 pm 08/12/2025
+
+3. Boolean Rendering :=
+
+boolean is the process only working in the conditional rendering it returns true or false
+
+syntax = const isActive=true
+
+when you want to using boolean rendering you need to use conditional rendering,optional rendering
+
+4. Null Rendering :-
+
+you will give the empty values to that variable you can use  null values
+
+syntax - const datas = null
+
+Nulliesh values - we use the process 
+
+5. Undefined Rendering:-
+
+it like empty variable declaration is the 
+
+
+
+2.CONDITIONAL RENDERING :-
+
+based on condition render
+This is the process between true or false. if you return the true value we will showing depending on your if conditional path.
+
+if(){
+
+}
+
+Ternory Operator :-
+
+condition ? true : false
+
+3. OPTIONAL RENDERING :- (&&)
+true only show. 
+
+when you have a hie and show you can use ternary operatot inside of optional rendering
+only show if the alues is true. there is
+
+
+4. Nullish Collesign :- (??)
+
+if your value is null or undefind or else its showing the right side. used to api data error show in display your message.
+
+
+TASK :-
+
+1. Hide and show box
+
+div - box - content stringRendering
+inlinecss
+
+5:42 pm 08/12/2025
+true - text 
+
+false - blank
+
+3. odd or even 2 or 3 
+
+4. truthy and false value button
+
+5. green - go
+red - stop
+yellow - ready 
+
+6. value undefined nullesh value return
+ 

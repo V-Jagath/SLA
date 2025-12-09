@@ -1,0 +1,43 @@
+Non primitive dataType Rendering:-
+
+1. Object 
+
+have a multiple values(key and value pair) in the single variable name.
+
+const Name ={}
+
+object and array of object diffrents:-
+
+1. one object do not use same key another object with in a single variabel
+
+const name={name:"jagath",name:"suriya"} // X 
+
+const name={name:{name:"jagath"}} 
+
+2. Array Process
+
+Map is very important
+
+Task :-
+
+1. Make a nested object 
+
+2. genarate 2 object
+
+1. profile making aaray of object
+
+profile image={}
+
+education 
+
+degree,institute
+
+professional details
+title company
+
+skills 
+
+front end 
+backend
+
+ 

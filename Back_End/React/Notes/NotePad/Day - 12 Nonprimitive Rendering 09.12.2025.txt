@@ -24,7 +24,7 @@ Task :-
 
 2. genarate 2 object
 
-1. profile making aaray of object
+1. profile making array of object
 
 profile image={}
 
@@ -33,6 +33,7 @@ education
 degree,institute
 
 professional details
+
 title company
 
 skills 

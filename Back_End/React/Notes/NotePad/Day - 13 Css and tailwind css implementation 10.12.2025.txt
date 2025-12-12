@@ -26,8 +26,7 @@ index.css
 vite --> tailwind version 4 
 
 npm install tailwindcss @tailwindcss/vite ---> vite.config.js  --> 
-import tailwindcss from '@tailwindcss/vite' ---> plugins: [react(), tailwindcss()]  ---> index.css --> @import 'tailwindcss'
- 
+import tailwindcss from '@tailwindcss/vite' ---> plugins: [react(), tailwindcss()]  ---> index.css --> 7:22 pm 11/12/2025
 tailwind css is a predefined css properties using a class name  and tailwind is a
 advanced css to devlop the attractive and effective user interfaces. you can use the multiple utility classes in the 
 tailwind framework. tailwind css are dynamic style

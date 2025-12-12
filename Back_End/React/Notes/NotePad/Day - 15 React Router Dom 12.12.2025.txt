@@ -1,0 +1,77 @@
+very very important for interview
+what why and when
+
+React Router DOM:-
+
+Installation :-
+
+npm install react-router-dom
+
+React Router DOM is a client side routing library. that lets react app switch between pages without reloading
+the browser 
+
+why we use it?
+
+we make a single page application(SPA)
+
+we can have Fast 
+
+clean URL Management
+
+URL - Uniform resource locator 
+
+the unique web address for any resource on the internet.
+
+Protect Route
+
+dynamic routing
+
+nested layouts
+
+Main Important in React Router DOM :-
+
+Essential imports
+
+BrowserRouter - Main wrapper that enables routing in your React App.
+
+2 Types 
+
+Main Wrapper
+App Wrapper
+
+Routes- a container for all route components. react router version6 needs all route element inside routes.
+
+Route - defined which component should render for which path. 
+
+2 property 
+
+1.path
+2.element
+
+<Routes>
+
+<Route path={} element={}>
+
+</Routes>
+
+
+
+Navication Components:-
+
+Link 
+NavLink
+
+Hooks:-
+
+UseNavigate
+useparams
+useLocation
+
+Nested Routing:-
+
+Outlet
+
+
+LINK- Clickable navication link its never reaload brower.
+
+Attributes in react called Props to,key,path,element.... 

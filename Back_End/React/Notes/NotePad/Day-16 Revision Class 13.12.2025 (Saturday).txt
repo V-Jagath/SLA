@@ -1,0 +1,88 @@
+Day-16 Revision Class 13.12.2025 Saturday
+
+Undefined 
+
+1. inside function variable call outside
+
+2. declare parameter but dont give argument
+
+3.declare a varibale but never give value 
+
+
+for of - array
+
+for in - object
+
+
+Functions :-
+
+3 types 
+
+1. function declaration 
+
+2. function expression
+
+3. arrow function 
+
+Callbackfunction:-
+
+1.setTimeout
+2.setIntervel
+array methods - higher order array methods 
+event handling
+buildin functions
+
+
+Memozation - 
+
+DOM -
+selector - event lestener - props - events 
+
+sync and async 
+
+callback ---> promise  ---> async and await
+
+React create phase
+
+1. Folder and file handling
+
+2. CRA v3 - npx create-react-app project-name
+
+and 
+
+Vite v4- npm create vite@latest projectname
+
+3. component handling
+
+4. component first letter capital 
+
+5. React Router DOM - for navigating single page application
+
+6. BrowserRouter - inside a main fail.
+
+7. v6 Routes - all route side a routes
+
+8. Link 
+
+9. NavLink
+
+10. useNaviagate(function process),useParams,useLocation
+
+
+GIT AND GIT HUB:-
+
+GIT :-
+
+software to handling your local machine to online github connectivity process- to connect you local files and online files,
+and maintain your verious of code.
+
+GITHUB :-
+
+GitHub is a online cloud platform to maintain your code ,or projects or your docuements.
+
+GITBASH -- its a internal commend prompt of gitbash    
+
+
+
+
+

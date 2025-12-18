@@ -1,0 +1,42 @@
+Props :-
+
+Multi component and component tree
+
+container VS Presentational 
+
+useState and Props(Property) and ES6+
+
+Props -you have a parent component or you have any component in your projects.
+
+parent to child data transfer. primitive and non primitive datas.
+
+What is MultiComponent ?
+
+App is not only a big file. its break UI into small reusable components.
+
+props are inmutable. child do not change data.
+
+purpose of Props :-
+
+reusable components  
+
+clean code
+
+useState() - only where Needed. its only used for intraction.
+
+Props Trilling - you can use same state 2 component 2 componet values are updated in same time. its a error Prop trilling.
+
+
+Task :-
+
+1. Make a container Component - logic and Data handling 
+
+2. Make a Presentation Component - Only UI Components 
+
+sla --> app.jsx
+
+technical container(banner-react,js,node,cards--> img,content,button) and one presentation
+
+Communication container and one presentation
+
+aptitude container and one presentation

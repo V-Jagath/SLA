@@ -1,0 +1,73 @@
+useParams --> pass a id to url so that same id is show another page.
+
+perameter based data. only single data only pass
+
+<Link to={`/product/${e.id}`} 
+
+Route path='/productPage/:id'
+
+
+useLocation its used to data tranfer one component to another component using state.
+its not pass data in url.you can pass multiple data. 
+
+products.map((e)=>(
+
+<link to='/product' state={{products:e}} className='bg-black text-white'
+
+))
+
+
+div
+
+link to ='/product' state={{datas:"This is React"}}
+
+div
+
+Layout:- (nested rooting process) - react-router-dom
+
+what is outlet 
+
+Outlet is the placeholder component use to render child routes inside the parent layout.
+
+where you use Outpet :-
+
+only inside the parent root work with nested root.
+ 
+MainLayout.jsx
+
+common things all add and outlet add this component
+
+app
+
+routes inside route<mainLayout/> 
+
+route inside the another route 
+
+
+React full Revision:-
+
+1. Project setup
+component making
+css adding
+image add
+tailwind css adding
+multicomponents
+rendering methods primitive and non primitive
+variables
+conditional,optional,nullish
+Hooks 
+useState,rendering methods
+event functions
+container components - presentation components
+React Router dom- BrowserRouter,Routes,Rute, link,Navlink,useNagigate,useparams,uselocation.
+
+
+
+
+
+Task:-
+
+1. 
+UseParams root link:id
+
+link 

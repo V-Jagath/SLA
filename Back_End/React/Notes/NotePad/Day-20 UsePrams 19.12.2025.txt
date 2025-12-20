@@ -62,9 +62,6 @@ container components - presentation components
 React Router dom- BrowserRouter,Routes,Rute, link,Navlink,useNagigate,useparams,uselocation.
 
 
-
-
-
 Task:-
 
 1. 

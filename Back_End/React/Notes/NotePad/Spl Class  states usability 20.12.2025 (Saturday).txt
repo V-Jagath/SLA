@@ -1,0 +1,13 @@
+spl class 20.12.2025 
+
+State Process :-
+
+conditional rendering ternary operator 
+optional
+nullish value
+
+
+task :-
+1. using props change theme
+2. create a box and create a button and you lick the button the text is changed 
+3. Create a button when i click showing the box. i click showing the 

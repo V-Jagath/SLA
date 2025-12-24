@@ -1,0 +1,29 @@
+side effact handle hook is a useEffact.
+
+side
+
+when you call open function in the react component it you want to update on the screen
+that time you have to use usestate. usestate handle state and update state function state update
+function rerender the component of every time so multiple rerender its affact your ui. 
+that time the solution is use Effect.
+
+useEffect(()=>{
+
+},[]) 
+
+
+when ever the depandancy state is update that time your useEffact function is again runing. empty dependancy one time run
+
+without dependancy - what ever happen on the component related to state 
+
+if any state update that useeffact is also called. its also side effect.
+
+datas - primitive and non primitie 
+
+functions -
+events
+state(show&update)
+state update function
+
+TASK :--
+

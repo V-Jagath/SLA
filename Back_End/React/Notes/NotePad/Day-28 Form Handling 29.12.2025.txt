@@ -4,3 +4,22 @@ to one state object. updated via finally handling with onsubmit.
 
 validataion single process and process form submit.
 
+value and name and event
+
+get unique for form use name attribute
+
+
+setForm({...form,[e.target.name]:e.target.value})
+
+step 1 : take tha values form input - single source one state to be maintain
+for all the form.
+
+onchange is the key event trigger the function to update the state.
+
+using event object called:target.name in the array and using the speread operator same like object update.
+
+
+
+
+
+
